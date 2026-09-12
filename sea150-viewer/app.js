@@ -96,8 +96,11 @@ async function loadWonders() {
 }
 
 function getWindowRect() {
-  const padding = 28;
-  const size = Math.max(200, Math.min(frame.clientWidth - padding * 2, frame.clientHeight - padding * 2));
+  const isMobile = frame.clientWidth <= 640;
+  // On mobile, render the static box at 90% of screen width dynamically
+  const size = isMobile 
+    ? Math.round(frame.clientWidth * 0.90)
+    : Math.max(200, Math.min(frame.clientWidth - 56, frame.clientHeight - 56));
   const x = Math.round((frame.clientWidth - size) / 2);
   const y = Math.round((frame.clientHeight - size) / 2);
   return { x, y, width: size, height: size };
@@ -732,36 +735,69 @@ document.querySelector("#fitButton").addEventListener("click", fitMap);
 document.querySelector("#zoomReset")?.addEventListener("click", fitMap);
 document.querySelector("#trapButton").addEventListener("click", () => focus(1967, 1685));
 
-// Sidebar Collapse / Expand Toggle
+// Left Controls Sidebar Collapse / Expand Toggle
 function toggleControlsSidebar(forceState) {
-  const panel = document.querySelector("#controlsPanel");
   const workspace = document.querySelector(".workspace");
-  const floatingBtn = document.querySelector("#floatingToggleControls");
-  const isCollapsed = forceState !== undefined ? forceState : !panel.classList.contains("collapsed");
+  const tabBtn = document.querySelector("#sidebarTabToggle");
+  const isCurrentlyCollapsed = workspace.classList.contains("controls-collapsed");
+  const willCollapse = forceState !== undefined ? forceState : !isCurrentlyCollapsed;
 
-  if (isCollapsed) {
-    panel.classList.add("collapsed");
-    workspace?.classList.add("controls-collapsed");
-    if (floatingBtn) floatingBtn.style.display = "block";
+  if (willCollapse) {
+    workspace.classList.add("controls-collapsed");
+    if (tabBtn) {
+      tabBtn.textContent = "▶";
+      tabBtn.title = "Expand Controls";
+    }
   } else {
-    panel.classList.remove("collapsed");
-    workspace?.classList.remove("controls-collapsed");
-    if (floatingBtn) floatingBtn.style.display = "none";
+    workspace.classList.remove("controls-collapsed");
+    if (tabBtn) {
+      tabBtn.textContent = "◀";
+      tabBtn.title = "Collapse Controls";
+    }
   }
 
-  // Trigger resize after layout changes so the canvas adapts smoothly
   setTimeout(() => {
     resize();
     fitMap();
-  }, 100);
+  }, 120);
 }
 
-document.querySelector("#toggleControlsBtn")?.addEventListener("click", () => toggleControlsSidebar(true));
-document.querySelector("#floatingToggleControls")?.addEventListener("click", () => toggleControlsSidebar(false));
+// Right Inspector Sidebar Collapse / Expand Toggle
+function toggleInspectorSidebar(forceState) {
+  const workspace = document.querySelector(".workspace");
+  const tabBtn = document.querySelector("#inspectorTabToggle");
+  const isCurrentlyCollapsed = workspace.classList.contains("inspector-collapsed");
+  const willCollapse = forceState !== undefined ? forceState : !isCurrentlyCollapsed;
 
-// On mobile (< 640px), auto-collapse sidebar on start so map render takes full screen
+  if (willCollapse) {
+    workspace.classList.add("inspector-collapsed");
+    if (tabBtn) {
+      tabBtn.textContent = "◀";
+      tabBtn.title = "Expand Directory";
+    }
+  } else {
+    workspace.classList.remove("inspector-collapsed");
+    if (tabBtn) {
+      tabBtn.textContent = "▶";
+      tabBtn.title = "Collapse Directory";
+    }
+  }
+
+  setTimeout(() => {
+    resize();
+    fitMap();
+  }, 120);
+}
+
+document.querySelector("#sidebarTabToggle")?.addEventListener("click", () => toggleControlsSidebar());
+document.querySelector("#inspectorTabToggle")?.addEventListener("click", () => toggleInspectorSidebar());
+
+// On mobile (< 640px), auto-collapse both sidebars so static box renders at 90% width dynamically
 if (window.innerWidth <= 640) {
-  setTimeout(() => toggleControlsSidebar(true), 50);
+  setTimeout(() => {
+    toggleControlsSidebar(true);
+    toggleInspectorSidebar(true);
+  }, 50);
 }
 
 document.querySelector("#zoomIn")?.addEventListener("click", () => {
