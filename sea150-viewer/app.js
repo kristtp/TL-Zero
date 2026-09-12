@@ -95,6 +95,14 @@ async function loadWonders() {
   });
 }
 
+function getWindowRect() {
+  const padding = 28;
+  const size = Math.max(200, Math.min(frame.clientWidth - padding * 2, frame.clientHeight - padding * 2));
+  const x = Math.round((frame.clientWidth - size) / 2);
+  const y = Math.round((frame.clientHeight - size) / 2);
+  return { x, y, width: size, height: size };
+}
+
 function resize() {
   const ratio = window.devicePixelRatio || 1;
   canvas.width = Math.round(frame.clientWidth * ratio);
@@ -104,17 +112,20 @@ function resize() {
 }
 
 function fitMap() {
-  const padding = 36;
-  state.scale = Math.min((frame.clientWidth - padding * 2) / MAP_SIZE, (frame.clientHeight - padding * 2) / MAP_SIZE);
-  state.offsetX = (frame.clientWidth - MAP_SIZE * state.scale) / 2;
-  state.offsetY = (frame.clientHeight - MAP_SIZE * state.scale) / 2;
+  const box = getWindowRect();
+  state.scale = box.width / MAP_SIZE;
+  state.offsetX = box.x;
+  state.offsetY = box.y;
   draw();
 }
 
 function focus(x, y, scale = 0.55) {
+  const box = getWindowRect();
+  const boxCenterX = box.x + box.width / 2;
+  const boxCenterY = box.y + box.height / 2;
   state.scale = scale;
-  state.offsetX = frame.clientWidth / 2 - (x + MAP_HALF) * scale;
-  state.offsetY = frame.clientHeight / 2 - (MAP_HALF - y) * scale;
+  state.offsetX = boxCenterX - (x + MAP_HALF) * scale;
+  state.offsetY = boxCenterY - (MAP_HALF - y) * scale;
   draw();
 }
 
@@ -261,18 +272,24 @@ function draw() {
   const height = frame.clientHeight;
   context.clearRect(0, 0, width, height);
 
-  // Deep oceanic background outside the grid box
+  // 1. Fixed stage background (outside the viewing window)
   context.fillStyle = "#07171f";
   context.fillRect(0, 0, width, height);
 
-  const [left, top] = screenPoint(-MAP_HALF, MAP_HALF);
-  const mapScreenSize = MAP_SIZE * state.scale;
+  const box = getWindowRect();
 
-  // Confine all map layers strictly within the bounds of the grid box
+  // 2. Confine all map layers strictly within the fixed viewing window (microscope aperture)
   context.save();
   context.beginPath();
-  context.rect(left, top, mapScreenSize, mapScreenSize);
+  context.rect(box.x, box.y, box.width, box.height);
   context.clip();
+
+  // Draw oceanic base inside the window
+  context.fillStyle = "#09313d";
+  context.fillRect(box.x, box.y, box.width, box.height);
+
+  const [left, top] = screenPoint(-MAP_HALF, MAP_HALF);
+  const mapScreenSize = MAP_SIZE * state.scale;
 
   if (state.showStitched && state.stitchedImage && state.stitchedImage.complete) {
     context.drawImage(state.stitchedImage, left, top, mapScreenSize, mapScreenSize);
@@ -280,19 +297,51 @@ function draw() {
     drawSea(left, top, mapScreenSize, mapScreenSize);
   }
 
+  // Subtle boundary outline of SEA 150 territory
+  context.strokeStyle = "rgba(241, 223, 173, 0.4)";
+  context.lineWidth = 1;
+  context.strokeRect(left, top, mapScreenSize, mapScreenSize);
+
   drawGrid();
   drawResources();
   drawWonders();
   drawTraps();
 
+  // Crosshair is only drawn if cursor is inside the window
+  if (state.mouseX >= box.x && state.mouseX <= box.x + box.width &&
+      state.mouseY >= box.y && state.mouseY <= box.y + box.height) {
+    drawCrosshair();
+  }
+
   context.restore();
 
-  // Grid box outer boundary
+  // 3. Fixed Window Outer Frame (Stationary like a microscope viewing frame)
   context.strokeStyle = "#f1dfad";
-  context.lineWidth = Math.max(1.5, Math.min(3, state.scale * 4));
-  context.strokeRect(left, top, mapScreenSize, mapScreenSize);
+  context.lineWidth = 3;
+  context.strokeRect(box.x, box.y, box.width, box.height);
 
-  drawCrosshair();
+  // Corner accents for the viewing frame
+  const cornerLen = 14;
+  context.strokeStyle = "#d49b27";
+  context.lineWidth = 4;
+  context.beginPath();
+  // Top-left
+  context.moveTo(box.x - 2, box.y + cornerLen);
+  context.lineTo(box.x - 2, box.y - 2);
+  context.lineTo(box.x + cornerLen, box.y - 2);
+  // Top-right
+  context.moveTo(box.x + box.width - cornerLen, box.y - 2);
+  context.lineTo(box.x + box.width + 2, box.y - 2);
+  context.lineTo(box.x + box.width + 2, box.y + cornerLen);
+  // Bottom-left
+  context.moveTo(box.x - 2, box.y + box.height - cornerLen);
+  context.lineTo(box.x - 2, box.y + box.height + 2);
+  context.lineTo(box.x + cornerLen, box.y + box.height + 2);
+  // Bottom-right
+  context.moveTo(box.x + box.width - cornerLen, box.y + box.height + 2);
+  context.lineTo(box.x + box.width + 2, box.y + box.height + 2);
+  context.lineTo(box.x + box.width + 2, box.y + box.height - cornerLen);
+  context.stroke();
 }
 
 function nearestAt(mapX, mapY) {
@@ -315,37 +364,77 @@ function inspect(hit) {
   element.innerHTML = `<h2>${hit.kind}</h2><dl>${rows}</dl>`;
 }
 
+// Global suppression of browser page pinch zoom
+window.addEventListener("wheel", event => {
+  if (event.ctrlKey) {
+    event.preventDefault();
+  }
+}, { passive: false });
+
+let isTouchpadPinching = false;
+let touchpadAnchorMap = [0, 0];
+let touchpadScreenPos = [0, 0];
+let touchpadResetTimer = null;
+let isZoomCooldown = false;
+let zoomCooldownTimer = null;
+
 canvas.addEventListener("wheel", event => {
   event.preventDefault();
+
+  state.dragging = false;
+  isZoomCooldown = true;
+  clearTimeout(zoomCooldownTimer);
+  zoomCooldownTimer = setTimeout(() => { isZoomCooldown = false; }, 140);
+
   const rect = canvas.getBoundingClientRect();
-  const mouseX = event.clientX - rect.left, mouseY = event.clientY - rect.top;
-  const [mapX, mapY] = mapPoint(mouseX, mouseY);
+  const mouseX = event.clientX - rect.left;
+  const mouseY = event.clientY - rect.top;
 
   let zoomFactor;
   if (event.ctrlKey) {
-    // Smooth scaling for laptop touchpad pinch gestures
-    zoomFactor = Math.exp(-event.deltaY * 0.008);
+    // Windows / Mac touchpad pinch gesture
+    let dy = event.deltaY;
+    if (event.deltaMode === 1) dy *= 16;
+    else if (event.deltaMode === 2) dy *= 100;
+
+    const clampedDelta = Math.max(-25, Math.min(25, dy));
+    zoomFactor = Math.exp(-clampedDelta * 0.0035);
+
+    if (!isTouchpadPinching) {
+      isTouchpadPinching = true;
+      touchpadScreenPos = [mouseX, mouseY];
+      touchpadAnchorMap = mapPoint(mouseX, mouseY);
+    }
+    clearTimeout(touchpadResetTimer);
+    touchpadResetTimer = setTimeout(() => { isTouchpadPinching = false; }, 160);
   } else {
-    // Discrete mouse wheel
+    isTouchpadPinching = false;
     zoomFactor = event.deltaY < 0 ? 1.12 : 0.89;
   }
-  zoomFactor = Math.max(0.65, Math.min(1.45, zoomFactor));
 
   const targetScale = Math.max(0.055, Math.min(1.8, state.scale * zoomFactor));
 
-  // Anchor the exact map coordinate under cursor without jumping
-  state.offsetX = mouseX - (mapX + MAP_HALF) * targetScale;
-  state.offsetY = mouseY - (MAP_HALF - mapY) * targetScale;
+  const anchorScreen = isTouchpadPinching ? touchpadScreenPos : [mouseX, mouseY];
+  const anchorMap = isTouchpadPinching ? touchpadAnchorMap : mapPoint(mouseX, mouseY);
+
   state.scale = targetScale;
+  state.offsetX = anchorScreen[0] - (anchorMap[0] + MAP_HALF) * state.scale;
+  state.offsetY = anchorScreen[1] - (MAP_HALF - anchorMap[1]) * state.scale;
   draw();
 }, { passive: false });
 
 canvas.addEventListener("dblclick", event => {
   event.preventDefault();
   const rect = canvas.getBoundingClientRect();
-  const mouseX = event.clientX - rect.left, mouseY = event.clientY - rect.top;
+  const mouseX = event.clientX - rect.left;
+  const mouseY = event.clientY - rect.top;
+  const box = getWindowRect();
+
+  // Only handle double click if inside the fixed viewing window
+  if (mouseX < box.x || mouseX > box.x + box.width || mouseY < box.y || mouseY > box.y + box.height) return;
+
   const [mapX, mapY] = mapPoint(mouseX, mouseY);
-  const targetScale = Math.min(1.8, Math.max(state.scale * 1.5, 0.45));
+  const targetScale = Math.min(1.8, Math.max(state.scale * 1.6, 0.45));
   focus(mapX, mapY, targetScale);
 });
 
@@ -353,7 +442,6 @@ const activePointers = new Map();
 let pinchStartDistance = 0;
 let pinchStartScale = 1;
 let pinchCenterMap = [0, 0];
-let pinchCenterScreen = [0, 0];
 
 canvas.addEventListener("pointerdown", event => {
   event.preventDefault();
@@ -375,7 +463,6 @@ canvas.addEventListener("pointerdown", event => {
     const rect = canvas.getBoundingClientRect();
     const midScreenX = (pts[0].x + pts[1].x) / 2 - rect.left;
     const midScreenY = (pts[0].y + pts[1].y) / 2 - rect.top;
-    pinchCenterScreen = [midScreenX, midScreenY];
     pinchCenterMap = mapPoint(midScreenX, midScreenY);
   }
 });
@@ -388,9 +475,18 @@ canvas.addEventListener("pointermove", event => {
   const rect = canvas.getBoundingClientRect();
   state.mouseX = event.clientX - rect.left;
   state.mouseY = event.clientY - rect.top;
-  state.mouseOver = true;
-  const [mapX, mapY] = mapPoint(state.mouseX, state.mouseY);
-  document.querySelector("#cursorCoords").textContent = `X:${Math.round(mapX)} Y:${Math.round(mapY)}`;
+
+  const box = getWindowRect();
+  const insideBox = state.mouseX >= box.x && state.mouseX <= box.x + box.width &&
+                    state.mouseY >= box.y && state.mouseY <= box.y + box.height;
+  state.mouseOver = insideBox;
+
+  if (insideBox) {
+    const [mapX, mapY] = mapPoint(state.mouseX, state.mouseY);
+    document.querySelector("#cursorCoords").textContent = `X:${Math.round(mapX)} Y:${Math.round(mapY)}`;
+  } else {
+    document.querySelector("#cursorCoords").textContent = "X:— Y:—";
+  }
 
   if (activePointers.size === 2) {
     const pts = Array.from(activePointers.values());
@@ -399,18 +495,18 @@ canvas.addEventListener("pointermove", event => {
       const zoomFactor = currentDist / pinchStartDistance;
       const targetScale = Math.max(0.055, Math.min(1.8, pinchStartScale * zoomFactor));
 
-      // Calculate the current midScreen center (allowing dual finger panning + zooming simultaneously)
       const currentMidX = (pts[0].x + pts[1].x) / 2 - rect.left;
       const currentMidY = (pts[0].y + pts[1].y) / 2 - rect.top;
 
       state.scale = targetScale;
-      // Anchor the map point under the pinch center to currentMid
       state.offsetX = currentMidX - (pinchCenterMap[0] + MAP_HALF) * state.scale;
       state.offsetY = currentMidY - (MAP_HALF - pinchCenterMap[1]) * state.scale;
       draw();
     }
     return;
   }
+
+  if (isZoomCooldown) return;
 
   if (state.dragging && activePointers.size === 1) {
     const dx = event.clientX - state.lastX;
@@ -445,8 +541,14 @@ canvas.addEventListener("pointerup", event => {
   endPointer(event);
   if (!state.moved && !wasPinching && activePointers.size === 0) {
     const rect = canvas.getBoundingClientRect();
-    const [mapX, mapY] = mapPoint(event.clientX - rect.left, event.clientY - rect.top);
-    inspect(nearestAt(mapX, mapY));
+    const mouseX = event.clientX - rect.left;
+    const mouseY = event.clientY - rect.top;
+    const box = getWindowRect();
+    if (mouseX >= box.x && mouseX <= box.x + box.width &&
+        mouseY >= box.y && mouseY <= box.y + box.height) {
+      const [mapX, mapY] = mapPoint(mouseX, mouseY);
+      inspect(nearestAt(mapX, mapY));
+    }
   }
 });
 
@@ -629,8 +731,16 @@ document.querySelector("#stitchedToggle")?.addEventListener("change", e => setSt
 document.querySelector("#fitButton").addEventListener("click", fitMap);
 document.querySelector("#zoomReset")?.addEventListener("click", fitMap);
 document.querySelector("#trapButton").addEventListener("click", () => focus(1967, 1685));
-document.querySelector("#zoomIn").addEventListener("click", () => focus(...mapPoint(frame.clientWidth / 2, frame.clientHeight / 2), Math.min(1.8, state.scale * 1.3)));
-document.querySelector("#zoomOut").addEventListener("click", () => focus(...mapPoint(frame.clientWidth / 2, frame.clientHeight / 2), Math.max(0.055, state.scale / 1.3)));
+document.querySelector("#zoomIn")?.addEventListener("click", () => {
+  const box = getWindowRect();
+  const [cx, cy] = mapPoint(box.x + box.width / 2, box.y + box.height / 2);
+  focus(cx, cy, Math.min(1.8, state.scale * 1.3));
+});
+document.querySelector("#zoomOut")?.addEventListener("click", () => {
+  const box = getWindowRect();
+  const [cx, cy] = mapPoint(box.x + box.width / 2, box.y + box.height / 2);
+  focus(cx, cy, Math.max(0.055, state.scale / 1.3));
+});
 
 // 4-Direction D-Pad Controls with continuous press support
 let panInterval = null;
