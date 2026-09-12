@@ -1,0 +1,617 @@
+UnityPy config bundle search report
+Source: xapk-extracted/UnityDataAssetPack.apk; raw TextAsset m_Script bytes exported under config-export/<bundle>/
+
+BUNDLES
+  x3.config.ab: 10720720 bytes
+  x3.config_asset.ab: 7219642 bytes
+  x3.config_dk.ab: 222618 bytes
+
+TEXTASSET INVENTORY / CONTAINER PATHS
+
+[x3.config.ab] 12 ActvScoreTaskGroup (32 bytes, utf-8)
+  file: config-export\x3.config.ab\0012_ActvScoreTaskGroup.bin
+  container: Assets/Res/Config/ProtoGen/ActvScoreTaskGroup.bytes
+
+[x3.config.ab] 28 HeroEquipSlot (187 bytes, utf-8)
+  file: config-export\x3.config.ab\0028_HeroEquipSlot.bin
+  container: Assets/Res/Config/ProtoGen/HeroEquipSlot.bytes
+
+[x3.config.ab] 31 KVKLODShow (317 bytes, utf-8)
+  file: config-export\x3.config.ab\0031_KVKLODShow.bin
+  container: Assets/Res/Config/ProtoGen/KVKLODShow.bytes
+
+[x3.config.ab] 38 HeroSecretActvReward (90 bytes, utf-8)
+  file: config-export\x3.config.ab\0038_HeroSecretActvReward.bin
+  container: Assets/Res/Config/ProtoGen/HeroSecretActvReward.bytes
+
+[x3.config.ab] 64 UnitTypeInfo (58 bytes, utf-8)
+  file: config-export\x3.config.ab\0064_UnitTypeInfo.bin
+  container: Assets/Res/Config/ProtoGen/UnitTypeInfo.bytes
+
+[x3.config.ab] 90 Details (230 bytes, utf-8)
+  file: config-export\x3.config.ab\0090_Details.bin
+  container: Assets/Res/Config/ProtoGen/Details.bytes
+
+[x3.config.ab] 129 HeroLabel (130 bytes, utf-8)
+  file: config-export\x3.config.ab\0129_HeroLabel.bin
+  container: Assets/Res/Config/ProtoGen/HeroLabel.bytes
+
+[x3.config.ab] 163 NotifySetting (220 bytes, utf-8)
+  file: config-export\x3.config.ab\0163_NotifySetting.bin
+  container: Assets/Res/Config/ProtoGen/NotifySetting.bytes
+
+[x3.config.ab] 177 ActvFlashSaleReward (0 bytes, utf-8)
+  file: config-export\x3.config.ab\0177_ActvFlashSaleReward.bin
+  container: Assets/Res/Config/ProtoGen/ActvFlashSaleReward.bytes
+
+[x3.config.ab] 181 ShipEquipType (121 bytes, utf-8)
+  file: config-export\x3.config.ab\0181_ShipEquipType.bin
+  container: Assets/Res/Config/ProtoGen/ShipEquipType.bytes
+
+[x3.config.ab] 183 TradeBonusWeek (98 bytes, utf-8)
+  file: config-export\x3.config.ab\0183_TradeBonusWeek.bin
+  container: Assets/Res/Config/ProtoGen/TradeBonusWeek.bytes
+
+[x3.config.ab] 198 PropScene (92 bytes, utf-8)
+  file: config-export\x3.config.ab\0198_PropScene.bin
+  container: Assets/Res/Config/ProtoGen/PropScene.bytes
+
+[x3.config.ab] 224 OpenScoreReward (70 bytes, utf-8)
+  file: config-export\x3.config.ab\0224_OpenScoreReward.bin
+  container: Assets/Res/Config/ProtoGen/OpenScoreReward.bytes
+
+[x3.config.ab] 258 ShipSkillSlot (86 bytes, utf-8)
+  file: config-export\x3.config.ab\0258_ShipSkillSlot.bin
+  container: Assets/Res/Config/ProtoGen/ShipSkillSlot.bytes
+
+[x3.config.ab] 259 UnionLog (342 bytes, utf-8)
+  file: config-export\x3.config.ab\0259_UnionLog.bin
+  container: Assets/Res/Config/ProtoGen/UnionLog.bytes
+
+[x3.config.ab] 273 UnionColor (342 bytes, utf-8)
+  file: config-export\x3.config.ab\0273_UnionColor.bin
+  container: Assets/Res/Config/ProtoGen/UnionColor.bytes
+
+[x3.config.ab] 274 BattleTag (464 bytes, utf-8)
+  file: config-export\x3.config.ab\0274_BattleTag.bin
+  container: Assets/Res/Config/ProtoGen/BattleTag.bytes
+
+[x3.config.ab] 277 ShipStarGiveLevel (444 bytes, utf-8)
+  file: config-export\x3.config.ab\0277_ShipStarGiveLevel.bin
+  container: Assets/Res/Config/ProtoGen/ShipStarGiveLevel.bytes
+
+[x3.config.ab] 302 TradeBonusPool (206 bytes, utf-8)
+  file: config-export\x3.config.ab\0302_TradeBonusPool.bin
+  container: Assets/Res/Config/ProtoGen/TradeBonusPool.bytes
+
+[x3.config.ab] 334 GameTips (82 bytes, utf-8)
+  file: config-export\x3.config.ab\0334_GameTips.bin
+  container: Assets/Res/Config/ProtoGen/GameTips.bytes
+
+[x3.config.ab] 336 MapMerge (182 bytes, utf-8)
+  file: config-export\x3.config.ab\0336_MapMerge.bin
+  container: Assets/Res/Config/ProtoGen/MapMerge.bytes
+
+[x3.config.ab] 338 KVKMapLog (156 bytes, utf-8)
+  file: config-export\x3.config.ab\0338_KVKMapLog.bin
+  container: Assets/Res/Config/ProtoGen/KVKMapLog.bytes
+
+[x3.config.ab] 349 ChatEmojyReply (294 bytes, utf-8)
+  file: config-export\x3.config.ab\0349_ChatEmojyReply.bin
+  container: Assets/Res/Config/ProtoGen/ChatEmojyReply.bytes
+
+[x3.config.ab] 355 ActvVoyageLevel (96 bytes, utf-16-le)
+  file: config-export\x3.config.ab\0355_ActvVoyageLevel.bin
+  container: Assets/Res/Config/ProtoGen/ActvVoyageLevel.bytes
+
+[x3.config.ab] 357 SecretShopBubble (191 bytes, utf-8)
+  file: config-export\x3.config.ab\0357_SecretShopBubble.bin
+  container: Assets/Res/Config/ProtoGen/SecretShopBubble.bytes
+
+[x3.config.ab] 365 GlassGroup (92 bytes, utf-8)
+  file: config-export\x3.config.ab\0365_GlassGroup.bin
+  container: Assets/Res/Config/ProtoGen/GlassGroup.bytes
+
+[x3.config.ab] 367 BlueprintsClass (214 bytes, utf-8)
+  file: config-export\x3.config.ab\0367_BlueprintsClass.bin
+  container: Assets/Res/Config/ProtoGen/BlueprintsClass.bytes
+
+[x3.config.ab] 384 SoldierEnhanceEvent (693 bytes, utf-8)
+  file: config-export\x3.config.ab\0384_SoldierEnhanceEvent.bin
+  container: Assets/Res/Config/ProtoGen/SoldierEnhanceEvent.bytes
+
+[x3.config.ab] 394 NPC (1212 bytes, utf-8)
+  file: config-export\x3.config.ab\0394_NPC.bin
+  container: Assets/Res/Config/ProtoGen/NPC.bytes
+
+[x3.config.ab] 403 KVKTerritoryColor (262 bytes, utf-8)
+  file: config-export\x3.config.ab\0403_KVKTerritoryColor.bin
+  container: Assets/Res/Config/ProtoGen/KVKTerritoryColor.bytes
+
+[x3.config.ab] 404 UnionClassDetail (352 bytes, utf-8)
+  file: config-export\x3.config.ab\0404_UnionClassDetail.bin
+  container: Assets/Res/Config/ProtoGen/UnionClassDetail.bytes
+
+[x3.config.ab] 427 TradeBonusDay (394 bytes, utf-8)
+  file: config-export\x3.config.ab\0427_TradeBonusDay.bin
+  container: Assets/Res/Config/ProtoGen/TradeBonusDay.bytes
+
+[x3.config.ab] 453 OrderRule (78 bytes, utf-8)
+  file: config-export\x3.config.ab\0453_OrderRule.bin
+  container: Assets/Res/Config/ProtoGen/OrderRule.bytes
+
+[x3.config.ab] 460 KVKLogColor (398 bytes, utf-8)
+  file: config-export\x3.config.ab\0460_KVKLogColor.bin
+  container: Assets/Res/Config/ProtoGen/KVKLogColor.bytes
+
+[x3.config.ab] 471 AnnType (10 bytes, utf-8)
+  file: config-export\x3.config.ab\0471_AnnType.bin
+  container: Assets/Res/Config/ProtoGen/AnnType.bytes
+
+CASE-INSENSITIVE MATCHES WITH NEARBY CONTEXT
+
+[x3.config.ab] BattleTag :: config-export\x3.config.ab\0274_BattleTag.bin
+  L2: '#"DK_icon_Battle_Arena*#eae03d)%"DK_icon_Battle_Defense*#3dea62*&"DK_icon_Battle_Monument*#3deae8*&"DK_icon_Battle_Exercise*#3d8fea'#"DK_icon_Battle_Route*#3dccea'#"DK_icon_Battle_Trial*#d83dea+'"DK_icon_Battle_Spectacle*#eabf3d&""DK_icon_Battle_List*#ea933d%!"DK_icon_Battle_war*#ea3d3d($"DK_icon_Battle_Attack*#ea6a3d(
+  L3: $
+  L4: "DK_icon_Battle_Turtle*#3deaa7
+
+MATCHED TEXT LINES: 1
+
+BINARY/PRINTABLE STRING MATCHES
+
+NUMERIC/CONFIG REFERENCES NEAR TERMS
+
+INTERPRETATION / LIMITATIONS
+Only literal case-insensitive matches and nearby serialized text were reported; coordinates were not inferred. TextAssets that decode as binary are preserved byte-for-byte and printable strings are shown where available. Static-vs-server-state evidence requires runtime/network code or scene data; this report does not claim coordinates are static without explicit fields/formulas.
+
+ERRORS
+x3.config.ab TextAsset 0: 'utf-8' codec can't encode character '\udcdc' in position 5: surrogates not allowed
+x3.config.ab TextAsset 1: 'utf-8' codec can't encode character '\udc9d' in position 5: surrogates not allowed
+x3.config.ab TextAsset 2: 'utf-8' codec can't encode character '\udc8f' in position 3: surrogates not allowed
+x3.config.ab TextAsset 3: 'utf-8' codec can't encode characters in position 5-6: surrogates not allowed
+x3.config.ab TextAsset 4: 'utf-8' codec can't encode characters in position 19-21: surrogates not allowed
+x3.config.ab TextAsset 5: 'utf-8' codec can't encode character '\udca3' in position 5: surrogates not allowed
+x3.config.ab TextAsset 6: 'utf-8' codec can't encode character '\udce5' in position 1: surrogates not allowed
+x3.config.ab TextAsset 7: 'utf-8' codec can't encode character '\udcca' in position 11: surrogates not allowed
+x3.config.ab TextAsset 8: 'utf-8' codec can't encode character '\udcee' in position 5: surrogates not allowed
+x3.config.ab TextAsset 9: 'utf-8' codec can't encode character '\udcbd' in position 5: surrogates not allowed
+x3.config.ab TextAsset 10: 'utf-8' codec can't encode characters in position 16-18: surrogates not allowed
+x3.config.ab TextAsset 11: 'utf-8' codec can't encode characters in position 11-14: surrogates not allowed
+x3.config.ab TextAsset 13: 'utf-8' codec can't encode character '\udc86' in position 3: surrogates not allowed
+x3.config.ab TextAsset 14: 'utf-8' codec can't encode characters in position 177-179: surrogates not allowed
+x3.config.ab TextAsset 15: 'utf-8' codec can't encode characters in position 38-41: surrogates not allowed
+x3.config.ab TextAsset 16: 'utf-8' codec can't encode characters in position 13-14: surrogates not allowed
+x3.config.ab TextAsset 17: 'utf-8' codec can't encode character '\udc9f' in position 1: surrogates not allowed
+x3.config.ab TextAsset 18: 'utf-8' codec can't encode character '\udc9b' in position 5: surrogates not allowed
+x3.config.ab TextAsset 19: 'utf-8' codec can't encode character '\udcb1' in position 5: surrogates not allowed
+x3.config.ab TextAsset 20: 'utf-8' codec can't encode character '\udc9e' in position 5: surrogates not allowed
+x3.config.ab TextAsset 21: 'utf-8' codec can't encode character '\udc95' in position 43: surrogates not allowed
+x3.config.ab TextAsset 22: 'utf-8' codec can't encode character '\udcfb' in position 5: surrogates not allowed
+x3.config.ab TextAsset 23: 'utf-8' codec can't encode character '\udcea' in position 1: surrogates not allowed
+x3.config.ab TextAsset 24: 'utf-8' codec can't encode character '\udcb0' in position 13: surrogates not allowed
+x3.config.ab TextAsset 25: 'utf-8' codec can't encode characters in position 5-7: surrogates not allowed
+x3.config.ab TextAsset 26: 'utf-8' codec can't encode character '\udcd0' in position 49: surrogates not allowed
+x3.config.ab TextAsset 27: 'utf-8' codec can't encode character '\udca4' in position 13: surrogates not allowed
+x3.config.ab TextAsset 29: 'utf-8' codec can't encode characters in position 31-32: surrogates not allowed
+x3.config.ab TextAsset 30: 'utf-8' codec can't encode character '\udca9' in position 11: surrogates not allowed
+x3.config.ab TextAsset 32: 'utf-8' codec can't encode characters in position 5-6: surrogates not allowed
+x3.config.ab TextAsset 33: 'utf-8' codec can't encode character '\udce8' in position 5: surrogates not allowed
+x3.config.ab TextAsset 34: 'utf-8' codec can't encode character '\udc92' in position 5: surrogates not allowed
+x3.config.ab TextAsset 35: 'utf-8' codec can't encode character '\udcbe' in position 5: surrogates not allowed
+x3.config.ab TextAsset 36: 'utf-8' codec can't encode characters in position 17-19: surrogates not allowed
+x3.config.ab TextAsset 37: 'utf-8' codec can't encode character '\udca2' in position 5: surrogates not allowed
+x3.config.ab TextAsset 39: 'utf-8' codec can't encode character '\udc95' in position 5: surrogates not allowed
+x3.config.ab TextAsset 40: 'utf-8' codec can't encode characters in position 11-13: surrogates not allowed
+x3.config.ab TextAsset 41: 'utf-8' codec can't encode characters in position 5-6: surrogates not allowed
+x3.config.ab TextAsset 42: 'utf-8' codec can't encode character '\udcb8' in position 47: surrogates not allowed
+x3.config.ab TextAsset 43: 'utf-8' codec can't encode character '\udce9' in position 5: surrogates not allowed
+x3.config.ab TextAsset 44: 'utf-8' codec can't encode character '\udcf6' in position 43: surrogates not allowed
+x3.config.ab TextAsset 45: 'utf-8' codec can't encode character '\udced' in position 5: surrogates not allowed
+x3.config.ab TextAsset 46: 'utf-8' codec can't encode characters in position 13-14: surrogates not allowed
+x3.config.ab TextAsset 47: 'utf-8' codec can't encode characters in position 21-23: surrogates not allowed
+x3.config.ab TextAsset 48: 'utf-8' codec can't encode character '\udcf2' in position 11: surrogates not allowed
+x3.config.ab TextAsset 49: 'utf-8' codec can't encode character '\udc96' in position 1: surrogates not allowed
+x3.config.ab TextAsset 50: 'utf-8' codec can't encode character '\udca1' in position 3: surrogates not allowed
+x3.config.ab TextAsset 51: 'utf-8' codec can't encode character '\udcb7' in position 6: surrogates not allowed
+x3.config.ab TextAsset 52: 'utf-8' codec can't encode character '\udcec' in position 6: surrogates not allowed
+x3.config.ab TextAsset 53: 'utf-8' codec can't encode characters in position 5-6: surrogates not allowed
+x3.config.ab TextAsset 54: 'utf-8' codec can't encode character '\udc9a' in position 40: surrogates not allowed
+x3.config.ab TextAsset 55: 'utf-8' codec can't encode character '\udc92' in position 5: surrogates not allowed
+x3.config.ab TextAsset 56: 'utf-8' codec can't encode character '\udc8c' in position 5: surrogates not allowed
+x3.config.ab TextAsset 57: 'utf-8' codec can't encode character '\udcd0' in position 5: surrogates not allowed
+x3.config.ab TextAsset 58: 'utf-8' codec can't encode character '\udc8b' in position 6: surrogates not allowed
+x3.config.ab TextAsset 59: 'utf-8' codec can't encode characters in position 5-6: surrogates not allowed
+x3.config.ab TextAsset 60: 'utf-8' codec can't encode characters in position 5-7: surrogates not allowed
+x3.config.ab TextAsset 61: 'utf-8' codec can't encode character '\udcbd' in position 5: surrogates not allowed
+x3.config.ab TextAsset 62: 'utf-8' codec can't encode character '\udce2' in position 1: surrogates not allowed
+x3.config.ab TextAsset 63: 'utf-8' codec can't encode character '\udcb1' in position 5: surrogates not allowed
+x3.config.ab TextAsset 65: 'utf-8' codec can't encode character '\udc82' in position 1: surrogates not allowed
+x3.config.ab TextAsset 66: 'utf-8' codec can't encode character '\udcef' in position 5: surrogates not allowed
+x3.config.ab TextAsset 67: 'utf-8' codec can't encode characters in position 1-2: surrogates not allowed
+x3.config.ab TextAsset 68: 'utf-8' codec can't encode characters in position 5-6: surrogates not allowed
+x3.config.ab TextAsset 69: 'utf-8' codec can't encode character '\udcef' in position 5: surrogates not allowed
+x3.config.ab TextAsset 70: 'utf-8' codec can't encode character '\udc91' in position 11: surrogates not allowed
+x3.config.ab TextAsset 71: 'utf-8' codec can't encode character '\udcc1' in position 1: surrogates not allowed
+x3.config.ab TextAsset 72: 'utf-8' codec can't encode character '\udcb1' in position 5: surrogates not allowed
+x3.config.ab TextAsset 73: 'utf-8' codec can't encode character '\udca5' in position 5: surrogates not allowed
+x3.config.ab TextAsset 74: 'utf-8' codec can't encode character '\udc8d' in position 5: surrogates not allowed
+x3.config.ab TextAsset 75: 'utf-8' codec can't encode character '\udcdb' in position 5: surrogates not allowed
+x3.config.ab TextAsset 76: 'utf-8' codec can't encode characters in position 5-7: surrogates not allowed
+x3.config.ab TextAsset 77: 'utf-8' codec can't encode character '\udc8f' in position 51: surrogates not allowed
+x3.config.ab TextAsset 78: 'utf-8' codec can't encode character '\udc89' in position 5: surrogates not allowed
+x3.config.ab TextAsset 79: 'utf-8' codec can't encode character '\udcd8' in position 1: surrogates not allowed
+x3.config.ab TextAsset 80: 'utf-8' codec can't encode characters in position 5-7: surrogates not allowed
+x3.config.ab TextAsset 81: 'utf-8' codec can't encode characters in position 42-43: surrogates not allowed
+x3.config.ab TextAsset 82: 'utf-8' codec can't encode character '\udcc8' in position 56: surrogates not allowed
+x3.config.ab TextAsset 83: 'utf-8' codec can't encode character '\udc93' in position 3: surrogates not allowed
+x3.config.ab TextAsset 84: 'utf-8' codec can't encode character '\udcee' in position 5: surrogates not allowed
+x3.config.ab TextAsset 85: 'utf-8' codec can't encode characters in position 5-6: surrogates not allowed
+x3.config.ab TextAsset 86: 'utf-8' codec can't encode character '\udcbe' in position 5: surrogates not allowed
+x3.config.ab TextAsset 87: 'utf-8' codec can't encode characters in position 5-6: surrogates not allowed
+x3.config.ab TextAsset 88: 'utf-8' codec can't encode characters in position 12-13: surrogates not allowed
+x3.config.ab TextAsset 89: 'utf-8' codec can't encode character '\udcc5' in position 5: surrogates not allowed
+x3.config.ab TextAsset 91: 'utf-8' codec can't encode character '\udc90' in position 1: surrogates not allowed
+x3.config.ab TextAsset 92: 'utf-8' codec can't encode character '\udcbd' in position 5: surrogates not allowed
+x3.config.ab TextAsset 93: 'utf-8' codec can't encode character '\udcfd' in position 5: surrogates not allowed
+x3.config.ab TextAsset 94: 'utf-8' codec can't encode character '\udcc1' in position 353: surrogates not allowed
+x3.config.ab TextAsset 95: 'utf-8' codec can't encode character '\udcec' in position 41: surrogates not allowed
+x3.config.ab TextAsset 96: 'utf-8' codec can't encode character '\udc84' in position 11: surrogates not allowed
+x3.config.ab TextAsset 97: 'utf-8' codec can't encode character '\udcde' in position 5: surrogates not allowed
+x3.config.ab TextAsset 98: 'utf-8' codec can't encode character '\udcdd' in position 5: surrogates not allowed
+x3.config.ab TextAsset 99: 'utf-8' codec can't encode character '\udcea' in position 11: surrogates not allowed
+x3.config.ab TextAsset 100: 'utf-8' codec can't encode character '\udc83' in position 75: surrogates not allowed
+x3.config.ab TextAsset 101: 'utf-8' codec can't encode character '\udcc4' in position 1: surrogates not allowed
+x3.config.ab TextAsset 102: 'utf-8' codec can't encode characters in position 13-14: surrogates not allowed
+x3.config.ab TextAsset 103: 'utf-8' codec can't encode character '\udc93' in position 5: surrogates not allowed
+x3.config.ab TextAsset 104: 'utf-8' codec can't encode character '\udcd7' in position 11: surrogates not allowed
+x3.config.ab TextAsset 105: 'utf-8' codec can't encode characters in position 13-15: surrogates not allowed
+x3.config.ab TextAsset 106: 'utf-8' codec can't encode character '\udcd1' in position 5: surrogates not allowed
+x3.config.ab TextAsset 107: 'utf-8' codec can't encode character '\udcd5' in position 3: surrogates not allowed
+x3.config.ab TextAsset 108: 'utf-8' codec can't encode character '\udcb1' in position 5: surrogates not allowed
+x3.config.ab TextAsset 109: 'utf-8' codec can't encode character '\udc96' in position 5: surrogates not allowed
+x3.config.ab TextAsset 110: 'utf-8' codec can't encode characters in position 14-15: surrogates not allowed
+x3.config.ab TextAsset 111: 'utf-8' codec can't encode character '\udca5' in position 5: surrogates not allowed
+x3.config.ab TextAsset 112: 'utf-8' codec can't encode characters in position 5-6: surrogates not allowed
+x3.config.ab TextAsset 113: 'utf-8' codec can't encode characters in position 15-17: surrogates not allowed
+x3.config.ab TextAsset 114: 'utf-8' codec can't encode character '\udcac' in position 13: surrogates not allowed
+x3.config.ab TextAsset 115: 'utf-8' codec can't encode character '\udcbd' in position 11: surrogates not allowed
+x3.config.ab TextAsset 116: 'utf-8' codec can't encode character '\udc9d' in position 5: surrogates not allowed
+x3.config.ab TextAsset 117: 'utf-8' codec can't encode character '\udc94' in position 5: surrogates not allowed
+x3.config.ab TextAsset 118: 'utf-8' codec can't encode character '\udcb4' in position 1: surrogates not allowed
+x3.config.ab TextAsset 119: 'utf-8' codec can't encode character '\udc93' in position 5: surrogates not allowed
+x3.config.ab TextAsset 120: 'utf-8' codec can't encode character '\udceb' in position 5: surrogates not allowed
+x3.config.ab TextAsset 121: 'utf-8' codec can't encode character '\udcab' in position 1: surrogates not allowed
+x3.config.ab TextAsset 122: 'utf-8' codec can't encode characters in position 5-7: surrogates not allowed
+x3.config.ab TextAsset 123: 'utf-8' codec can't encode characters in position 5-7: surrogates not allowed
+x3.config.ab TextAsset 124: 'utf-8' codec can't encode character '\udce4' in position 1: surrogates not allowed
+x3.config.ab TextAsset 125: 'utf-8' codec can't encode character '\udcb1' in position 5: surrogates not allowed
+x3.config.ab TextAsset 126: 'utf-8' codec can't encode character '\udcde' in position 1: surrogates not allowed
+x3.config.ab TextAsset 127: 'utf-8' codec can't encode character '\udcfb' in position 5: surrogates not allowed
+x3.config.ab TextAsset 128: 'utf-8' codec can't encode characters in position 5-6: surrogates not allowed
+x3.config.ab TextAsset 130: 'utf-8' codec can't encode character '\udc9e' in position 1: surrogates not allowed
+x3.config.ab TextAsset 131: 'utf-8' codec can't encode character '\udc90' in position 1: surrogates not allowed
+x3.config.ab TextAsset 132: 'utf-8' codec can't encode character '\udc9e' in position 5: surrogates not allowed
+x3.config.ab TextAsset 133: 'utf-8' codec can't encode character '\udce8' in position 13: surrogates not allowed
+x3.config.ab TextAsset 134: 'utf-8' codec can't encode character '\udc94' in position 11: surrogates not allowed
+x3.config.ab TextAsset 135: 'utf-8' codec can't encode character '\udcbe' in position 3: surrogates not allowed
+x3.config.ab TextAsset 136: 'utf-8' codec can't encode character '\udce0' in position 19: surrogates not allowed
+x3.config.ab TextAsset 137: 'utf-8' codec can't encode character '\udcee' in position 5: surrogates not allowed
+x3.config.ab TextAsset 138: 'utf-8' codec can't encode character '\udc87' in position 17: surrogates not allowed
+x3.config.ab TextAsset 139: 'utf-8' codec can't encode character '\udc90' in position 1: surrogates not allowed
+x3.config.ab TextAsset 140: 'utf-8' codec can't encode character '\udc95' in position 2: surrogates not allowed
+x3.config.ab TextAsset 141: 'utf-8' codec can't encode character '\udcd1' in position 1: surrogates not allowed
+x3.config.ab TextAsset 142: 'utf-8' codec can't encode characters in position 5-6: surrogates not allowed
+x3.config.ab TextAsset 143: 'utf-8' codec can't encode character '\udce4' in position 5: surrogates not allowed
+x3.config.ab TextAsset 144: 'utf-8' codec can't encode character '\udc9f' in position 11: surrogates not allowed
+x3.config.ab TextAsset 145: 'utf-8' codec can't encode characters in position 5-6: surrogates not allowed
+x3.config.ab TextAsset 146: 'utf-8' codec can't encode character '\udc90' in position 1: surrogates not allowed
+x3.config.ab TextAsset 147: 'utf-8' codec can't encode character '\udcf6' in position 11: surrogates not allowed
+x3.config.ab TextAsset 148: 'utf-8' codec can't encode character '\udcfb' in position 5: surrogates not allowed
+x3.config.ab TextAsset 149: 'utf-8' codec can't encode characters in position 5-7: surrogates not allowed
+x3.config.ab TextAsset 150: 'utf-8' codec can't encode character '\udc8b' in position 1: surrogates not allowed
+x3.config.ab TextAsset 151: 'utf-8' codec can't encode character '\udc91' in position 1: surrogates not allowed
+x3.config.ab TextAsset 152: 'utf-8' codec can't encode characters in position 5-7: surrogates not allowed
+x3.config.ab TextAsset 153: 'utf-8' codec can't encode characters in position 11-14: surrogates not allowed
+x3.config.ab TextAsset 154: 'utf-8' codec can't encode character '\udca1' in position 5: surrogates not allowed
+x3.config.ab TextAsset 155: 'utf-8' codec can't encode character '\udcae' in position 3: surrogates not allowed
+x3.config.ab TextAsset 156: 'utf-8' codec can't encode character '\udcf4' in position 11: surrogates not allowed
+x3.config.ab TextAsset 157: 'utf-8' codec can't encode character '\udcc8' in position 1: surrogates not allowed
+x3.config.ab TextAsset 158: 'utf-8' codec can't encode character '\udcf0' in position 1: surrogates not allowed
+x3.config.ab TextAsset 159: 'utf-8' codec can't encode character '\udca0' in position 13: surrogates not allowed
+x3.config.ab TextAsset 160: 'utf-8' codec can't encode character '\udcb5' in position 5: surrogates not allowed
+x3.config.ab TextAsset 161: 'utf-8' codec can't encode characters in position 5-7: surrogates not allowed
+x3.config.ab TextAsset 162: 'utf-8' codec can't encode character '\udced' in position 5: surrogates not allowed
+x3.config.ab TextAsset 164: 'utf-8' codec can't encode characters in position 13-14: surrogates not allowed
+x3.config.ab TextAsset 165: 'utf-8' codec can't encode characters in position 15-16: surrogates not allowed
+x3.config.ab TextAsset 166: 'utf-8' codec can't encode character '\udcf3' in position 5: surrogates not allowed
+x3.config.ab TextAsset 167: 'utf-8' codec can't encode character '\udc90' in position 11: surrogates not allowed
+x3.config.ab TextAsset 168: 'utf-8' codec can't encode character '\udc8c' in position 1: surrogates not allowed
+x3.config.ab TextAsset 169: 'utf-8' codec can't encode characters in position 13-14: surrogates not allowed
+x3.config.ab TextAsset 170: 'utf-8' codec can't encode characters in position 5-7: surrogates not allowed
+x3.config.ab TextAsset 171: 'utf-8' codec can't encode character '\udc8d' in position 44: surrogates not allowed
+x3.config.ab TextAsset 172: 'utf-8' codec can't encode characters in position 15-16: surrogates not allowed
+x3.config.ab TextAsset 173: 'utf-8' codec can't encode character '\udc92' in position 3: surrogates not allowed
+x3.config.ab TextAsset 174: 'utf-8' codec can't encode character '\udcb1' in position 5: surrogates not allowed
+x3.config.ab TextAsset 175: 'utf-8' codec can't encode character '\udcbd' in position 3: surrogates not allowed
+x3.config.ab TextAsset 176: 'utf-8' codec can't encode character '\udcfd' in position 5: surrogates not allowed
+x3.config.ab TextAsset 178: 'utf-8' codec can't encode characters in position 5-8: surrogates not allowed
+x3.config.ab TextAsset 179: 'utf-8' codec can't encode character '\udc88' in position 1: surrogates not allowed
+x3.config.ab TextAsset 180: 'utf-8' codec can't encode character '\udca0' in position 13: surrogates not allowed
+x3.config.ab TextAsset 182: 'utf-8' codec can't encode characters in position 5-6: surrogates not allowed
+x3.config.ab TextAsset 184: 'utf-8' codec can't encode character '\udca7' in position 5: surrogates not allowed
+x3.config.ab TextAsset 185: 'utf-8' codec can't encode character '\udcfb' in position 5: surrogates not allowed
+x3.config.ab TextAsset 186: 'utf-8' codec can't encode character '\udc8d' in position 5: surrogates not allowed
+x3.config.ab TextAsset 187: 'utf-8' codec can't encode characters in position 5-6: surrogates not allowed
+x3.config.ab TextAsset 188: 'utf-8' codec can't encode character '\udc93' in position 5: surrogates not allowed
+x3.config.ab TextAsset 189: 'utf-8' codec can't encode characters in position 5-6: surrogates not allowed
+x3.config.ab TextAsset 190: 'utf-8' codec can't encode characters in position 5-6: surrogates not allowed
+x3.config.ab TextAsset 191: 'utf-8' codec can't encode character '\udcf4' in position 6: surrogates not allowed
+x3.config.ab TextAsset 192: 'utf-8' codec can't encode character '\udc97' in position 1: surrogates not allowed
+x3.config.ab TextAsset 193: 'utf-8' codec can't encode character '\udcf3' in position 5: surrogates not allowed
+x3.config.ab TextAsset 194: 'utf-8' codec can't encode character '\udceb' in position 1: surrogates not allowed
+x3.config.ab TextAsset 195: 'utf-8' codec can't encode characters in position 11-14: surrogates not allowed
+x3.config.ab TextAsset 196: 'utf-8' codec can't encode character '\udc98' in position 6: surrogates not allowed
+x3.config.ab TextAsset 197: 'utf-8' codec can't encode characters in position 5-6: surrogates not allowed
+x3.config.ab TextAsset 199: 'utf-8' codec can't encode character '\udce8' in position 11: surrogates not allowed
+x3.config.ab TextAsset 200: 'utf-8' codec can't encode character '\udca0' in position 1: surrogates not allowed
+x3.config.ab TextAsset 201: 'utf-8' codec can't encode character '\udce7' in position 3: surrogates not allowed
+x3.config.ab TextAsset 202: 'utf-8' codec can't encode character '\udc81' in position 3: surrogates not allowed
+x3.config.ab TextAsset 203: 'utf-8' codec can't encode characters in position 11-12: surrogates not allowed
+x3.config.ab TextAsset 204: 'utf-8' codec can't encode character '\udc90' in position 1: surrogates not allowed
+x3.config.ab TextAsset 205: 'utf-8' codec can't encode character '\udc84' in position 3: surrogates not allowed
+x3.config.ab TextAsset 206: 'utf-8' codec can't encode character '\udc90' in position 17: surrogates not allowed
+x3.config.ab TextAsset 207: 'utf-8' codec can't encode character '\udcb5' in position 5: surrogates not allowed
+x3.config.ab TextAsset 208: 'utf-8' codec can't encode character '\udcd1' in position 5: surrogates not allowed
+x3.config.ab TextAsset 209: 'utf-8' codec can't encode character '\udcb4' in position 11: surrogates not allowed
+x3.config.ab TextAsset 210: 'utf-8' codec can't encode character '\udc81' in position 5: surrogates not allowed
+x3.config.ab TextAsset 211: 'utf-8' codec can't encode character '\udcf5' in position 5: surrogates not allowed
+x3.config.ab TextAsset 212: 'utf-8' codec can't encode character '\udcf5' in position 5: surrogates not allowed
+x3.config.ab TextAsset 213: 'utf-8' codec can't encode character '\udca0' in position 5: surrogates not allowed
+x3.config.ab TextAsset 214: 'utf-8' codec can't encode character '\udcec' in position 18: surrogates not allowed
+x3.config.ab TextAsset 215: 'utf-8' codec can't encode character '\udce8' in position 56: surrogates not allowed
+x3.config.ab TextAsset 216: 'utf-8' codec can't encode character '\udcec' in position 123: surrogates not allowed
+x3.config.ab TextAsset 217: 'utf-8' codec can't encode character '\udc82' in position 3: surrogates not allowed
+x3.config.ab TextAsset 218: 'utf-8' codec can't encode character '\udcee' in position 5: surrogates not allowed
+x3.config.ab TextAsset 220: 'utf-8' codec can't encode character '\udc95' in position 5: surrogates not allowed
+x3.config.ab TextAsset 221: 'utf-8' codec can't encode character '\udce9' in position 5: surrogates not allowed
+x3.config.ab TextAsset 222: 'utf-8' codec can't encode character '\udc84' in position 1: surrogates not allowed
+x3.config.ab TextAsset 223: 'utf-8' codec can't encode character '\udcf8' in position 1: surrogates not allowed
+x3.config.ab TextAsset 225: 'utf-8' codec can't encode character '\udcfd' in position 5: surrogates not allowed
+x3.config.ab TextAsset 226: 'utf-8' codec can't encode character '\udcac' in position 5: surrogates not allowed
+x3.config.ab TextAsset 227: 'utf-8' codec can't encode character '\udcd8' in position 1: surrogates not allowed
+x3.config.ab TextAsset 228: 'utf-8' codec can't encode characters in position 5-7: surrogates not allowed
+x3.config.ab TextAsset 229: 'utf-8' codec can't encode character '\udcb0' in position 1: surrogates not allowed
+x3.config.ab TextAsset 230: 'utf-8' codec can't encode characters in position 15-16: surrogates not allowed
+x3.config.ab TextAsset 231: 'utf-8' codec can't encode character '\udcc8' in position 5: surrogates not allowed
+x3.config.ab TextAsset 232: 'utf-8' codec can't encode character '\udcd1' in position 5: surrogates not allowed
+x3.config.ab TextAsset 233: 'utf-8' codec can't encode characters in position 5-6: surrogates not allowed
+x3.config.ab TextAsset 234: 'utf-8' codec can't encode character '\udcd1' in position 11: surrogates not allowed
+x3.config.ab TextAsset 235: 'utf-8' codec can't encode character '\udc92' in position 1: surrogates not allowed
+x3.config.ab TextAsset 236: 'utf-8' codec can't encode character '\udca9' in position 5: surrogates not allowed
+x3.config.ab TextAsset 237: 'utf-8' codec can't encode character '\udcbe' in position 1: surrogates not allowed
+x3.config.ab TextAsset 238: 'utf-8' codec can't encode characters in position 5-7: surrogates not allowed
+x3.config.ab TextAsset 239: 'utf-8' codec can't encode character '\udcbf' in position 1: surrogates not allowed
+x3.config.ab TextAsset 240: 'utf-8' codec can't encode character '\udccd' in position 5: surrogates not allowed
+x3.config.ab TextAsset 241: 'utf-8' codec can't encode character '\udce6' in position 5: surrogates not allowed
+x3.config.ab TextAsset 242: 'utf-8' codec can't encode character '\udcce' in position 5: surrogates not allowed
+x3.config.ab TextAsset 243: 'utf-8' codec can't encode character '\udcf4' in position 1: surrogates not allowed
+x3.config.ab TextAsset 244: 'utf-8' codec can't encode characters in position 11-12: surrogates not allowed
+x3.config.ab TextAsset 245: 'utf-8' codec can't encode character '\udcae' in position 1: surrogates not allowed
+x3.config.ab TextAsset 246: 'utf-8' codec can't encode characters in position 5-7: surrogates not allowed
+x3.config.ab TextAsset 247: 'utf-8' codec can't encode character '\udcf4' in position 11: surrogates not allowed
+x3.config.ab TextAsset 248: 'utf-8' codec can't encode character '\udca6' in position 1: surrogates not allowed
+x3.config.ab TextAsset 249: 'utf-8' codec can't encode character '\udc9d' in position 1: surrogates not allowed
+x3.config.ab TextAsset 250: 'utf-8' codec can't encode character '\udced' in position 5: surrogates not allowed
+x3.config.ab TextAsset 251: 'utf-8' codec can't encode character '\udcbd' in position 5: surrogates not allowed
+x3.config.ab TextAsset 252: 'utf-8' codec can't encode character '\udcea' in position 11: surrogates not allowed
+x3.config.ab TextAsset 253: 'utf-8' codec can't encode character '\udcc0' in position 1: surrogates not allowed
+x3.config.ab TextAsset 254: 'utf-8' codec can't encode characters in position 13-14: surrogates not allowed
+x3.config.ab TextAsset 255: 'utf-8' codec can't encode character '\udcfa' in position 13: surrogates not allowed
+x3.config.ab TextAsset 256: 'utf-8' codec can't encode character '\udc85' in position 5: surrogates not allowed
+x3.config.ab TextAsset 257: 'utf-8' codec can't encode character '\udc89' in position 1: surrogates not allowed
+x3.config.ab TextAsset 260: 'utf-8' codec can't encode character '\udcb2' in position 1: surrogates not allowed
+x3.config.ab TextAsset 261: 'utf-8' codec can't encode character '\udc93' in position 5: surrogates not allowed
+x3.config.ab TextAsset 262: 'utf-8' codec can't encode characters in position 5-6: surrogates not allowed
+x3.config.ab TextAsset 263: 'utf-8' codec can't encode character '\udca0' in position 1: surrogates not allowed
+x3.config.ab TextAsset 264: 'utf-8' codec can't encode character '\udcc3' in position 5: surrogates not allowed
+x3.config.ab TextAsset 265: 'utf-8' codec can't encode characters in position 5-6: surrogates not allowed
+x3.config.ab TextAsset 266: 'utf-8' codec can't encode character '\udca3' in position 1: surrogates not allowed
+x3.config.ab TextAsset 267: 'utf-8' codec can't encode character '\udc95' in position 5: surrogates not allowed
+x3.config.ab TextAsset 268: 'utf-8' codec can't encode characters in position 13-15: surrogates not allowed
+x3.config.ab TextAsset 269: 'utf-8' codec can't encode character '\udcd2' in position 1: surrogates not allowed
+x3.config.ab TextAsset 270: 'utf-8' codec can't encode character '\udcf4' in position 13: surrogates not allowed
+x3.config.ab TextAsset 271: 'utf-8' codec can't encode character '\udceb' in position 6: surrogates not allowed
+x3.config.ab TextAsset 272: 'utf-8' codec can't encode characters in position 5-7: surrogates not allowed
+x3.config.ab TextAsset 275: 'utf-8' codec can't encode character '\udc8e' in position 80: surrogates not allowed
+x3.config.ab TextAsset 276: 'utf-8' codec can't encode character '\udcfe' in position 46: surrogates not allowed
+x3.config.ab TextAsset 278: 'utf-8' codec can't encode character '\udcb6' in position 1: surrogates not allowed
+x3.config.ab TextAsset 279: 'utf-8' codec can't encode character '\udce9' in position 13: surrogates not allowed
+x3.config.ab TextAsset 280: 'utf-8' codec can't encode character '\udcfd' in position 5: surrogates not allowed
+x3.config.ab TextAsset 281: 'utf-8' codec can't encode character '\udced' in position 5: surrogates not allowed
+x3.config.ab TextAsset 282: 'utf-8' codec can't encode characters in position 13-14: surrogates not allowed
+x3.config.ab TextAsset 283: 'utf-8' codec can't encode character '\udc91' in position 5: surrogates not allowed
+x3.config.ab TextAsset 284: 'utf-8' codec can't encode character '\udc84' in position 1: surrogates not allowed
+x3.config.ab TextAsset 285: 'utf-8' codec can't encode character '\udcfd' in position 5: surrogates not allowed
+x3.config.ab TextAsset 286: 'utf-8' codec can't encode character '\udcfd' in position 1: surrogates not allowed
+x3.config.ab TextAsset 287: 'utf-8' codec can't encode character '\udc95' in position 3: surrogates not allowed
+x3.config.ab TextAsset 288: 'utf-8' codec can't encode character '\udcde' in position 1: surrogates not allowed
+x3.config.ab TextAsset 289: 'utf-8' codec can't encode character '\udce8' in position 5: surrogates not allowed
+x3.config.ab TextAsset 290: 'utf-8' codec can't encode character '\udcd6' in position 1: surrogates not allowed
+x3.config.ab TextAsset 291: 'utf-8' codec can't encode characters in position 16-17: surrogates not allowed
+x3.config.ab TextAsset 292: 'utf-8' codec can't encode character '\udcac' in position 1: surrogates not allowed
+x3.config.ab TextAsset 293: 'utf-8' codec can't encode character '\udce4' in position 3: surrogates not allowed
+x3.config.ab TextAsset 294: 'utf-8' codec can't encode character '\udcc8' in position 1: surrogates not allowed
+x3.config.ab TextAsset 295: 'utf-8' codec can't encode character '\udcc1' in position 5: surrogates not allowed
+x3.config.ab TextAsset 296: 'utf-8' codec can't encode character '\udc8c' in position 14: surrogates not allowed
+x3.config.ab TextAsset 297: 'utf-8' codec can't encode characters in position 5-6: surrogates not allowed
+x3.config.ab TextAsset 298: 'utf-8' codec can't encode character '\udcfb' in position 5: surrogates not allowed
+x3.config.ab TextAsset 299: 'utf-8' codec can't encode character '\udcc3' in position 5: surrogates not allowed
+x3.config.ab TextAsset 300: 'utf-8' codec can't encode character '\udcc9' in position 1: surrogates not allowed
+x3.config.ab TextAsset 301: 'utf-8' codec can't encode character '\udcfd' in position 19: surrogates not allowed
+x3.config.ab TextAsset 303: 'utf-8' codec can't encode character '\udca8' in position 5: surrogates not allowed
+x3.config.ab TextAsset 304: 'utf-8' codec can't encode characters in position 11-12: surrogates not allowed
+x3.config.ab TextAsset 305: 'utf-8' codec can't encode character '\udc91' in position 3: surrogates not allowed
+x3.config.ab TextAsset 306: 'utf-8' codec can't encode characters in position 5-6: surrogates not allowed
+x3.config.ab TextAsset 307: 'utf-8' codec can't encode characters in position 5-6: surrogates not allowed
+x3.config.ab TextAsset 308: 'utf-8' codec can't encode characters in position 15-17: surrogates not allowed
+x3.config.ab TextAsset 309: 'utf-8' codec can't encode character '\udcc7' in position 1: surrogates not allowed
+x3.config.ab TextAsset 310: 'utf-8' codec can't encode characters in position 5-6: surrogates not allowed
+x3.config.ab TextAsset 311: 'utf-8' codec can't encode characters in position 45-46: surrogates not allowed
+x3.config.ab TextAsset 312: 'utf-8' codec can't encode characters in position 5-6: surrogates not allowed
+x3.config.ab TextAsset 313: 'utf-8' codec can't encode character '\udc94' in position 1: surrogates not allowed
+x3.config.ab TextAsset 314: 'utf-8' codec can't encode character '\udca2' in position 13: surrogates not allowed
+x3.config.ab TextAsset 315: 'utf-8' codec can't encode character '\udccb' in position 5: surrogates not allowed
+x3.config.ab TextAsset 316: 'utf-8' codec can't encode character '\udcfb' in position 5: surrogates not allowed
+x3.config.ab TextAsset 317: 'utf-8' codec can't encode character '\udce8' in position 5: surrogates not allowed
+x3.config.ab TextAsset 318: 'utf-8' codec can't encode characters in position 13-14: surrogates not allowed
+x3.config.ab TextAsset 319: 'utf-8' codec can't encode character '\udce6' in position 5: surrogates not allowed
+x3.config.ab TextAsset 320: 'utf-8' codec can't encode character '\udc8a' in position 12: surrogates not allowed
+x3.config.ab TextAsset 321: 'utf-8' codec can't encode characters in position 31-33: surrogates not allowed
+x3.config.ab TextAsset 322: 'utf-8' codec can't encode character '\udca5' in position 23: surrogates not allowed
+x3.config.ab TextAsset 323: 'utf-8' codec can't encode character '\udcd4' in position 1: surrogates not allowed
+x3.config.ab TextAsset 324: 'utf-8' codec can't encode characters in position 5-6: surrogates not allowed
+x3.config.ab TextAsset 325: 'utf-8' codec can't encode characters in position 5-6: surrogates not allowed
+x3.config.ab TextAsset 326: 'utf-8' codec can't encode character '\udcf5' in position 77: surrogates not allowed
+x3.config.ab TextAsset 327: 'utf-8' codec can't encode characters in position 5-6: surrogates not allowed
+x3.config.ab TextAsset 328: 'utf-8' codec can't encode character '\udcb6' in position 3: surrogates not allowed
+x3.config.ab TextAsset 329: 'utf-8' codec can't encode character '\udc9e' in position 5: surrogates not allowed
+x3.config.ab TextAsset 330: 'utf-8' codec can't encode character '\udca7' in position 5: surrogates not allowed
+x3.config.ab TextAsset 331: 'utf-8' codec can't encode character '\udc9d' in position 3: surrogates not allowed
+x3.config.ab TextAsset 332: 'utf-8' codec can't encode character '\udc90' in position 39: surrogates not allowed
+x3.config.ab TextAsset 333: 'utf-8' codec can't encode characters in position 5-6: surrogates not allowed
+x3.config.ab TextAsset 335: 'utf-8' codec can't encode character '\udcbe' in position 5: surrogates not allowed
+x3.config.ab TextAsset 337: 'utf-8' codec can't encode character '\udcec' in position 5: surrogates not allowed
+x3.config.ab TextAsset 339: 'utf-8' codec can't encode character '\udcf4' in position 15: surrogates not allowed
+x3.config.ab TextAsset 340: 'utf-8' codec can't encode character '\udc84' in position 3: surrogates not allowed
+x3.config.ab TextAsset 341: 'utf-8' codec can't encode characters in position 5-6: surrogates not allowed
+x3.config.ab TextAsset 342: 'utf-8' codec can't encode character '\udc82' in position 1: surrogates not allowed
+x3.config.ab TextAsset 343: 'utf-8' codec can't encode character '\udcf4' in position 1: surrogates not allowed
+x3.config.ab TextAsset 344: 'utf-8' codec can't encode character '\udcf0' in position 1: surrogates not allowed
+x3.config.ab TextAsset 345: 'utf-8' codec can't encode characters in position 11-12: surrogates not allowed
+x3.config.ab TextAsset 346: 'utf-8' codec can't encode character '\udcef' in position 1: surrogates not allowed
+x3.config.ab TextAsset 347: 'utf-8' codec can't encode character '\udc99' in position 5: surrogates not allowed
+x3.config.ab TextAsset 348: 'utf-8' codec can't encode character '\udcc3' in position 5: surrogates not allowed
+x3.config.ab TextAsset 350: 'utf-8' codec can't encode character '\udcad' in position 1: surrogates not allowed
+x3.config.ab TextAsset 351: 'utf-8' codec can't encode character '\udcd9' in position 5: surrogates not allowed
+x3.config.ab TextAsset 352: 'utf-8' codec can't encode character '\udc87' in position 17: surrogates not allowed
+x3.config.ab TextAsset 353: 'utf-8' codec can't encode characters in position 5-6: surrogates not allowed
+x3.config.ab TextAsset 354: 'utf-8' codec can't encode characters in position 5-6: surrogates not allowed
+x3.config.ab TextAsset 356: 'utf-8' codec can't encode character '\udcd6' in position 3: surrogates not allowed
+x3.config.ab TextAsset 358: 'utf-8' codec can't encode character '\udc9b' in position 5: surrogates not allowed
+x3.config.ab TextAsset 359: 'utf-8' codec can't encode character '\udcac' in position 22: surrogates not allowed
+x3.config.ab TextAsset 360: 'utf-8' codec can't encode characters in position 5-6: surrogates not allowed
+x3.config.ab TextAsset 361: 'utf-8' codec can't encode character '\udcc6' in position 1: surrogates not allowed
+x3.config.ab TextAsset 362: 'utf-8' codec can't encode character '\udc95' in position 1: surrogates not allowed
+x3.config.ab TextAsset 363: 'utf-8' codec can't encode character '\udc88' in position 1: surrogates not allowed
+x3.config.ab TextAsset 364: 'utf-8' codec can't encode characters in position 11-13: surrogates not allowed
+x3.config.ab TextAsset 366: 'utf-8' codec can't encode characters in position 5-6: surrogates not allowed
+x3.config.ab TextAsset 368: 'utf-8' codec can't encode characters in position 5-6: surrogates not allowed
+x3.config.ab TextAsset 369: 'utf-8' codec can't encode character '\udcdb' in position 3: surrogates not allowed
+x3.config.ab TextAsset 370: 'utf-8' codec can't encode character '\udc90' in position 1: surrogates not allowed
+x3.config.ab TextAsset 371: 'utf-8' codec can't encode character '\udcbb' in position 5: surrogates not allowed
+x3.config.ab TextAsset 372: 'utf-8' codec can't encode character '\udce6' in position 1: surrogates not allowed
+x3.config.ab TextAsset 373: 'utf-8' codec can't encode character '\udcdc' in position 1: surrogates not allowed
+x3.config.ab TextAsset 374: 'utf-8' codec can't encode character '\udc97' in position 1: surrogates not allowed
+x3.config.ab TextAsset 375: 'utf-8' codec can't encode character '\udce7' in position 3: surrogates not allowed
+x3.config.ab TextAsset 376: 'utf-8' codec can't encode characters in position 27-28: surrogates not allowed
+x3.config.ab TextAsset 377: 'utf-8' codec can't encode character '\udc8b' in position 1: surrogates not allowed
+x3.config.ab TextAsset 378: 'utf-8' codec can't encode character '\udcee' in position 1: surrogates not allowed
+x3.config.ab TextAsset 379: 'utf-8' codec can't encode character '\udcf3' in position 5: surrogates not allowed
+x3.config.ab TextAsset 380: 'utf-8' codec can't encode character '\udcf2' in position 55: surrogates not allowed
+x3.config.ab TextAsset 381: 'utf-8' codec can't encode character '\udced' in position 5: surrogates not allowed
+x3.config.ab TextAsset 382: 'utf-8' codec can't encode character '\udc92' in position 5: surrogates not allowed
+x3.config.ab TextAsset 383: 'utf-8' codec can't encode character '\udcbe' in position 5: surrogates not allowed
+x3.config.ab TextAsset 385: 'utf-8' codec can't encode characters in position 11-13: surrogates not allowed
+x3.config.ab TextAsset 386: 'utf-8' codec can't encode character '\udcb6' in position 11: surrogates not allowed
+x3.config.ab TextAsset 387: 'utf-8' codec can't encode character '\udccf' in position 5: surrogates not allowed
+x3.config.ab TextAsset 388: 'utf-8' codec can't encode character '\udca3' in position 13: surrogates not allowed
+x3.config.ab TextAsset 389: 'utf-8' codec can't encode character '\udc8c' in position 1: surrogates not allowed
+x3.config.ab TextAsset 390: 'utf-8' codec can't encode character '\udcda' in position 5: surrogates not allowed
+x3.config.ab TextAsset 391: 'utf-8' codec can't encode character '\udcda' in position 15: surrogates not allowed
+x3.config.ab TextAsset 392: 'utf-8' codec can't encode character '\udce0' in position 1: surrogates not allowed
+x3.config.ab TextAsset 393: 'utf-8' codec can't encode character '\udc92' in position 1: surrogates not allowed
+x3.config.ab TextAsset 395: 'utf-8' codec can't encode characters in position 5-7: surrogates not allowed
+x3.config.ab TextAsset 396: 'utf-8' codec can't encode characters in position 15-16: surrogates not allowed
+x3.config.ab TextAsset 397: 'utf-8' codec can't encode character '\udca4' in position 1: surrogates not allowed
+x3.config.ab TextAsset 398: 'utf-8' codec can't encode character '\udcaf' in position 11: surrogates not allowed
+x3.config.ab TextAsset 399: 'utf-8' codec can't encode character '\udc8c' in position 81: surrogates not allowed
+x3.config.ab TextAsset 400: 'utf-8' codec can't encode character '\udcfb' in position 5: surrogates not allowed
+x3.config.ab TextAsset 401: 'utf-8' codec can't encode character '\udcf1' in position 1: surrogates not allowed
+x3.config.ab TextAsset 402: 'utf-8' codec can't encode character '\udcde' in position 1: surrogates not allowed
+x3.config.ab TextAsset 405: 'utf-8' codec can't encode character '\udcee' in position 5: surrogates not allowed
+x3.config.ab TextAsset 406: 'utf-8' codec can't encode character '\udcd1' in position 5: surrogates not allowed
+x3.config.ab TextAsset 407: 'utf-8' codec can't encode characters in position 5-7: surrogates not allowed
+x3.config.ab TextAsset 408: 'utf-8' codec can't encode character '\udce6' in position 5: surrogates not allowed
+x3.config.ab TextAsset 409: 'utf-8' codec can't encode character '\udcc4' in position 5: surrogates not allowed
+x3.config.ab TextAsset 410: 'utf-8' codec can't encode character '\udc92' in position 1: surrogates not allowed
+x3.config.ab TextAsset 411: 'utf-8' codec can't encode character '\udcbf' in position 5: surrogates not allowed
+x3.config.ab TextAsset 412: 'utf-8' codec can't encode character '\udcee' in position 5: surrogates not allowed
+x3.config.ab TextAsset 413: 'utf-8' codec can't encode character '\udcf0' in position 1: surrogates not allowed
+x3.config.ab TextAsset 414: 'utf-8' codec can't encode character '\udce1' in position 3: surrogates not allowed
+x3.config.ab TextAsset 415: 'utf-8' codec can't encode characters in position 46-47: surrogates not allowed
+x3.config.ab TextAsset 416: 'utf-8' codec can't encode character '\udc80' in position 3: surrogates not allowed
+x3.config.ab TextAsset 417: 'utf-8' codec can't encode character '\udc8a' in position 1: surrogates not allowed
+x3.config.ab TextAsset 418: 'utf-8' codec can't encode character '\udc93' in position 5: surrogates not allowed
+x3.config.ab TextAsset 419: 'utf-8' codec can't encode character '\udcf2' in position 15: surrogates not allowed
+x3.config.ab TextAsset 420: 'utf-8' codec can't encode character '\udc92' in position 5: surrogates not allowed
+x3.config.ab TextAsset 421: 'utf-8' codec can't encode character '\udcd2' in position 1: surrogates not allowed
+x3.config.ab TextAsset 422: 'utf-8' codec can't encode characters in position 12-13: surrogates not allowed
+x3.config.ab TextAsset 423: 'utf-8' codec can't encode characters in position 41-42: surrogates not allowed
+x3.config.ab TextAsset 424: 'utf-8' codec can't encode character '\udcbd' in position 13: surrogates not allowed
+x3.config.ab TextAsset 425: 'utf-8' codec can't encode character '\udc84' in position 11: surrogates not allowed
+x3.config.ab TextAsset 426: 'utf-8' codec can't encode characters in position 11-13: surrogates not allowed
+x3.config.ab TextAsset 428: 'utf-8' codec can't encode character '\udcbe' in position 35: surrogates not allowed
+x3.config.ab TextAsset 429: 'utf-8' codec can't encode character '\udcf4' in position 13: surrogates not allowed
+x3.config.ab TextAsset 430: 'utf-8' codec can't encode character '\udcfa' in position 13: surrogates not allowed
+x3.config.ab TextAsset 431: 'utf-8' codec can't encode character '\udcd9' in position 5: surrogates not allowed
+x3.config.ab TextAsset 432: 'utf-8' codec can't encode character '\udc8f' in position 271: surrogates not allowed
+x3.config.ab TextAsset 433: 'utf-8' codec can't encode character '\udcf4' in position 1: surrogates not allowed
+x3.config.ab TextAsset 434: 'utf-8' codec can't encode character '\udcc0' in position 3: surrogates not allowed
+x3.config.ab TextAsset 435: 'utf-8' codec can't encode character '\udca6' in position 3: surrogates not allowed
+x3.config.ab TextAsset 436: 'utf-8' codec can't encode character '\udcc8' in position 1: surrogates not allowed
+x3.config.ab TextAsset 437: 'utf-8' codec can't encode character '\udcf1' in position 1: surrogates not allowed
+x3.config.ab TextAsset 438: 'utf-8' codec can't encode character '\udce9' in position 5: surrogates not allowed
+x3.config.ab TextAsset 439: 'utf-8' codec can't encode character '\udc81' in position 1: surrogates not allowed
+x3.config.ab TextAsset 440: 'utf-8' codec can't encode character '\udcf4' in position 13: surrogates not allowed
+x3.config.ab TextAsset 441: 'utf-8' codec can't encode character '\udcac' in position 16: surrogates not allowed
+x3.config.ab TextAsset 442: 'utf-8' codec can't encode character '\udcff' in position 1: surrogates not allowed
+x3.config.ab TextAsset 443: 'utf-8' codec can't encode character '\udcfb' in position 5: surrogates not allowed
+x3.config.ab TextAsset 444: 'utf-8' codec can't encode character '\udce8' in position 11: surrogates not allowed
+x3.config.ab TextAsset 445: 'utf-8' codec can't encode character '\udcbb' in position 3: surrogates not allowed
+x3.config.ab TextAsset 446: 'utf-8' codec can't encode character '\udcac' in position 1: surrogates not allowed
+x3.config.ab TextAsset 447: 'utf-8' codec can't encode character '\udca9' in position 3: surrogates not allowed
+x3.config.ab TextAsset 448: 'utf-8' codec can't encode character '\udcc4' in position 5: surrogates not allowed
+x3.config.ab TextAsset 449: 'utf-8' codec can't encode character '\udc8b' in position 3: surrogates not allowed
+x3.config.ab TextAsset 450: 'utf-8' codec can't encode character '\udcb4' in position 1: surrogates not allowed
+x3.config.ab TextAsset 451: 'utf-8' codec can't encode character '\udcb7' in position 13: surrogates not allowed
+x3.config.ab TextAsset 452: 'utf-8' codec can't encode character '\udcf0' in position 13: surrogates not allowed
+x3.config.ab TextAsset 454: 'utf-8' codec can't encode characters in position 15-16: surrogates not allowed
+x3.config.ab TextAsset 455: 'utf-8' codec can't encode characters in position 55-56: surrogates not allowed
+x3.config.ab TextAsset 456: 'utf-8' codec can't encode characters in position 13-14: surrogates not allowed
+x3.config.ab TextAsset 457: 'utf-8' codec can't encode characters in position 5-6: surrogates not allowed
+x3.config.ab TextAsset 458: 'utf-8' codec can't encode character '\udccb' in position 1: surrogates not allowed
+x3.config.ab TextAsset 459: 'utf-8' codec can't encode character '\udc81' in position 5: surrogates not allowed
+x3.config.ab TextAsset 461: 'utf-8' codec can't encode character '\udce0' in position 1: surrogates not allowed
+x3.config.ab TextAsset 462: 'utf-8' codec can't encode characters in position 5-6: surrogates not allowed
+x3.config.ab TextAsset 463: 'utf-8' codec can't encode character '\udcb1' in position 5: surrogates not allowed
+x3.config.ab TextAsset 464: 'utf-8' codec can't encode characters in position 11-12: surrogates not allowed
+x3.config.ab TextAsset 465: 'utf-8' codec can't encode characters in position 15-16: surrogates not allowed
+x3.config.ab TextAsset 466: 'utf-8' codec can't encode character '\udc98' in position 1: surrogates not allowed
+x3.config.ab TextAsset 467: 'utf-8' codec can't encode character '\udc95' in position 3: surrogates not allowed
+x3.config.ab TextAsset 468: 'utf-8' codec can't encode character '\udc8f' in position 5: surrogates not allowed
+x3.config.ab TextAsset 469: 'utf-8' codec can't encode characters in position 5-6: surrogates not allowed
+x3.config.ab TextAsset 470: 'utf-8' codec can't encode characters in position 5-7: surrogates not allowed
+x3.config.ab TextAsset 472: 'utf-8' codec can't encode character '\udcb8' in position 1: surrogates not allowed
+x3.config.ab TextAsset 473: 'utf-8' codec can't encode characters in position 30-31: surrogates not allowed
+x3.config.ab TextAsset 474: 'utf-8' codec can't encode character '\udce1' in position 3: surrogates not allowed
+x3.config.ab TextAsset 475: 'utf-8' codec can't encode character '\udce4' in position 1: surrogates not allowed
+x3.config.ab TextAsset 476: 'utf-8' codec can't encode character '\udcbd' in position 5: surrogates not allowed
+x3.config.ab TextAsset 477: 'utf-8' codec can't encode character '\udcf6' in position 5: surrogates not allowed
+x3.config.ab TextAsset 478: 'utf-8' codec can't encode character '\udcfb' in position 5: surrogates not allowed
+x3.config.ab TextAsset 479: 'utf-8' codec can't encode character '\udcf9' in position 11: surrogates not allowed
+x3.config.ab TextAsset 480: 'utf-8' codec can't encode character '\udc8e' in position 3: surrogates not allowed
+x3.config.ab TextAsset 481: 'utf-8' codec can't encode character '\udcbf' in position 1: surrogates not allowed
+x3.config.ab TextAsset 482: 'utf-8' codec can't encode character '\udcd1' in position 1: surrogates not allowed
+x3.config.ab TextAsset 483: 'utf-8' codec can't encode character '\udcfc' in position 3: surrogates not allowed
+x3.config.ab TextAsset 484: 'utf-8' codec can't encode characters in position 11-12: surrogates not allowed
+x3.config.ab TextAsset 485: 'utf-8' codec can't encode character '\udc85' in position 5: surrogates not allowed

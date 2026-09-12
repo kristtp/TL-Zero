@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SEA 150 Atlas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">LIVE + CLIENT GEOMETRY</p>
+        <h1>SEA 150 Atlas</h1>
+      </div>
+      <div class="status"><span class="pulse"></span><span id="statusText">Loading geometry</span></div>
+    </header>
+
+    <section class="workspace">
+      <aside class="panel controls">
+        <div class="panel-title">Map Layers</div>
+        <label class="toggle"><input id="stitchedToggle" type="checkbox"><span>Stitched map</span><b id="stitchedStatus">Live</b></label>
+        <label class="toggle"><input id="resourcesToggle" type="checkbox" checked><span>Resources</span><b id="resourceCount">0</b></label>
+        <label class="toggle"><input id="wondersToggle" type="checkbox" checked><span>Goddesses</span><b id="wonderCount">0</b></label>
+        <label class="toggle"><input id="trapsToggle" type="checkbox" checked><span>Turtle traps</span><b id="trapCount">1</b></label>
+        <label class="toggle"><input id="gridToggle" type="checkbox" checked><span>Coordinate grid</span></label>
+
+        <div class="divider"></div>
+        <div class="panel-title">Resource Type</div>
+        <label class="toggle compact"><input class="resource-filter" data-type="island" type="checkbox" checked><i class="swatch island"></i><span>Island beach</span></label>
+        <label class="toggle compact"><input class="resource-filter" data-type="plant" type="checkbox" checked><i class="swatch plant"></i><span>Giant plants</span></label>
+        <label class="toggle compact"><input class="resource-filter" data-type="stone" type="checkbox" checked><i class="swatch stone"></i><span>Stone</span></label>
+
+        <div class="divider"></div>
+        <button id="toggleStitchedButton" class="command mode-toggle">Switch to Stitched Map</button>
+        <button id="fitButton" class="command">Fit Entire Sea</button>
+        <button id="trapButton" class="command secondary">Focus Confirmed Trap</button>
+        <p class="hint">Wheel to zoom. Drag to pan. Target cross displays live X, Y coordinates.</p>
+
+        <div class="divider"></div>
+        <div class="panel-title">Live Trap Overlay</div>
+        <div class="coordinate-entry">
+          <label>X<input id="trapX" type="number" min="-3600" max="3600" placeholder="1967"></label>
+          <label>Y<input id="trapY" type="number" min="-3600" max="3600" placeholder="1685"></label>
+        </div>
+        <button id="addTrapButton" class="command">Add Turtle</button>
+        <button id="clearTrapsButton" class="text-command">Clear added turtles</button>
+      </aside>
+
+      <section class="map-frame">
+        <canvas id="mapCanvas" aria-label="Synthetic map of SEA 150"></canvas>
+        <div class="map-badge">−3600 … 0 … +3600</div>
+        <div id="cursorCoords" class="coords">X:— Y:—</div>
+        <div class="zoom-controls">
+          <button id="zoomIn" title="Zoom in">+</button>
+          <button id="zoomOut" title="Zoom out">−</button>
+        </div>
+      </section>
+
+      <aside class="panel inspector">
+        <div class="panel-title">Searchable Directory</div>
+        <input id="directorySearch" type="search" placeholder="Filter by type, name, X, Y..." style="width: 100%; box-sizing: border-box; padding: 6px 10px; border-radius: 6px; border: 1px solid #234d58; background: #0c2730; color: #fff; font-size: 13px; margin-bottom: 8px;">
+        <div id="directoryResultsCount" style="font-size: 11px; color: #8ec3c7; margin-bottom: 6px;">Showing 1,665 objects</div>
+        <div id="directoryList" style="max-height: 220px; overflow-y: auto; font-size: 12px; border: 1px solid #1a3c46; border-radius: 6px; background: #071c22; padding: 4px;"></div>
+        <div class="divider"></div>
+        <div class="panel-title">Selection</div>
+        <div id="selection" class="selection empty">Select a marker on the map.</div>
+        <div class="divider"></div>
+        <div class="panel-title">Confirmed Live Data</div>
+        <div class="fact"><span>Sea</span><strong>#150</strong></div>
+        <div class="fact"><span>Trap</span><strong>X:1967 Y:1685</strong></div>
+        <div class="fact"><span>Nearest Goddess</span><strong>X:2150 Y:2150</strong></div>
+        <div class="fact"><span>Distance</span><strong>500</strong></div>
+        <div class="notice">Client geometry is complete. Dynamic cities and additional traps appear only after live observation. Add captured trap coordinates from the layer controls.</div>
+      </aside>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

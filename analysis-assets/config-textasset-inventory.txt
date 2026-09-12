@@ -1,0 +1,973 @@
+TextAsset inventory (raw m_Script extraction)
+Raw rule: bytes used directly; non-bytes encoded with utf-8/surrogateescape; decoded surrogate strings are never written.
+
+[x3.config.ab] index=0 path_id=-9213576807773648734 name='ShipSkill' bytes=510
+  container_paths: Assets/Res/Config/ProtoGen/ShipSkill.bytes
+[x3.config.ab] index=1 path_id=-9187832033978533856 name='ActvDonate' bytes=25
+  container_paths: Assets/Res/Config/ProtoGen/ActvDonate.bytes
+[x3.config.ab] index=2 path_id=-9170580609441499780 name='Chest' bytes=653
+  container_paths: Assets/Res/Config/ProtoGen/Chest.bytes
+[x3.config.ab] index=3 path_id=-9154579325173650346 name='SpecialEventRefresh' bytes=1977
+  container_paths: Assets/Res/Config/ProtoGen/SpecialEventRefresh.bytes
+[x3.config.ab] index=4 path_id=-9010757906701862246 name='GvGRankReward' bytes=601
+  container_paths: Assets/Res/Config/ProtoGen/GvGRankReward.bytes
+[x3.config.ab] index=5 path_id=-8964505585474478323 name='ActvExercise' bytes=375
+  container_paths: Assets/Res/Config/ProtoGen/ActvExercise.bytes
+[x3.config.ab] index=6 path_id=-8822939135263560783 name='ActvVoyageEvent' bytes=41428
+  container_paths: Assets/Res/Config/ProtoGen/ActvVoyageEvent.bytes
+[x3.config.ab] index=7 path_id=-8775299543414355585 name='ActvGrowth' bytes=1368
+  container_paths: Assets/Res/Config/ProtoGen/ActvGrowth.bytes
+[x3.config.ab] index=8 path_id=-8718674418295238816 name='GvGLuckyWheelReward' bytes=412
+  container_paths: Assets/Res/Config/ProtoGen/GvGLuckyWheelReward.bytes
+[x3.config.ab] index=9 path_id=-8688169439788671362 name='News' bytes=7469
+  container_paths: Assets/Res/Config/ProtoGen/News.bytes
+[x3.config.ab] index=10 path_id=-8657177041198110596 name='IdleReward' bytes=1947
+  container_paths: Assets/Res/Config/ProtoGen/IdleReward.bytes
+[x3.config.ab] index=11 path_id=-8637994782373824118 name='GVGRoundTime' bytes=79
+  container_paths: Assets/Res/Config/ProtoGen/GVGRoundTime.bytes
+[x3.config.ab] index=12 path_id=-8636340831274074711 name='ActvScoreTaskGroup' bytes=32
+  container_paths: Assets/Res/Config/ProtoGen/ActvScoreTaskGroup.bytes
+[x3.config.ab] index=13 path_id=-8622952206834531573 name='DungeonItemAffinity' bytes=10602
+  container_paths: Assets/Res/Config/ProtoGen/DungeonItemAffinity.bytes
+[x3.config.ab] index=14 path_id=-8541415446209384680 name='GvGRankBase' bytes=189
+  container_paths: Assets/Res/Config/ProtoGen/GvGRankBase.bytes
+[x3.config.ab] index=15 path_id=-8525379674535489598 name='MailType' bytes=2916
+  container_paths: Assets/Res/Config/ProtoGen/MailType.bytes
+[x3.config.ab] index=16 path_id=-8514396354829529211 name='ActvShipEquipSellMonster' bytes=87
+  container_paths: Assets/Res/Config/ProtoGen/ActvShipEquipSellMonster.bytes
+[x3.config.ab] index=17 path_id=-8480332236675161104 name='ActvCraftingReward' bytes=5750
+  container_paths: Assets/Res/Config/ProtoGen/ActvCraftingReward.bytes
+[x3.config.ab] index=18 path_id=-8451048396128766848 name='PersonalizeAvatarFrameCfg' bytes=7649
+  container_paths: Assets/Res/Config/ProtoGen/PersonalizeAvatarFrameCfg.bytes
+[x3.config.ab] index=19 path_id=-8270940041851797993 name='MemoryShowcaseRarity' bytes=380
+  container_paths: Assets/Res/Config/ProtoGen/MemoryShowcaseRarity.bytes
+[x3.config.ab] index=20 path_id=-8190531834779660905 name='ActvPuzzle' bytes=3924
+  container_paths: Assets/Res/Config/ProtoGen/ActvPuzzle.bytes
+[x3.config.ab] index=21 path_id=-8166433064468692420 name='DungeonStage' bytes=260
+  container_paths: Assets/Res/Config/ProtoGen/DungeonStage.bytes
+[x3.config.ab] index=22 path_id=-8082068638376782163 name='StickerBuff' bytes=730
+  container_paths: Assets/Res/Config/ProtoGen/StickerBuff.bytes
+[x3.config.ab] index=23 path_id=-8049412826676002905 name='ActvIntelligence' bytes=8567
+  container_paths: Assets/Res/Config/ProtoGen/ActvIntelligence.bytes
+[x3.config.ab] index=24 path_id=-8018591977229327121 name='TradeDayReward' bytes=447
+  container_paths: Assets/Res/Config/ProtoGen/TradeDayReward.bytes
+[x3.config.ab] index=25 path_id=-7983858613980923859 name='ActvMarbleAngle' bytes=3732
+  container_paths: Assets/Res/Config/ProtoGen/ActvMarbleAngle.bytes
+[x3.config.ab] index=26 path_id=-7975235434690427506 name='ShipPart' bytes=337
+  container_paths: Assets/Res/Config/ProtoGen/ShipPart.bytes
+[x3.config.ab] index=27 path_id=-7886027336598531020 name='UnionDonate' bytes=591
+  container_paths: Assets/Res/Config/ProtoGen/UnionDonate.bytes
+[x3.config.ab] index=28 path_id=-7882897183615445947 name='HeroEquipSlot' bytes=187
+  container_paths: Assets/Res/Config/ProtoGen/HeroEquipSlot.bytes
+[x3.config.ab] index=29 path_id=-7834232133321552780 name='ActvInvasionDebuff' bytes=272
+  container_paths: Assets/Res/Config/ProtoGen/ActvInvasionDebuff.bytes
+[x3.config.ab] index=30 path_id=-7754715223935364578 name='ActvWishing' bytes=913
+  container_paths: Assets/Res/Config/ProtoGen/ActvWishing.bytes
+[x3.config.ab] index=31 path_id=-7719048578961321316 name='KVKLODShow' bytes=317
+  container_paths: Assets/Res/Config/ProtoGen/KVKLODShow.bytes
+[x3.config.ab] index=32 path_id=-7698458916709667667 name='PersonalizeAvatarCfg' bytes=1031
+  container_paths: Assets/Res/Config/ProtoGen/PersonalizeAvatarCfg.bytes
+[x3.config.ab] index=33 path_id=-7686062984663243347 name='ActvVisitPack' bytes=429
+  container_paths: Assets/Res/Config/ProtoGen/ActvVisitPack.bytes
+[x3.config.ab] index=34 path_id=-7654509919182927110 name='ServerSegment' bytes=1021
+  container_paths: Assets/Res/Config/ProtoGen/ServerSegment.bytes
+[x3.config.ab] index=35 path_id=-7645961037145617643 name='ShipTermRandom' bytes=3525
+  container_paths: Assets/Res/Config/ProtoGen/ShipTermRandom.bytes
+[x3.config.ab] index=36 path_id=-7588960537225525772 name='ChapterInfo' bytes=3105
+  container_paths: Assets/Res/Config/ProtoGen/ChapterInfo.bytes
+[x3.config.ab] index=37 path_id=-7507698541226209768 name='ShipEquipMainTask' bytes=480
+  container_paths: Assets/Res/Config/ProtoGen/ShipEquipMainTask.bytes
+[x3.config.ab] index=38 path_id=-7423704033923077763 name='HeroSecretActvReward' bytes=90
+  container_paths: Assets/Res/Config/ProtoGen/HeroSecretActvReward.bytes
+[x3.config.ab] index=39 path_id=-7313000568343496288 name='StarFishSpeech' bytes=142
+  container_paths: Assets/Res/Config/ProtoGen/StarFishSpeech.bytes
+[x3.config.ab] index=40 path_id=-7232389313365342093 name='MechaFreePurpleChainNode' bytes=50
+  container_paths: Assets/Res/Config/ProtoGen/MechaFreePurpleChainNode.bytes
+[x3.config.ab] index=41 path_id=-7203306848366108018 name='QualityUpdateItem' bytes=578
+  container_paths: Assets/Res/Config/ProtoGen/QualityUpdateItem.bytes
+[x3.config.ab] index=42 path_id=-7202470518303425685 name='ActvBountyTask' bytes=4710
+  container_paths: Assets/Res/Config/ProtoGen/ActvBountyTask.bytes
+[x3.config.ab] index=43 path_id=-7194060103216191466 name='ActvScore' bytes=706
+  container_paths: Assets/Res/Config/ProtoGen/ActvScore.bytes
+[x3.config.ab] index=44 path_id=-7156709374848771145 name='DiamondCostGoto' bytes=131
+  container_paths: Assets/Res/Config/ProtoGen/DiamondCostGoto.bytes
+[x3.config.ab] index=45 path_id=-7154238231437547228 name='GameScenes' bytes=191
+  container_paths: Assets/Res/Config/ProtoGen/GameScenes.bytes
+[x3.config.ab] index=46 path_id=-7095925889094329008 name='ActvDonateServerReward' bytes=140
+  container_paths: Assets/Res/Config/ProtoGen/ActvDonateServerReward.bytes
+[x3.config.ab] index=47 path_id=-7054854839515955193 name='KVKMonsterGroup' bytes=83
+  container_paths: Assets/Res/Config/ProtoGen/KVKMonsterGroup.bytes
+[x3.config.ab] index=48 path_id=-6983392869529244393 name='Arena' bytes=116
+  container_paths: Assets/Res/Config/ProtoGen/Arena.bytes
+[x3.config.ab] index=49 path_id=-6930139250022236381 name='HeroBreak' bytes=62607
+  container_paths: Assets/Res/Config/ProtoGen/HeroBreak.bytes
+[x3.config.ab] index=50 path_id=-6856336728023061136 name='UnionShipLevel' bytes=4822
+  container_paths: Assets/Res/Config/ProtoGen/UnionShipLevel.bytes
+[x3.config.ab] index=51 path_id=-6789265619463756572 name='RouteMap' bytes=1330
+  container_paths: Assets/Res/Config/ProtoGen/RouteMap.bytes
+[x3.config.ab] index=52 path_id=-6772553766821367584 name='UnionIpoStock' bytes=334
+  container_paths: Assets/Res/Config/ProtoGen/UnionIpoStock.bytes
+[x3.config.ab] index=53 path_id=-6673431733202735069 name='IntelligenceBox' bytes=204
+  container_paths: Assets/Res/Config/ProtoGen/IntelligenceBox.bytes
+[x3.config.ab] index=54 path_id=-6659959458532081174 name='GoldPrice' bytes=926
+  container_paths: Assets/Res/Config/ProtoGen/GoldPrice.bytes
+[x3.config.ab] index=55 path_id=-6643851827412640302 name='ActvDailyRankReward' bytes=318
+  container_paths: Assets/Res/Config/ProtoGen/ActvDailyRankReward.bytes
+[x3.config.ab] index=56 path_id=-6635968411489469189 name='ActvCircusGacha' bytes=339
+  container_paths: Assets/Res/Config/ProtoGen/ActvCircusGacha.bytes
+[x3.config.ab] index=57 path_id=-6490819151729344132 name='BattlePass' bytes=119
+  container_paths: Assets/Res/Config/ProtoGen/BattlePass.bytes
+[x3.config.ab] index=58 path_id=-6476655039460834091 name='MechaSkillInfo' bytes=1037
+  container_paths: Assets/Res/Config/ProtoGen/MechaSkillInfo.bytes
+[x3.config.ab] index=59 path_id=-6413719262297577400 name='ActvKVKBPReward' bytes=4304
+  container_paths: Assets/Res/Config/ProtoGen/ActvKVKBPReward.bytes
+[x3.config.ab] index=60 path_id=-6407759432401755687 name='UnionIpoAction' bytes=3250
+  container_paths: Assets/Res/Config/ProtoGen/UnionIpoAction.bytes
+[x3.config.ab] index=61 path_id=-6406629407335743911 name='SoldierLvPack' bytes=1430
+  container_paths: Assets/Res/Config/ProtoGen/SoldierLvPack.bytes
+[x3.config.ab] index=62 path_id=-6383126520139441363 name='PackTypeInfo' bytes=46748
+  container_paths: Assets/Res/Config/ProtoGen/PackTypeInfo.bytes
+[x3.config.ab] index=63 path_id=-6345700035453521295 name='ActvInvasionTask' bytes=1184
+  container_paths: Assets/Res/Config/ProtoGen/ActvInvasionTask.bytes
+[x3.config.ab] index=64 path_id=-6316285276391071672 name='UnitTypeInfo' bytes=58
+  container_paths: Assets/Res/Config/ProtoGen/UnitTypeInfo.bytes
+[x3.config.ab] index=65 path_id=-6309591198917038105 name='IntelligenceTask' bytes=641484
+  container_paths: Assets/Res/Config/ProtoGen/IntelligenceTask.bytes
+[x3.config.ab] index=66 path_id=-6265829576552062107 name='ActvLoginRewardGroup' bytes=2554
+  container_paths: Assets/Res/Config/ProtoGen/ActvLoginRewardGroup.bytes
+[x3.config.ab] index=67 path_id=-6231870294119136465 name='Reward' bytes=1318547
+  container_paths: Assets/Res/Config/ProtoGen/Reward.bytes
+[x3.config.ab] index=68 path_id=-6185760915683440930 name='KVKSeasonHero' bytes=1220
+  container_paths: Assets/Res/Config/ProtoGen/KVKSeasonHero.bytes
+[x3.config.ab] index=69 path_id=-6173744726825081092 name='HeroEquipAttributeGroup' bytes=817
+  container_paths: Assets/Res/Config/ProtoGen/HeroEquipAttributeGroup.bytes
+[x3.config.ab] index=70 path_id=-6158617687546647498 name='ActvRomanceReward' bytes=299
+  container_paths: Assets/Res/Config/ProtoGen/ActvRomanceReward.bytes
+[x3.config.ab] index=71 path_id=-6127483790892041331 name='Item' bytes=171421
+  container_paths: Assets/Res/Config/ProtoGen/Item.bytes
+[x3.config.ab] index=72 path_id=-5954169620526252215 name='MechaFreePurpleTask' bytes=629
+  container_paths: Assets/Res/Config/ProtoGen/MechaFreePurpleTask.bytes
+[x3.config.ab] index=73 path_id=-5901783634740992143 name='ActvUnderpantsBase' bytes=17
+  container_paths: Assets/Res/Config/ProtoGen/ActvUnderpantsBase.bytes
+[x3.config.ab] index=74 path_id=-5834491667375574887 name='ActvLoginPurchase' bytes=78
+  container_paths: Assets/Res/Config/ProtoGen/ActvLoginPurchase.bytes
+[x3.config.ab] index=75 path_id=-5799787220481923078 name='ActvGroupSchedule' bytes=1707
+  container_paths: Assets/Res/Config/ProtoGen/ActvGroupSchedule.bytes
+[x3.config.ab] index=76 path_id=-5799389288107589449 name='FurnitureDefault' bytes=152
+  container_paths: Assets/Res/Config/ProtoGen/FurnitureDefault.bytes
+[x3.config.ab] index=77 path_id=-5774814216607092132 name='UnionClass' bytes=162
+  container_paths: Assets/Res/Config/ProtoGen/UnionClass.bytes
+[x3.config.ab] index=78 path_id=-5673285024039787848 name='CustomerClass' bytes=3574
+  container_paths: Assets/Res/Config/ProtoGen/CustomerClass.bytes
+[x3.config.ab] index=79 path_id=-5615666305007098831 name='ActvVoyageIsland' bytes=6338
+  container_paths: Assets/Res/Config/ProtoGen/ActvVoyageIsland.bytes
+[x3.config.ab] index=80 path_id=-5520564521097127144 name='FogfallQuarantineBroadcast' bytes=400
+  container_paths: Assets/Res/Config/ProtoGen/FogfallQuarantineBroadcast.bytes
+[x3.config.ab] index=81 path_id=-5510799515389270608 name='ShipEquip' bytes=5830
+  container_paths: Assets/Res/Config/ProtoGen/ShipEquip.bytes
+[x3.config.ab] index=82 path_id=-5466347926763396500 name='IdleWeapon' bytes=329
+  container_paths: Assets/Res/Config/ProtoGen/IdleWeapon.bytes
+[x3.config.ab] index=83 path_id=-5421931536014731134 name='BubbleTips' bytes=419
+  container_paths: Assets/Res/Config/ProtoGen/BubbleTips.bytes
+[x3.config.ab] index=84 path_id=-5421003878382594059 name='StarFishNPCShow' bytes=428
+  container_paths: Assets/Res/Config/ProtoGen/StarFishNPCShow.bytes
+[x3.config.ab] index=85 path_id=-5417549866871809882 name='UnitConfigTroop' bytes=1161
+  container_paths: Assets/Res/Config/ProtoGen/UnitConfigTroop.bytes
+[x3.config.ab] index=86 path_id=-5387295543635369767 name='ActvWishingPoolStageReward' bytes=132
+  container_paths: Assets/Res/Config/ProtoGen/ActvWishingPoolStageReward.bytes
+[x3.config.ab] index=87 path_id=-5374326202247605095 name='ActvWeeklyCard' bytes=38
+  container_paths: Assets/Res/Config/ProtoGen/ActvWeeklyCard.bytes
+[x3.config.ab] index=88 path_id=-5361956598173597938 name='AchievePack' bytes=1340
+  container_paths: Assets/Res/Config/ProtoGen/AchievePack.bytes
+[x3.config.ab] index=89 path_id=-5360068182613639099 name='ActvHeroUpRoute' bytes=3152
+  container_paths: Assets/Res/Config/ProtoGen/ActvHeroUpRoute.bytes
+[x3.config.ab] index=90 path_id=-5356505775856445453 name='Details' bytes=230
+  container_paths: Assets/Res/Config/ProtoGen/Details.bytes
+[x3.config.ab] index=91 path_id=-5349032983526573447 name='ActvMechaWheelOuterReward' bytes=4199
+  container_paths: Assets/Res/Config/ProtoGen/ActvMechaWheelOuterReward.bytes
+[x3.config.ab] index=92 path_id=-5247255325264575962 name='Soldier' bytes=6026
+  container_paths: Assets/Res/Config/ProtoGen/Soldier.bytes
+[x3.config.ab] index=93 path_id=-5243412233108996713 name='ChatAIAutoMessage' bytes=482
+  container_paths: Assets/Res/Config/ProtoGen/ChatAIAutoMessage.bytes
+[x3.config.ab] index=94 path_id=-5232134028308753485 name='PowerProgress' bytes=1671
+  container_paths: Assets/Res/Config/ProtoGen/PowerProgress.bytes
+[x3.config.ab] index=95 path_id=-5106962332628181475 name='AddPower' bytes=281
+  container_paths: Assets/Res/Config/ProtoGen/AddPower.bytes
+[x3.config.ab] index=96 path_id=-5046722593804411489 name='ShipEquipCollect' bytes=715
+  container_paths: Assets/Res/Config/ProtoGen/ShipEquipCollect.bytes
+[x3.config.ab] index=97 path_id=-5027246522736037458 name='ActvVoyageProgressReward' bytes=342
+  container_paths: Assets/Res/Config/ProtoGen/ActvVoyageProgressReward.bytes
+[x3.config.ab] index=98 path_id=-4992156068704846193 name='ActvHeroSkillSell' bytes=39
+  container_paths: Assets/Res/Config/ProtoGen/ActvHeroSkillSell.bytes
+[x3.config.ab] index=99 path_id=-4984322432109908724 name='PowerUpMain' bytes=216
+  container_paths: Assets/Res/Config/ProtoGen/PowerUpMain.bytes
+[x3.config.ab] index=100 path_id=-4955522115908967470 name='ActvTransportShip' bytes=658
+  container_paths: Assets/Res/Config/ProtoGen/ActvTransportShip.bytes
+[x3.config.ab] index=101 path_id=-4880171361328539670 name='BuildingSpeech' bytes=10665
+  container_paths: Assets/Res/Config/ProtoGen/BuildingSpeech.bytes
+[x3.config.ab] index=102 path_id=-4795621667696456108 name='ShipEquipSuit' bytes=147
+  container_paths: Assets/Res/Config/ProtoGen/ShipEquipSuit.bytes
+[x3.config.ab] index=103 path_id=-4745080729576431468 name='LikeRewardRarity' bytes=71
+  container_paths: Assets/Res/Config/ProtoGen/LikeRewardRarity.bytes
+[x3.config.ab] index=104 path_id=-4707528980069047590 name='SirenTrackingRound' bytes=552
+  container_paths: Assets/Res/Config/ProtoGen/SirenTrackingRound.bytes
+[x3.config.ab] index=105 path_id=-4690052617943736818 name='FurnitureLv' bytes=65
+  container_paths: Assets/Res/Config/ProtoGen/FurnitureLv.bytes
+[x3.config.ab] index=106 path_id=-4633156519827926885 name='ActvSaveDwarvesBase' bytes=33
+  container_paths: Assets/Res/Config/ProtoGen/ActvSaveDwarvesBase.bytes
+[x3.config.ab] index=107 path_id=-4574407808827541695 name='ShipPartsInfo' bytes=1324
+  container_paths: Assets/Res/Config/ProtoGen/ShipPartsInfo.bytes
+[x3.config.ab] index=108 path_id=-4572064569454857229 name='ActvTravelDateSpot' bytes=732
+  container_paths: Assets/Res/Config/ProtoGen/ActvTravelDateSpot.bytes
+[x3.config.ab] index=109 path_id=-4453853876928013177 name='ActvMechaWheelMechaItemMap' bytes=1016
+  container_paths: Assets/Res/Config/ProtoGen/ActvMechaWheelMechaItemMap.bytes
+[x3.config.ab] index=110 path_id=-4443301454744645972 name='RecommendPack' bytes=4307
+  container_paths: Assets/Res/Config/ProtoGen/RecommendPack.bytes
+[x3.config.ab] index=111 path_id=-4429344213048511179 name='ShopGroupCfg' bytes=1829
+  container_paths: Assets/Res/Config/ProtoGen/ShopGroupCfg.bytes
+[x3.config.ab] index=112 path_id=-4397087103097362439 name='SpecialRewardSettlement' bytes=338
+  container_paths: Assets/Res/Config/ProtoGen/SpecialRewardSettlement.bytes
+[x3.config.ab] index=113 path_id=-4374657805058478054 name='StageProgress' bytes=148
+  container_paths: Assets/Res/Config/ProtoGen/StageProgress.bytes
+[x3.config.ab] index=114 path_id=-4370409863695968007 name='ActvDonateItem' bytes=320
+  container_paths: Assets/Res/Config/ProtoGen/ActvDonateItem.bytes
+[x3.config.ab] index=115 path_id=-4301302054573378781 name='ActvKvkTask' bytes=419
+  container_paths: Assets/Res/Config/ProtoGen/ActvKvkTask.bytes
+[x3.config.ab] index=116 path_id=-4260759747555747909 name='HordeCfg' bytes=517
+  container_paths: Assets/Res/Config/ProtoGen/HordeCfg.bytes
+[x3.config.ab] index=117 path_id=-4239511585532239830 name='ActvPack' bytes=2273
+  container_paths: Assets/Res/Config/ProtoGen/ActvPack.bytes
+[x3.config.ab] index=118 path_id=-4218536681610197413 name='DrawCardsOdds' bytes=6979
+  container_paths: Assets/Res/Config/ProtoGen/DrawCardsOdds.bytes
+[x3.config.ab] index=119 path_id=-4211111328750768482 name='DailyPackHero' bytes=367
+  container_paths: Assets/Res/Config/ProtoGen/DailyPackHero.bytes
+[x3.config.ab] index=120 path_id=-4052776302223851905 name='BlackMarketDialogue' bytes=42
+  container_paths: Assets/Res/Config/ProtoGen/BlackMarketDialogue.bytes
+[x3.config.ab] index=121 path_id=-4051230194209818992 name='GuideTask' bytes=13555
+  container_paths: Assets/Res/Config/ProtoGen/GuideTask.bytes
+[x3.config.ab] index=122 path_id=-4006465755367411104 name='UnionIpoStockLevel' bytes=936
+  container_paths: Assets/Res/Config/ProtoGen/UnionIpoStockLevel.bytes
+[x3.config.ab] index=123 path_id=-4001711898833993589 name='ActvWeeklyCardTier' bytes=520
+  container_paths: Assets/Res/Config/ProtoGen/ActvWeeklyCardTier.bytes
+[x3.config.ab] index=124 path_id=-4001117072352761798 name='UnitConfigMonster' bytes=773729
+  container_paths: Assets/Res/Config/ProtoGen/UnitConfigMonster.bytes
+[x3.config.ab] index=125 path_id=-3825137226310106149 name='FriskGameDialogue' bytes=348
+  container_paths: Assets/Res/Config/ProtoGen/FriskGameDialogue.bytes
+[x3.config.ab] index=126 path_id=-3742346354332056409 name='BattlePassScoreReward' bytes=53573
+  container_paths: Assets/Res/Config/ProtoGen/BattlePassScoreReward.bytes
+[x3.config.ab] index=127 path_id=-3657784002631850823 name='StarFishPriceMultiple' bytes=642
+  container_paths: Assets/Res/Config/ProtoGen/StarFishPriceMultiple.bytes
+[x3.config.ab] index=128 path_id=-3606405850946628717 name='Like' bytes=178
+  container_paths: Assets/Res/Config/ProtoGen/Like.bytes
+[x3.config.ab] index=129 path_id=-3525914322687477789 name='HeroLabel' bytes=130
+  container_paths: Assets/Res/Config/ProtoGen/HeroLabel.bytes
+[x3.config.ab] index=130 path_id=-3512546834126629026 name='MemorialCardLevel' bytes=20335
+  container_paths: Assets/Res/Config/ProtoGen/MemorialCardLevel.bytes
+[x3.config.ab] index=131 path_id=-3440454686026996949 name='CardGallary' bytes=11631
+  container_paths: Assets/Res/Config/ProtoGen/CardGallary.bytes
+[x3.config.ab] index=132 path_id=-3432173431188552691 name='DailyTask' bytes=1385
+  container_paths: Assets/Res/Config/ProtoGen/DailyTask.bytes
+[x3.config.ab] index=133 path_id=-3397870760252985637 name='UnionTrap' bytes=166
+  container_paths: Assets/Res/Config/ProtoGen/UnionTrap.bytes
+[x3.config.ab] index=134 path_id=-3356141845751298387 name='SoldierPack' bytes=1034
+  container_paths: Assets/Res/Config/ProtoGen/SoldierPack.bytes
+[x3.config.ab] index=135 path_id=-3333830647241447593 name='MechaSkin' bytes=1258
+  container_paths: Assets/Res/Config/ProtoGen/MechaSkin.bytes
+[x3.config.ab] index=136 path_id=-3328840907597180399 name='PlateCfg' bytes=1051
+  container_paths: Assets/Res/Config/ProtoGen/PlateCfg.bytes
+[x3.config.ab] index=137 path_id=-3284377518911188313 name='ActvUnderpants' bytes=521
+  container_paths: Assets/Res/Config/ProtoGen/ActvUnderpants.bytes
+[x3.config.ab] index=138 path_id=-3283767971251049772 name='PackPrice' bytes=2233
+  container_paths: Assets/Res/Config/ProtoGen/PackPrice.bytes
+[x3.config.ab] index=139 path_id=-3232967057033913326 name='MechaSkill' bytes=33784
+  container_paths: Assets/Res/Config/ProtoGen/MechaSkill.bytes
+[x3.config.ab] index=140 path_id=-3229377340971545765 name='ConstCfg' bytes=7715
+  container_paths: Assets/Res/Config/ProtoGen/ConstCfg.bytes
+[x3.config.ab] index=141 path_id=-3203261575439184029 name='RankRewardSlotCfg' bytes=29906
+  container_paths: Assets/Res/Config/ProtoGen/RankRewardSlotCfg.bytes
+[x3.config.ab] index=142 path_id=-3165322179151111367 name='ActvBpFund' bytes=146
+  container_paths: Assets/Res/Config/ProtoGen/ActvBpFund.bytes
+[x3.config.ab] index=143 path_id=-3133232021585657325 name='BlackMarketTask' bytes=1781
+  container_paths: Assets/Res/Config/ProtoGen/BlackMarketTask.bytes
+[x3.config.ab] index=144 path_id=-3054979811532064911 name='UnionPirateTask' bytes=438
+  container_paths: Assets/Res/Config/ProtoGen/UnionPirateTask.bytes
+[x3.config.ab] index=145 path_id=-3014576212306053115 name='ActvFlashSalePack' bytes=832
+  container_paths: Assets/Res/Config/ProtoGen/ActvFlashSalePack.bytes
+[x3.config.ab] index=146 path_id=-2952546046111533564 name='MechaLevel' bytes=32678
+  container_paths: Assets/Res/Config/ProtoGen/MechaLevel.bytes
+[x3.config.ab] index=147 path_id=-2930171547469572921 name='WonderSeason' bytes=181
+  container_paths: Assets/Res/Config/ProtoGen/WonderSeason.bytes
+[x3.config.ab] index=148 path_id=-2919800665210713373 name='LightConditionGroup' bytes=1274
+  container_paths: Assets/Res/Config/ProtoGen/LightConditionGroup.bytes
+[x3.config.ab] index=149 path_id=-2875684061647478399 name='ActvPayGachaQuest' bytes=80
+  container_paths: Assets/Res/Config/ProtoGen/ActvPayGachaQuest.bytes
+[x3.config.ab] index=150 path_id=-2808013962590042297 name='BuffTemplate' bytes=24012
+  container_paths: Assets/Res/Config/ProtoGen/BuffTemplate.bytes
+[x3.config.ab] index=151 path_id=-2753042854036198937 name='ActvCraftingOtherReward' bytes=3497
+  container_paths: Assets/Res/Config/ProtoGen/ActvCraftingOtherReward.bytes
+[x3.config.ab] index=152 path_id=-2712817413949986734 name='CustomCard' bytes=44
+  container_paths: Assets/Res/Config/ProtoGen/CustomCard.bytes
+[x3.config.ab] index=153 path_id=-2687189324420812338 name='KVKResearchStageInfo' bytes=290
+  container_paths: Assets/Res/Config/ProtoGen/KVKResearchStageInfo.bytes
+[x3.config.ab] index=154 path_id=-2682054895749437194 name='DiamondRebateMain' bytes=31
+  container_paths: Assets/Res/Config/ProtoGen/DiamondRebateMain.bytes
+[x3.config.ab] index=155 path_id=-2669277138876018993 name='HeroClubInteract' bytes=32127
+  container_paths: Assets/Res/Config/ProtoGen/HeroClubInteract.bytes
+[x3.config.ab] index=156 path_id=-2648028260930107853 name='GvGFlagShipLevel' bytes=212
+  container_paths: Assets/Res/Config/ProtoGen/GvGFlagShipLevel.bytes
+[x3.config.ab] index=157 path_id=-2597844103001612108 name='ShipLevel' bytes=25539
+  container_paths: Assets/Res/Config/ProtoGen/ShipLevel.bytes
+[x3.config.ab] index=158 path_id=-2544097461984362700 name='HeroFavorAll' bytes=44271
+  container_paths: Assets/Res/Config/ProtoGen/HeroFavorAll.bytes
+[x3.config.ab] index=159 path_id=-2536936398906963042 name='KVKInfluenceCost' bytes=236
+  container_paths: Assets/Res/Config/ProtoGen/KVKInfluenceCost.bytes
+[x3.config.ab] index=160 path_id=-2485904794649557914 name='UnitConfigCity' bytes=1439
+  container_paths: Assets/Res/Config/ProtoGen/UnitConfigCity.bytes
+[x3.config.ab] index=161 path_id=-2465820292057375487 name='MechaChangeExp' bytes=2552
+  container_paths: Assets/Res/Config/ProtoGen/MechaChangeExp.bytes
+[x3.config.ab] index=162 path_id=-2415076899560043530 name='NewsMaster' bytes=170
+  container_paths: Assets/Res/Config/ProtoGen/NewsMaster.bytes
+[x3.config.ab] index=163 path_id=-2331991016528012778 name='NotifySetting' bytes=220
+  container_paths: Assets/Res/Config/ProtoGen/NotifySetting.bytes
+[x3.config.ab] index=164 path_id=-2248367832224145524 name='PackRally' bytes=4845
+  container_paths: Assets/Res/Config/ProtoGen/PackRally.bytes
+[x3.config.ab] index=165 path_id=-2200257940049669912 name='BluePrintsShop' bytes=1442
+  container_paths: Assets/Res/Config/ProtoGen/BluePrintsShop.bytes
+[x3.config.ab] index=166 path_id=-2159890068369523370 name='TimePoint' bytes=374
+  container_paths: Assets/Res/Config/ProtoGen/TimePoint.bytes
+[x3.config.ab] index=167 path_id=-2147315376976823025 name='BluePrintsShopRefresh' bytes=115
+  container_paths: Assets/Res/Config/ProtoGen/BluePrintsShopRefresh.bytes
+[x3.config.ab] index=168 path_id=-2135294597893721437 name='HeroQuestionOptions' bytes=5705
+  container_paths: Assets/Res/Config/ProtoGen/HeroQuestionOptions.bytes
+[x3.config.ab] index=169 path_id=-2104654767582227986 name='UnionChestCfg' bytes=260
+  container_paths: Assets/Res/Config/ProtoGen/UnionChestCfg.bytes
+[x3.config.ab] index=170 path_id=-2099432521726274175 name='UnionIpo' bytes=518
+  container_paths: Assets/Res/Config/ProtoGen/UnionIpo.bytes
+[x3.config.ab] index=171 path_id=-2096538524024696092 name='BlueprintsType' bytes=1925
+  container_paths: Assets/Res/Config/ProtoGen/BlueprintsType.bytes
+[x3.config.ab] index=172 path_id=-2089819127592305453 name='TradeShopGoods' bytes=696
+  container_paths: Assets/Res/Config/ProtoGen/TradeShopGoods.bytes
+[x3.config.ab] index=173 path_id=-2069611363166814349 name='KVKTower' bytes=814
+  container_paths: Assets/Res/Config/ProtoGen/KVKTower.bytes
+[x3.config.ab] index=174 path_id=-2055625357369807616 name='HeroSecret' bytes=938
+  container_paths: Assets/Res/Config/ProtoGen/HeroSecret.bytes
+[x3.config.ab] index=175 path_id=-2045967053911670913 name='CardGallaryStore' bytes=1697
+  container_paths: Assets/Res/Config/ProtoGen/CardGallaryStore.bytes
+[x3.config.ab] index=176 path_id=-1903430229981536906 name='StarFishBuyPrice' bytes=481
+  container_paths: Assets/Res/Config/ProtoGen/StarFishBuyPrice.bytes
+[x3.config.ab] index=177 path_id=-1871932100191195994 name='ActvFlashSaleReward' bytes=0
+  container_paths: Assets/Res/Config/ProtoGen/ActvFlashSaleReward.bytes
+[x3.config.ab] index=178 path_id=-1854838092337636724 name='MechaDriverCollect' bytes=4246
+  container_paths: Assets/Res/Config/ProtoGen/MechaDriverCollect.bytes
+[x3.config.ab] index=179 path_id=-1769104984004139406 name='TrapReward' bytes=3828
+  container_paths: Assets/Res/Config/ProtoGen/TrapReward.bytes
+[x3.config.ab] index=180 path_id=-1726524182299598849 name='DeepOrderQuality' bytes=56
+  container_paths: Assets/Res/Config/ProtoGen/DeepOrderQuality.bytes
+[x3.config.ab] index=181 path_id=-1721893988738921893 name='ShipEquipType' bytes=121
+  container_paths: Assets/Res/Config/ProtoGen/ShipEquipType.bytes
+[x3.config.ab] index=182 path_id=-1693311366271727225 name='ActvDailyRank' bytes=343
+  container_paths: Assets/Res/Config/ProtoGen/ActvDailyRank.bytes
+[x3.config.ab] index=183 path_id=-1567365733636602383 name='TradeBonusWeek' bytes=98
+  container_paths: Assets/Res/Config/ProtoGen/TradeBonusWeek.bytes
+[x3.config.ab] index=184 path_id=-1501960641161396601 name='MechaDriverData' bytes=1103
+  container_paths: Assets/Res/Config/ProtoGen/MechaDriverData.bytes
+[x3.config.ab] index=185 path_id=-1474471807775962404 name='HeroSellEvent' bytes=634
+  container_paths: Assets/Res/Config/ProtoGen/HeroSellEvent.bytes
+[x3.config.ab] index=186 path_id=-1453654228852258444 name='ActvFlashSale' bytes=152
+  container_paths: Assets/Res/Config/ProtoGen/ActvFlashSale.bytes
+[x3.config.ab] index=187 path_id=-1403599018621955688 name='ActvBpFundReward' bytes=5537
+  container_paths: Assets/Res/Config/ProtoGen/ActvBpFundReward.bytes
+[x3.config.ab] index=188 path_id=-1386806464404011304 name='BuildingDiscount' bytes=911
+  container_paths: Assets/Res/Config/ProtoGen/BuildingDiscount.bytes
+[x3.config.ab] index=189 path_id=-1322769956959976073 name='ActvBuildup' bytes=1743
+  container_paths: Assets/Res/Config/ProtoGen/ActvBuildup.bytes
+[x3.config.ab] index=190 path_id=-1284548941923578801 name='ShipPartsStarUpAttr' bytes=3260
+  container_paths: Assets/Res/Config/ProtoGen/ShipPartsStarUpAttr.bytes
+[x3.config.ab] index=191 path_id=-1208920425962066546 name='ActvPayGachaReward' bytes=569
+  container_paths: Assets/Res/Config/ProtoGen/ActvPayGachaReward.bytes
+[x3.config.ab] index=192 path_id=-1185621928534754345 name='ActvExerciseReward' bytes=4225
+  container_paths: Assets/Res/Config/ProtoGen/ActvExerciseReward.bytes
+[x3.config.ab] index=193 path_id=-1159972345630889741 name='GrowthFund' bytes=650
+  container_paths: Assets/Res/Config/ProtoGen/GrowthFund.bytes
+[x3.config.ab] index=194 path_id=-1140520336335810504 name='Pack' bytes=682311
+  container_paths: Assets/Res/Config/ProtoGen/Pack.bytes
+[x3.config.ab] index=195 path_id=-1110109917609932802 name='TrapRewardSlide' bytes=2207
+  container_paths: Assets/Res/Config/ProtoGen/TrapRewardSlide.bytes
+[x3.config.ab] index=196 path_id=-1073034651331696906 name='SLGMeteorWarMineRefresh' bytes=501
+  container_paths: Assets/Res/Config/ProtoGen/SLGMeteorWarMineRefresh.bytes
+[x3.config.ab] index=197 path_id=-1066344743080666155 name='ActvPioneerCityInnerReward' bytes=370
+  container_paths: Assets/Res/Config/ProtoGen/ActvPioneerCityInnerReward.bytes
+[x3.config.ab] index=198 path_id=-1019371222931726494 name='PropScene' bytes=92
+  container_paths: Assets/Res/Config/ProtoGen/PropScene.bytes
+[x3.config.ab] index=199 path_id=-906399097386111569 name='ActvHeroSkillTryTask' bytes=89
+  container_paths: Assets/Res/Config/ProtoGen/ActvHeroSkillTryTask.bytes
+[x3.config.ab] index=200 path_id=-749548935654395451 name='DateEvent' bytes=95067
+  container_paths: Assets/Res/Config/ProtoGen/DateEvent.bytes
+[x3.config.ab] index=201 path_id=-744886871454447312 name='LuckyDrop' bytes=938
+  container_paths: Assets/Res/Config/ProtoGen/LuckyDrop.bytes
+[x3.config.ab] index=202 path_id=-736643774178987235 name='MechaDriverAwake' bytes=5406
+  container_paths: Assets/Res/Config/ProtoGen/MechaDriverAwake.bytes
+[x3.config.ab] index=203 path_id=-692844346688823964 name='ActvEmbeddedTask' bytes=128
+  container_paths: Assets/Res/Config/ProtoGen/ActvEmbeddedTask.bytes
+[x3.config.ab] index=204 path_id=-692658698454447026 name='ActvPuzzleTask' bytes=16253
+  container_paths: Assets/Res/Config/ProtoGen/ActvPuzzleTask.bytes
+[x3.config.ab] index=205 path_id=-638960297388542614 name='GuideUI' bytes=265
+  container_paths: Assets/Res/Config/ProtoGen/GuideUI.bytes
+[x3.config.ab] index=206 path_id=-561590454707555565 name='ShipEquipQuality' bytes=305
+  container_paths: Assets/Res/Config/ProtoGen/ShipEquipQuality.bytes
+[x3.config.ab] index=207 path_id=-543454461331332293 name='GVGBase' bytes=103
+  container_paths: Assets/Res/Config/ProtoGen/GVGBase.bytes
+[x3.config.ab] index=208 path_id=-477548667965828744 name='PackRecommend' bytes=231
+  container_paths: Assets/Res/Config/ProtoGen/PackRecommend.bytes
+[x3.config.ab] index=209 path_id=-462401946034764315 name='ShipSkillStrengthenLevelRed' bytes=426
+  container_paths: Assets/Res/Config/ProtoGen/ShipSkillStrengthenLevelRed.bytes
+[x3.config.ab] index=210 path_id=-281300679930757937 name='ActvMechaWheelOtherReward' bytes=1288
+  container_paths: Assets/Res/Config/ProtoGen/ActvMechaWheelOtherReward.bytes
+[x3.config.ab] index=211 path_id=-279977547476635383 name='ActvBounty' bytes=38
+  container_paths: Assets/Res/Config/ProtoGen/ActvBounty.bytes
+[x3.config.ab] index=212 path_id=-279357996373091831 name='ActvPayGacha' bytes=105
+  container_paths: Assets/Res/Config/ProtoGen/ActvPayGacha.bytes
+[x3.config.ab] index=213 path_id=-278031178613382768 name='BattlePassReward' bytes=2271
+  container_paths: Assets/Res/Config/ProtoGen/BattlePassReward.bytes
+[x3.config.ab] index=214 path_id=-139162208425080605 name='KVKWonder' bytes=126
+  container_paths: Assets/Res/Config/ProtoGen/KVKWonder.bytes
+[x3.config.ab] index=215 path_id=-124554990100001554 name='PlayerTitle' bytes=1774
+  container_paths: Assets/Res/Config/ProtoGen/PlayerTitle.bytes
+[x3.config.ab] index=216 path_id=-55246893573264475 name='JumpType' bytes=1184
+  container_paths: Assets/Res/Config/ProtoGen/JumpType.bytes
+[x3.config.ab] index=217 path_id=-12790018817597985 name='Memory' bytes=8565
+  container_paths: Assets/Res/Config/ProtoGen/Memory.bytes
+[x3.config.ab] index=218 path_id=-12709393857192571 name='LikeRewardTier' bytes=204
+  container_paths: Assets/Res/Config/ProtoGen/LikeRewardTier.bytes
+[x3.config.ab] index=220 path_id=44652528750594408 name='ActvCommunity' bytes=95
+  container_paths: Assets/Res/Config/ProtoGen/ActvCommunity.bytes
+[x3.config.ab] index=221 path_id=45159284946457210 name='ActvCrafting' bytes=2082
+  container_paths: Assets/Res/Config/ProtoGen/ActvCrafting.bytes
+[x3.config.ab] index=222 path_id=55542262715515530 name='HeroStar' bytes=339265
+  container_paths: Assets/Res/Config/ProtoGen/HeroStar.bytes
+[x3.config.ab] index=223 path_id=64523813609257239 name='DungeonCGStar' bytes=147653
+  container_paths: Assets/Res/Config/ProtoGen/DungeonCGStar.bytes
+[x3.config.ab] index=224 path_id=186145676450928800 name='OpenScoreReward' bytes=70
+  container_paths: Assets/Res/Config/ProtoGen/OpenScoreReward.bytes
+[x3.config.ab] index=225 path_id=187561500559609319 name='ActvHeroChampionRoad' bytes=46
+  container_paths: Assets/Res/Config/ProtoGen/ActvHeroChampionRoad.bytes
+[x3.config.ab] index=226 path_id=194254262460109504 name='ActvMemoryBase' bytes=47
+  container_paths: Assets/Res/Config/ProtoGen/ActvMemoryBase.bytes
+[x3.config.ab] index=227 path_id=221570704847544134 name='MemoryShowcase' bytes=12773
+  container_paths: Assets/Res/Config/ProtoGen/MemoryShowcase.bytes
+[x3.config.ab] index=228 path_id=252783103979481446 name='MechaData' bytes=593
+  container_paths: Assets/Res/Config/ProtoGen/MechaData.bytes
+[x3.config.ab] index=229 path_id=266143655312838109 name='Grade' bytes=35222
+  container_paths: Assets/Res/Config/ProtoGen/Grade.bytes
+[x3.config.ab] index=230 path_id=307633957737887491 name='MemoryShowcaseSlot' bytes=198
+  container_paths: Assets/Res/Config/ProtoGen/MemoryShowcaseSlot.bytes
+[x3.config.ab] index=231 path_id=308514310828122215 name='DrawCardsShow' bytes=481
+  container_paths: Assets/Res/Config/ProtoGen/DrawCardsShow.bytes
+[x3.config.ab] index=232 path_id=432021733119199189 name='ShipPay' bytes=198
+  container_paths: Assets/Res/Config/ProtoGen/ShipPay.bytes
+[x3.config.ab] index=233 path_id=448548263490173483 name='HeroTalent' bytes=2227
+  container_paths: Assets/Res/Config/ProtoGen/HeroTalent.bytes
+[x3.config.ab] index=234 path_id=493338910968479928 name='ActvTravelDate' bytes=554
+  container_paths: Assets/Res/Config/ProtoGen/ActvTravelDate.bytes
+[x3.config.ab] index=235 path_id=515232141775681200 name='FurnitureDecorate' bytes=18407
+  container_paths: Assets/Res/Config/ProtoGen/FurnitureDecorate.bytes
+[x3.config.ab] index=236 path_id=544824893501298847 name='ActvHeroVerify' bytes=80
+  container_paths: Assets/Res/Config/ProtoGen/ActvHeroVerify.bytes
+[x3.config.ab] index=237 path_id=593478262379808307 name='Server' bytes=8030
+  container_paths: Assets/Res/Config/ProtoGen/Server.bytes
+[x3.config.ab] index=238 path_id=669764245803255803 name='SLGMeteorWar' bytes=188
+  container_paths: Assets/Res/Config/ProtoGen/SLGMeteorWar.bytes
+[x3.config.ab] index=239 path_id=682313673706745698 name='ActvExchange' bytes=27422
+  container_paths: Assets/Res/Config/ProtoGen/ActvExchange.bytes
+[x3.config.ab] index=240 path_id=727002371020373722 name='HeroSecretActv' bytes=280
+  container_paths: Assets/Res/Config/ProtoGen/HeroSecretActv.bytes
+[x3.config.ab] index=241 path_id=747637169872884275 name='ActvKVKBP' bytes=88
+  container_paths: Assets/Res/Config/ProtoGen/ActvKVKBP.bytes
+[x3.config.ab] index=242 path_id=752881557806414147 name='Emoticons' bytes=2007
+  container_paths: Assets/Res/Config/ProtoGen/Emoticons.bytes
+[x3.config.ab] index=243 path_id=779100220394797176 name='ShopItemCfg' bytes=36353
+  container_paths: Assets/Res/Config/ProtoGen/ShopItemCfg.bytes
+[x3.config.ab] index=244 path_id=833804787445134755 name='PackStall' bytes=158
+  container_paths: Assets/Res/Config/ProtoGen/PackStall.bytes
+[x3.config.ab] index=245 path_id=839835599891319435 name='ChainPack' bytes=8931
+  container_paths: Assets/Res/Config/ProtoGen/ChainPack.bytes
+[x3.config.ab] index=246 path_id=840434623860521008 name='ActvMarbleReward' bytes=1970
+  container_paths: Assets/Res/Config/ProtoGen/ActvMarbleReward.bytes
+[x3.config.ab] index=247 path_id=872951719690037303 name='RoutePack' bytes=1448
+  container_paths: Assets/Res/Config/ProtoGen/RoutePack.bytes
+[x3.config.ab] index=248 path_id=903846727117158766 name='ActvScoreTask' bytes=2951
+  container_paths: Assets/Res/Config/ProtoGen/ActvScoreTask.bytes
+[x3.config.ab] index=249 path_id=982429347819381825 name='AudioList' bytes=92066
+  container_paths: Assets/Res/Config/ProtoGen/AudioList.bytes
+[x3.config.ab] index=250 path_id=991047066894402350 name='ActvHeroSkillTryUse' bytes=27
+  container_paths: Assets/Res/Config/ProtoGen/ActvHeroSkillTryUse.bytes
+[x3.config.ab] index=251 path_id=995377738812061264 name='Skin' bytes=3652
+  container_paths: Assets/Res/Config/ProtoGen/Skin.bytes
+[x3.config.ab] index=252 path_id=1065113749463688991 name='ArenaBuff' bytes=1168
+  container_paths: Assets/Res/Config/ProtoGen/ArenaBuff.bytes
+[x3.config.ab] index=253 path_id=1133284136534578846 name='RallyRefresh' bytes=57739
+  container_paths: Assets/Res/Config/ProtoGen/RallyRefresh.bytes
+[x3.config.ab] index=254 path_id=1173702060104513732 name='UnionGiftCfg' bytes=349
+  container_paths: Assets/Res/Config/ProtoGen/UnionGiftCfg.bytes
+[x3.config.ab] index=255 path_id=1174387054209765108 name='TradeShip' bytes=176
+  container_paths: Assets/Res/Config/ProtoGen/TradeShip.bytes
+[x3.config.ab] index=256 path_id=1204496351707307905 name='ArenaRankReward' bytes=930
+  container_paths: Assets/Res/Config/ProtoGen/ArenaRankReward.bytes
+[x3.config.ab] index=257 path_id=1226739492910509348 name='RuleTips' bytes=2807
+  container_paths: Assets/Res/Config/ProtoGen/RuleTips.bytes
+[x3.config.ab] index=258 path_id=1259805235886283673 name='ShipSkillSlot' bytes=86
+  container_paths: Assets/Res/Config/ProtoGen/ShipSkillSlot.bytes
+[x3.config.ab] index=259 path_id=1294246274622352950 name='UnionLog' bytes=342
+  container_paths: Assets/Res/Config/ProtoGen/UnionLog.bytes
+[x3.config.ab] index=260 path_id=1308599299637361363 name='KVKResearchInfo' bytes=15348
+  container_paths: Assets/Res/Config/ProtoGen/KVKResearchInfo.bytes
+[x3.config.ab] index=261 path_id=1315429680243961180 name='ActvKvKWonderSeasonAward' bytes=142
+  container_paths: Assets/Res/Config/ProtoGen/ActvKvKWonderSeasonAward.bytes
+[x3.config.ab] index=262 path_id=1369230342727373913 name='PackHeroPromotion' bytes=987
+  container_paths: Assets/Res/Config/ProtoGen/PackHeroPromotion.bytes
+[x3.config.ab] index=263 path_id=1400407085284653926 name='ItemObtain' bytes=26032
+  container_paths: Assets/Res/Config/ProtoGen/ItemObtain.bytes
+[x3.config.ab] index=264 path_id=1457935524537122204 name='ShopCfg' bytes=592
+  container_paths: Assets/Res/Config/ProtoGen/ShopCfg.bytes
+[x3.config.ab] index=265 path_id=1548383993847686057 name='ActvBuff' bytes=47
+  container_paths: Assets/Res/Config/ProtoGen/ActvBuff.bytes
+[x3.config.ab] index=266 path_id=1548578325087318227 name='TimeCycle' bytes=52773
+  container_paths: Assets/Res/Config/ProtoGen/TimeCycle.bytes
+[x3.config.ab] index=267 path_id=1584340033501142965 name='Expansions' bytes=894
+  container_paths: Assets/Res/Config/ProtoGen/Expansions.bytes
+[x3.config.ab] index=268 path_id=1629167927156094239 name='DailyTaskReward' bytes=84
+  container_paths: Assets/Res/Config/ProtoGen/DailyTaskReward.bytes
+[x3.config.ab] index=269 path_id=1698259938946163350 name='MemoryLevelCost' bytes=4858
+  container_paths: Assets/Res/Config/ProtoGen/MemoryLevelCost.bytes
+[x3.config.ab] index=270 path_id=1713211949282573603 name='ActvDonatePersonalReward' bytes=94
+  container_paths: Assets/Res/Config/ProtoGen/ActvDonatePersonalReward.bytes
+[x3.config.ab] index=271 path_id=1719636552226301464 name='UnionRedPackShow' bytes=1057
+  container_paths: Assets/Res/Config/ProtoGen/UnionRedPackShow.bytes
+[x3.config.ab] index=272 path_id=1742847372134854231 name='OptionalPack' bytes=641
+  container_paths: Assets/Res/Config/ProtoGen/OptionalPack.bytes
+[x3.config.ab] index=273 path_id=1762831733886472592 name='UnionColor' bytes=342
+  container_paths: Assets/Res/Config/ProtoGen/UnionColor.bytes
+[x3.config.ab] index=274 path_id=1817559722892621036 name='BattleTag' bytes=464
+  container_paths: Assets/Res/Config/ProtoGen/BattleTag.bytes
+[x3.config.ab] index=275 path_id=1842772695706092972 name='DungeonConst' bytes=3207
+  container_paths: Assets/Res/Config/ProtoGen/DungeonConst.bytes
+[x3.config.ab] index=276 path_id=1864951210360546224 name='SliderBubble' bytes=379
+  container_paths: Assets/Res/Config/ProtoGen/SliderBubble.bytes
+[x3.config.ab] index=277 path_id=1942445323986113456 name='ShipStarGiveLevel' bytes=444
+  container_paths: Assets/Res/Config/ProtoGen/ShipStarGiveLevel.bytes
+[x3.config.ab] index=278 path_id=1962900140366228890 name='GuideTarget' bytes=14298
+  container_paths: Assets/Res/Config/ProtoGen/GuideTarget.bytes
+[x3.config.ab] index=279 path_id=2014340372194848687 name='KVKSeasonHeroAttr' bytes=4139
+  container_paths: Assets/Res/Config/ProtoGen/KVKSeasonHeroAttr.bytes
+[x3.config.ab] index=280 path_id=2014871102809171116 name='ActvRevive' bytes=53
+  container_paths: Assets/Res/Config/ProtoGen/ActvRevive.bytes
+[x3.config.ab] index=281 path_id=2071998850699986916 name='LightPointsLevel' bytes=222
+  container_paths: Assets/Res/Config/ProtoGen/LightPointsLevel.bytes
+[x3.config.ab] index=282 path_id=2122445470571636644 name='BlackMarketWeekTask' bytes=133
+  container_paths: Assets/Res/Config/ProtoGen/BlackMarketWeekTask.bytes
+[x3.config.ab] index=283 path_id=2162648666398656479 name='ActvKvKWonder' bytes=17
+  container_paths: Assets/Res/Config/ProtoGen/ActvKvKWonder.bytes
+[x3.config.ab] index=284 path_id=2183727432877343486 name='DungeonCGStarCondition' bytes=7528
+  container_paths: Assets/Res/Config/ProtoGen/DungeonCGStarCondition.bytes
+[x3.config.ab] index=285 path_id=2209310428519815999 name='HeroStickers' bytes=1502
+  container_paths: Assets/Res/Config/ProtoGen/HeroStickers.bytes
+[x3.config.ab] index=286 path_id=2267727007668849585 name='ActvKVKBPTask' bytes=17673
+  container_paths: Assets/Res/Config/ProtoGen/ActvKVKBPTask.bytes
+[x3.config.ab] index=287 path_id=2284949805985815133 name='Hero' bytes=16049
+  container_paths: Assets/Res/Config/ProtoGen/Hero.bytes
+[x3.config.ab] index=288 path_id=2287030830847786488 name='ShipPartsLevelUp' bytes=24065
+  container_paths: Assets/Res/Config/ProtoGen/ShipPartsLevelUp.bytes
+[x3.config.ab] index=289 path_id=2691712780512507857 name='ActvWishingPoolReward' bytes=1098
+  container_paths: Assets/Res/Config/ProtoGen/ActvWishingPoolReward.bytes
+[x3.config.ab] index=290 path_id=2776745200257290354 name='FunctionUnlockTask' bytes=7579
+  container_paths: Assets/Res/Config/ProtoGen/FunctionUnlockTask.bytes
+[x3.config.ab] index=291 path_id=2793999198286396996 name='PiggyBank' bytes=2934
+  container_paths: Assets/Res/Config/ProtoGen/PiggyBank.bytes
+[x3.config.ab] index=292 path_id=2810449723526385305 name='HeroAttributes' bytes=13367
+  container_paths: Assets/Res/Config/ProtoGen/HeroAttributes.bytes
+[x3.config.ab] index=293 path_id=2821520771269761958 name='CardGallaryBook' bytes=233
+  container_paths: Assets/Res/Config/ProtoGen/CardGallaryBook.bytes
+[x3.config.ab] index=294 path_id=2842427909352059723 name='ActvLuckyWheelReward' bytes=8643
+  container_paths: Assets/Res/Config/ProtoGen/ActvLuckyWheelReward.bytes
+[x3.config.ab] index=295 path_id=2882776614381205221 name='ActvShipEquipSell' bytes=26
+  container_paths: Assets/Res/Config/ProtoGen/ActvShipEquipSell.bytes
+[x3.config.ab] index=296 path_id=2899347630847696669 name='Privilege' bytes=152
+  container_paths: Assets/Res/Config/ProtoGen/Privilege.bytes
+[x3.config.ab] index=297 path_id=2919319096436985126 name='ActvCircusGachaReward' bytes=1187
+  container_paths: Assets/Res/Config/ProtoGen/ActvCircusGachaReward.bytes
+[x3.config.ab] index=298 path_id=2987211637789162372 name='BlackMarketItem' bytes=5932
+  container_paths: Assets/Res/Config/ProtoGen/BlackMarketItem.bytes
+[x3.config.ab] index=299 path_id=2991535575629777736 name='FunctionUnlock' bytes=3657
+  container_paths: Assets/Res/Config/ProtoGen/FunctionUnlock.bytes
+[x3.config.ab] index=300 path_id=3028072570790999596 name='MailTemplate' bytes=7572
+  container_paths: Assets/Res/Config/ProtoGen/MailTemplate.bytes
+[x3.config.ab] index=301 path_id=3067800085422529387 name='MemoryBreakCost' bytes=656
+  container_paths: Assets/Res/Config/ProtoGen/MemoryBreakCost.bytes
+[x3.config.ab] index=302 path_id=3076508845298899763 name='TradeBonusPool' bytes=206
+  container_paths: Assets/Res/Config/ProtoGen/TradeBonusPool.bytes
+[x3.config.ab] index=303 path_id=3132392863877826865 name='ActvIdle' bytes=347
+  container_paths: Assets/Res/Config/ProtoGen/ActvIdle.bytes
+[x3.config.ab] index=304 path_id=3169387959574564004 name='TimeMonster' bytes=1022
+  container_paths: Assets/Res/Config/ProtoGen/TimeMonster.bytes
+[x3.config.ab] index=305 path_id=3195305849675764520 name='DungeonCG' bytes=15372
+  container_paths: Assets/Res/Config/ProtoGen/DungeonCG.bytes
+[x3.config.ab] index=306 path_id=3323706774673467612 name='HeroEquip' bytes=2920
+  container_paths: Assets/Res/Config/ProtoGen/HeroEquip.bytes
+[x3.config.ab] index=307 path_id=3391548846950099646 name='ShipEquipUp' bytes=7819
+  container_paths: Assets/Res/Config/ProtoGen/ShipEquipUp.bytes
+[x3.config.ab] index=308 path_id=3413779925578628462 name='ProgressReward' bytes=2582
+  container_paths: Assets/Res/Config/ProtoGen/ProgressReward.bytes
+[x3.config.ab] index=309 path_id=3473214776182641185 name='UnionResearchCfg' bytes=28404
+  container_paths: Assets/Res/Config/ProtoGen/UnionResearchCfg.bytes
+[x3.config.ab] index=310 path_id=3475077570502056330 name='PlayerDialogue' bytes=64
+  container_paths: Assets/Res/Config/ProtoGen/PlayerDialogue.bytes
+[x3.config.ab] index=311 path_id=3484791903293631564 name='ShipSkin' bytes=1678
+  container_paths: Assets/Res/Config/ProtoGen/ShipSkin.bytes
+[x3.config.ab] index=312 path_id=3501402936371518397 name='ActvBpFundServerReward' bytes=1142
+  container_paths: Assets/Res/Config/ProtoGen/ActvBpFundServerReward.bytes
+[x3.config.ab] index=313 path_id=3583175312595684384 name='ActvOnline' bytes=95494
+  container_paths: Assets/Res/Config/ProtoGen/ActvOnline.bytes
+[x3.config.ab] index=314 path_id=3587940769043688964 name='ActvShipEquipSellItem' bytes=108
+  container_paths: Assets/Res/Config/ProtoGen/ActvShipEquipSellItem.bytes
+[x3.config.ab] index=315 path_id=3600385488448360593 name='MapMark' bytes=753
+  container_paths: Assets/Res/Config/ProtoGen/MapMark.bytes
+[x3.config.ab] index=316 path_id=3608058988400525262 name='ActvLuckyWheel' bytes=2531
+  container_paths: Assets/Res/Config/ProtoGen/ActvLuckyWheel.bytes
+[x3.config.ab] index=317 path_id=3644494468269642965 name='UnionKVKDonate' bytes=25
+  container_paths: Assets/Res/Config/ProtoGen/UnionKVKDonate.bytes
+[x3.config.ab] index=318 path_id=3655703330304542519 name='ActvWonderReward' bytes=232
+  container_paths: Assets/Res/Config/ProtoGen/ActvWonderReward.bytes
+[x3.config.ab] index=319 path_id=3799122296829572739 name='ActvScoreMultiServer' bytes=125
+  container_paths: Assets/Res/Config/ProtoGen/ActvScoreMultiServer.bytes
+[x3.config.ab] index=320 path_id=3806807596689421258 name='MemoryGroup' bytes=1447
+  container_paths: Assets/Res/Config/ProtoGen/MemoryGroup.bytes
+[x3.config.ab] index=321 path_id=3846154045153021308 name='OapTopUp' bytes=802
+  container_paths: Assets/Res/Config/ProtoGen/OapTopUp.bytes
+[x3.config.ab] index=322 path_id=3857184536934576995 name='Map' bytes=987
+  container_paths: Assets/Res/Config/ProtoGen/Map.bytes
+[x3.config.ab] index=323 path_id=3883466819385005335 name='Building' bytes=137907
+  container_paths: Assets/Res/Config/ProtoGen/Building.bytes
+[x3.config.ab] index=324 path_id=3925816744886593248 name='ExtraReward' bytes=51
+  container_paths: Assets/Res/Config/ProtoGen/ExtraReward.bytes
+[x3.config.ab] index=325 path_id=4010002855826919024 name='DebtRecycle' bytes=3511
+  container_paths: Assets/Res/Config/ProtoGen/DebtRecycle.bytes
+[x3.config.ab] index=326 path_id=4036433663364252047 name='Newsroom' bytes=947
+  container_paths: Assets/Res/Config/ProtoGen/Newsroom.bytes
+[x3.config.ab] index=327 path_id=4038645112350673417 name='Gathering' bytes=2834
+  container_paths: Assets/Res/Config/ProtoGen/Gathering.bytes
+[x3.config.ab] index=328 path_id=4039601454042742082 name='ChampionRoadContent' bytes=20938
+  container_paths: Assets/Res/Config/ProtoGen/ChampionRoadContent.bytes
+[x3.config.ab] index=329 path_id=4133738302723250602 name='ActvTravelDateChat' bytes=962
+  container_paths: Assets/Res/Config/ProtoGen/ActvTravelDateChat.bytes
+[x3.config.ab] index=330 path_id=4180020539871313302 name='GuideChapter' bytes=1398
+  container_paths: Assets/Res/Config/ProtoGen/GuideChapter.bytes
+[x3.config.ab] index=331 path_id=4186138946855317652 name='UnitConfigWonder' bytes=2793
+  container_paths: Assets/Res/Config/ProtoGen/UnitConfigWonder.bytes
+[x3.config.ab] index=332 path_id=4202426301979440719 name='BlackMarketSeriesWelfare' bytes=198
+  container_paths: Assets/Res/Config/ProtoGen/BlackMarketSeriesWelfare.bytes
+[x3.config.ab] index=333 path_id=4247215016562334789 name='ActvPioneerCity' bytes=134
+  container_paths: Assets/Res/Config/ProtoGen/ActvPioneerCity.bytes
+[x3.config.ab] index=334 path_id=4257628487166033741 name='GameTips' bytes=82
+  container_paths: Assets/Res/Config/ProtoGen/GameTips.bytes
+[x3.config.ab] index=335 path_id=4284928161820101339 name='GuideScroll' bytes=508
+  container_paths: Assets/Res/Config/ProtoGen/GuideScroll.bytes
+[x3.config.ab] index=336 path_id=4299281914482642369 name='MapMerge' bytes=182
+  container_paths: Assets/Res/Config/ProtoGen/MapMerge.bytes
+[x3.config.ab] index=337 path_id=4322824214246004227 name='KVKMonsterRefresh' bytes=261
+  container_paths: Assets/Res/Config/ProtoGen/KVKMonsterRefresh.bytes
+[x3.config.ab] index=338 path_id=4341435317198100068 name='KVKMapLog' bytes=156
+  container_paths: Assets/Res/Config/ProtoGen/KVKMapLog.bytes
+[x3.config.ab] index=339 path_id=4418098567774073751 name='KVKEchoMonsterLevel' bytes=311
+  container_paths: Assets/Res/Config/ProtoGen/KVKEchoMonsterLevel.bytes
+[x3.config.ab] index=340 path_id=4443450289292756336 name='DrawCards' bytes=15214
+  container_paths: Assets/Res/Config/ProtoGen/DrawCards.bytes
+[x3.config.ab] index=341 path_id=4504351289751308108 name='FurnitureSkin' bytes=5298
+  container_paths: Assets/Res/Config/ProtoGen/FurnitureSkin.bytes
+[x3.config.ab] index=342 path_id=4511900043339650939 name='BuildingStar' bytes=12043
+  container_paths: Assets/Res/Config/ProtoGen/BuildingStar.bytes
+[x3.config.ab] index=343 path_id=4581691288352339436 name='IdleLevel' bytes=252874
+  container_paths: Assets/Res/Config/ProtoGen/IdleLevel.bytes
+[x3.config.ab] index=344 path_id=4640522226757664588 name='RankCfg' bytes=12080
+  container_paths: Assets/Res/Config/ProtoGen/RankCfg.bytes
+[x3.config.ab] index=345 path_id=4665248594125154160 name='PackAllowance' bytes=22
+  container_paths: Assets/Res/Config/ProtoGen/PackAllowance.bytes
+[x3.config.ab] index=346 path_id=4702507360895177659 name='ActvRomanceTask' bytes=7928
+  container_paths: Assets/Res/Config/ProtoGen/ActvRomanceTask.bytes
+[x3.config.ab] index=347 path_id=4714724089814045101 name='ActvScoreGuidInternal' bytes=18
+  container_paths: Assets/Res/Config/ProtoGen/ActvScoreGuidInternal.bytes
+[x3.config.ab] index=348 path_id=4758543134391939389 name='SellEvent' bytes=8247
+  container_paths: Assets/Res/Config/ProtoGen/SellEvent.bytes
+[x3.config.ab] index=349 path_id=4824949686106821124 name='ChatEmojyReply' bytes=294
+  container_paths: Assets/Res/Config/ProtoGen/ChatEmojyReply.bytes
+[x3.config.ab] index=350 path_id=4860881927838520248 name='RankValue' bytes=4263
+  container_paths: Assets/Res/Config/ProtoGen/RankValue.bytes
+[x3.config.ab] index=351 path_id=4904254206876646361 name='TavernAdventureMain' bytes=35
+  container_paths: Assets/Res/Config/ProtoGen/TavernAdventureMain.bytes
+[x3.config.ab] index=352 path_id=4926011690752085306 name='WebPrice' bytes=1345
+  container_paths: Assets/Res/Config/ProtoGen/WebPrice.bytes
+[x3.config.ab] index=353 path_id=4943367413129046482 name='ActvWonderTask' bytes=3657
+  container_paths: Assets/Res/Config/ProtoGen/ActvWonderTask.bytes
+[x3.config.ab] index=354 path_id=5005978284786054367 name='Route' bytes=1964
+  container_paths: Assets/Res/Config/ProtoGen/Route.bytes
+[x3.config.ab] index=355 path_id=5043837684771640425 name='ActvVoyageLevel' bytes=96
+  container_paths: Assets/Res/Config/ProtoGen/ActvVoyageLevel.bytes
+[x3.config.ab] index=356 path_id=5122961222997648475 name='DungeonAction' bytes=13248
+  container_paths: Assets/Res/Config/ProtoGen/DungeonAction.bytes
+[x3.config.ab] index=357 path_id=5170561126358096390 name='SecretShopBubble' bytes=191
+  container_paths: Assets/Res/Config/ProtoGen/SecretShopBubble.bytes
+[x3.config.ab] index=358 path_id=5207279403731004077 name='ActvMechaWheelInnerReward' bytes=3046
+  container_paths: Assets/Res/Config/ProtoGen/ActvMechaWheelInnerReward.bytes
+[x3.config.ab] index=359 path_id=5271720664201785461 name='BattleValue' bytes=1985
+  container_paths: Assets/Res/Config/ProtoGen/BattleValue.bytes
+[x3.config.ab] index=360 path_id=5276114730130821636 name='MarqueeRuntips' bytes=4215
+  container_paths: Assets/Res/Config/ProtoGen/MarqueeRuntips.bytes
+[x3.config.ab] index=361 path_id=5277624728932138077 name='CardPools' bytes=5268
+  container_paths: Assets/Res/Config/ProtoGen/CardPools.bytes
+[x3.config.ab] index=362 path_id=5305973708358795935 name='ActvLuckyWheelOtherReward' bytes=5383
+  container_paths: Assets/Res/Config/ProtoGen/ActvLuckyWheelOtherReward.bytes
+[x3.config.ab] index=363 path_id=5319938026041120566 name='PackWeek' bytes=72062
+  container_paths: Assets/Res/Config/ProtoGen/PackWeek.bytes
+[x3.config.ab] index=364 path_id=5341633796884971990 name='DungeonCollectTask' bytes=10322
+  container_paths: Assets/Res/Config/ProtoGen/DungeonCollectTask.bytes
+[x3.config.ab] index=365 path_id=5357554899316046297 name='GlassGroup' bytes=92
+  container_paths: Assets/Res/Config/ProtoGen/GlassGroup.bytes
+[x3.config.ab] index=366 path_id=5370051025157019012 name='RallyBand' bytes=578
+  container_paths: Assets/Res/Config/ProtoGen/RallyBand.bytes
+[x3.config.ab] index=367 path_id=5409914377075969502 name='BlueprintsClass' bytes=214
+  container_paths: Assets/Res/Config/ProtoGen/BlueprintsClass.bytes
+[x3.config.ab] index=368 path_id=5487280619918456116 name='RallyMonster' bytes=182
+  container_paths: Assets/Res/Config/ProtoGen/RallyMonster.bytes
+[x3.config.ab] index=369 path_id=5498542234624369897 name='SLGMeteorWarMine' bytes=1116
+  container_paths: Assets/Res/Config/ProtoGen/SLGMeteorWarMine.bytes
+[x3.config.ab] index=370 path_id=5516008084436112712 name='ShipTerm' bytes=4396
+  container_paths: Assets/Res/Config/ProtoGen/ShipTerm.bytes
+[x3.config.ab] index=371 path_id=5582268149444977003 name='KvkTemplate' bytes=362
+  container_paths: Assets/Res/Config/ProtoGen/KvkTemplate.bytes
+[x3.config.ab] index=372 path_id=5633292161340205936 name='RouteLevels' bytes=449715
+  container_paths: Assets/Res/Config/ProtoGen/RouteLevels.bytes
+[x3.config.ab] index=373 path_id=5641166227569486626 name='SoldierEnhance' bytes=363823
+  container_paths: Assets/Res/Config/ProtoGen/SoldierEnhance.bytes
+[x3.config.ab] index=374 path_id=5672198193869954186 name='Dialogue' bytes=941023
+  container_paths: Assets/Res/Config/ProtoGen/Dialogue.bytes
+[x3.config.ab] index=375 path_id=5680005021351138184 name='FogfallQuarantine' bytes=13459
+  container_paths: Assets/Res/Config/ProtoGen/FogfallQuarantine.bytes
+[x3.config.ab] index=376 path_id=5716602949318992479 name='SirenTavernRule' bytes=146
+  container_paths: Assets/Res/Config/ProtoGen/SirenTavernRule.bytes
+[x3.config.ab] index=377 path_id=5731362801029958126 name='Property' bytes=8041
+  container_paths: Assets/Res/Config/ProtoGen/Property.bytes
+[x3.config.ab] index=378 path_id=5739873854275581027 name='SetCfg' bytes=13254
+  container_paths: Assets/Res/Config/ProtoGen/SetCfg.bytes
+[x3.config.ab] index=379 path_id=5776453439235390167 name='BlackMarketPrice' bytes=567
+  container_paths: Assets/Res/Config/ProtoGen/BlackMarketPrice.bytes
+[x3.config.ab] index=380 path_id=5794627713668570255 name='MemorialCard' bytes=6421
+  container_paths: Assets/Res/Config/ProtoGen/MemorialCard.bytes
+[x3.config.ab] index=381 path_id=5841308352414817153 name='PirateInvasion' bytes=158
+  container_paths: Assets/Res/Config/ProtoGen/PirateInvasion.bytes
+[x3.config.ab] index=382 path_id=5857176776106019906 name='ActvScoreMulti' bytes=7746
+  container_paths: Assets/Res/Config/ProtoGen/ActvScoreMulti.bytes
+[x3.config.ab] index=383 path_id=5896387054294185449 name='FastBuy' bytes=194
+  container_paths: Assets/Res/Config/ProtoGen/FastBuy.bytes
+[x3.config.ab] index=384 path_id=5916754737341145508 name='SoldierEnhanceEvent' bytes=693
+  container_paths: Assets/Res/Config/ProtoGen/SoldierEnhanceEvent.bytes
+[x3.config.ab] index=385 path_id=5928876244411034298 name='ShipEquipMainTaskChapterTask' bytes=56
+  container_paths: Assets/Res/Config/ProtoGen/ShipEquipMainTaskChapterTask.bytes
+[x3.config.ab] index=386 path_id=5941305757169159939 name='ShipALLStarsReward' bytes=938
+  container_paths: Assets/Res/Config/ProtoGen/ShipALLStarsReward.bytes
+[x3.config.ab] index=387 path_id=5943025544551251851 name='HeroSkillInfo' bytes=5418
+  container_paths: Assets/Res/Config/ProtoGen/HeroSkillInfo.bytes
+[x3.config.ab] index=388 path_id=5961423215260667899 name='NewsText' bytes=3248
+  container_paths: Assets/Res/Config/ProtoGen/NewsText.bytes
+[x3.config.ab] index=389 path_id=5976415198958595880 name='ActvPuzzleReward' bytes=13773
+  container_paths: Assets/Res/Config/ProtoGen/ActvPuzzleReward.bytes
+[x3.config.ab] index=390 path_id=5977729033890950232 name='WeeklyCard' bytes=217
+  container_paths: Assets/Res/Config/ProtoGen/WeeklyCard.bytes
+[x3.config.ab] index=391 path_id=5986989444378982202 name='GlassRewards' bytes=80
+  container_paths: Assets/Res/Config/ProtoGen/GlassRewards.bytes
+[x3.config.ab] index=392 path_id=5987036367897231632 name='ShipTermGroup' bytes=13043
+  container_paths: Assets/Res/Config/ProtoGen/ShipTermGroup.bytes
+[x3.config.ab] index=393 path_id=6009063759690063885 name='MemoryData' bytes=147374
+  container_paths: Assets/Res/Config/ProtoGen/MemoryData.bytes
+[x3.config.ab] index=394 path_id=6010094379624217015 name='NPC' bytes=1212
+  container_paths: Assets/Res/Config/ProtoGen/NPC.bytes
+[x3.config.ab] index=395 path_id=6106544277801607418 name='ActvIdleLvReward' bytes=729
+  container_paths: Assets/Res/Config/ProtoGen/ActvIdleLvReward.bytes
+[x3.config.ab] index=396 path_id=6116992276612612509 name='LadderCfg' bytes=622
+  container_paths: Assets/Res/Config/ProtoGen/LadderCfg.bytes
+[x3.config.ab] index=397 path_id=6126195322775757748 name='TrapRewardWindow' bytes=2410
+  container_paths: Assets/Res/Config/ProtoGen/TrapRewardWindow.bytes
+[x3.config.ab] index=398 path_id=6139664443036789414 name='BlackMarketLeaderboardAct' bytes=332
+  container_paths: Assets/Res/Config/ProtoGen/BlackMarketLeaderboardAct.bytes
+[x3.config.ab] index=399 path_id=6213069737687560463 name='ShipSkillStrengthenLevel' bytes=312
+  container_paths: Assets/Res/Config/ProtoGen/ShipSkillStrengthenLevel.bytes
+[x3.config.ab] index=400 path_id=6263457185545192475 name='ShowConditionGroup' bytes=814
+  container_paths: Assets/Res/Config/ProtoGen/ShowConditionGroup.bytes
+[x3.config.ab] index=401 path_id=6275479673276761499 name='GuideAction' bytes=15215
+  container_paths: Assets/Res/Config/ProtoGen/GuideAction.bytes
+[x3.config.ab] index=402 path_id=6307203926425552285 name='UnionPirate' bytes=20440
+  container_paths: Assets/Res/Config/ProtoGen/UnionPirate.bytes
+[x3.config.ab] index=403 path_id=6313307036795091239 name='KVKTerritoryColor' bytes=262
+  container_paths: Assets/Res/Config/ProtoGen/KVKTerritoryColor.bytes
+[x3.config.ab] index=404 path_id=6340865413091371003 name='UnionClassDetail' bytes=352
+  container_paths: Assets/Res/Config/ProtoGen/UnionClassDetail.bytes
+[x3.config.ab] index=405 path_id=6341110451480297458 name='FurnitureDecorateSkin' bytes=914
+  container_paths: Assets/Res/Config/ProtoGen/FurnitureDecorateSkin.bytes
+[x3.config.ab] index=406 path_id=6341853798544563876 name='ActvSaveDwarves' bytes=848
+  container_paths: Assets/Res/Config/ProtoGen/ActvSaveDwarves.bytes
+[x3.config.ab] index=407 path_id=6358662586736249292 name='UnionIpoAuction' bytes=1091
+  container_paths: Assets/Res/Config/ProtoGen/UnionIpoAuction.bytes
+[x3.config.ab] index=408 path_id=6360128414146651560 name='ActvVoyageOtherReward' bytes=2493
+  container_paths: Assets/Res/Config/ProtoGen/ActvVoyageOtherReward.bytes
+[x3.config.ab] index=409 path_id=6521828813622946950 name='BattlePassScore' bytes=2022
+  container_paths: Assets/Res/Config/ProtoGen/BattlePassScore.bytes
+[x3.config.ab] index=410 path_id=6548824762419438007 name='Research' bytes=502674
+  container_paths: Assets/Res/Config/ProtoGen/Research.bytes
+[x3.config.ab] index=411 path_id=6634662667544128751 name='ActvScoreGuild' bytes=159
+  container_paths: Assets/Res/Config/ProtoGen/ActvScoreGuild.bytes
+[x3.config.ab] index=412 path_id=6635131531548646414 name='TextImage' bytes=323
+  container_paths: Assets/Res/Config/ProtoGen/TextImage.bytes
+[x3.config.ab] index=413 path_id=6637999103014287493 name='IdleWeaponLevel' bytes=183568
+  container_paths: Assets/Res/Config/ProtoGen/IdleWeaponLevel.bytes
+[x3.config.ab] index=414 path_id=6645616366760431607 name='CoinPusher' bytes=9451
+  container_paths: Assets/Res/Config/ProtoGen/CoinPusher.bytes
+[x3.config.ab] index=415 path_id=6710398868991950569 name='MechaDriverSlot' bytes=392
+  container_paths: Assets/Res/Config/ProtoGen/MechaDriverSlot.bytes
+[x3.config.ab] index=416 path_id=6714222495654495006 name='ABTestSplit' bytes=10996
+  container_paths: Assets/Res/Config/ProtoGen/ABTestSplit.bytes
+[x3.config.ab] index=417 path_id=6715175439690409304 name='HeroSkill' bytes=564564
+  container_paths: Assets/Res/Config/ProtoGen/HeroSkill.bytes
+[x3.config.ab] index=418 path_id=6756652665118346755 name='WTPersonalTask' bytes=1903
+  container_paths: Assets/Res/Config/ProtoGen/WTPersonalTask.bytes
+[x3.config.ab] index=419 path_id=6768087966032950033 name='KVKCellTemplate' bytes=245
+  container_paths: Assets/Res/Config/ProtoGen/KVKCellTemplate.bytes
+[x3.config.ab] index=420 path_id=6796821638232386701 name='ActvWishingPool' bytes=515
+  container_paths: Assets/Res/Config/ProtoGen/ActvWishingPool.bytes
+[x3.config.ab] index=421 path_id=6801836365422718840 name='TaskType' bytes=3152
+  container_paths: Assets/Res/Config/ProtoGen/TaskType.bytes
+[x3.config.ab] index=422 path_id=6824025251376435217 name='PackShip' bytes=179
+  container_paths: Assets/Res/Config/ProtoGen/PackShip.bytes
+[x3.config.ab] index=423 path_id=6848554458103613818 name='ActvLogin' bytes=4015
+  container_paths: Assets/Res/Config/ProtoGen/ActvLogin.bytes
+[x3.config.ab] index=424 path_id=6870019321244949023 name='ActvKvkSeason' bytes=2894
+  container_paths: Assets/Res/Config/ProtoGen/ActvKvkSeason.bytes
+[x3.config.ab] index=425 path_id=6873481358739941438 name='ShipPartsStarUp' bytes=831
+  container_paths: Assets/Res/Config/ProtoGen/ShipPartsStarUp.bytes
+[x3.config.ab] index=426 path_id=6877484590517715679 name='HeroPublicLevel' bytes=3493
+  container_paths: Assets/Res/Config/ProtoGen/HeroPublicLevel.bytes
+[x3.config.ab] index=427 path_id=6961745976013175722 name='TradeBonusDay' bytes=394
+  container_paths: Assets/Res/Config/ProtoGen/TradeBonusDay.bytes
+[x3.config.ab] index=428 path_id=7010069080328828687 name='IdleFish' bytes=4710
+  container_paths: Assets/Res/Config/ProtoGen/IdleFish.bytes
+[x3.config.ab] index=429 path_id=7108663162104723768 name='ActvMail' bytes=422
+  container_paths: Assets/Res/Config/ProtoGen/ActvMail.bytes
+[x3.config.ab] index=430 path_id=7141068154492231239 name='HeroClub' bytes=3121
+  container_paths: Assets/Res/Config/ProtoGen/HeroClub.bytes
+[x3.config.ab] index=431 path_id=7153200131928469656 name='HeroQuestion' bytes=1974
+  container_paths: Assets/Res/Config/ProtoGen/HeroQuestion.bytes
+[x3.config.ab] index=432 path_id=7188059381115677287 name='GvGRankStage' bytes=567
+  container_paths: Assets/Res/Config/ProtoGen/GvGRankStage.bytes
+[x3.config.ab] index=433 path_id=7301928280964291762 name='ShipTermBaseNum' bytes=5884
+  container_paths: Assets/Res/Config/ProtoGen/ShipTermBaseNum.bytes
+[x3.config.ab] index=434 path_id=7336258856090954694 name='ActvMarble' bytes=197
+  container_paths: Assets/Res/Config/ProtoGen/ActvMarble.bytes
+[x3.config.ab] index=435 path_id=7375320453550142262 name='ActvGroup' bytes=9362
+  container_paths: Assets/Res/Config/ProtoGen/ActvGroup.bytes
+[x3.config.ab] index=436 path_id=7557793564910901392 name='MechaSkillAwaken' bytes=14077
+  container_paths: Assets/Res/Config/ProtoGen/MechaSkillAwaken.bytes
+[x3.config.ab] index=437 path_id=7567269726915375396 name='Blueprints' bytes=102582
+  container_paths: Assets/Res/Config/ProtoGen/Blueprints.bytes
+[x3.config.ab] index=438 path_id=7601803561391162284 name='GvGLuckyWheel' bytes=108
+  container_paths: Assets/Res/Config/ProtoGen/GvGLuckyWheel.bytes
+[x3.config.ab] index=439 path_id=7669728036431906466 name='PowerNum' bytes=13710
+  container_paths: Assets/Res/Config/ProtoGen/PowerNum.bytes
+[x3.config.ab] index=440 path_id=7692354848001544122 name='ActvScoreGuidInternalReward' bytes=111
+  container_paths: Assets/Res/Config/ProtoGen/ActvScoreGuidInternalReward.bytes
+[x3.config.ab] index=441 path_id=7692369528361267034 name='KVKMonsterGroupRefresh' bytes=154
+  container_paths: Assets/Res/Config/ProtoGen/KVKMonsterGroupRefresh.bytes
+[x3.config.ab] index=442 path_id=7758425987134495612 name='ActvTask' bytes=25213
+  container_paths: Assets/Res/Config/ProtoGen/ActvTask.bytes
+[x3.config.ab] index=443 path_id=7767780984116831779 name='HeroEquipEnchantmentUpgrade' bytes=2830
+  container_paths: Assets/Res/Config/ProtoGen/HeroEquipEnchantmentUpgrade.bytes
+[x3.config.ab] index=444 path_id=7786956859301774180 name='ActvBountyReward' bytes=253
+  container_paths: Assets/Res/Config/ProtoGen/ActvBountyReward.bytes
+[x3.config.ab] index=445 path_id=7820060149386663800 name='ActvMechaWheel' bytes=382
+  container_paths: Assets/Res/Config/ProtoGen/ActvMechaWheel.bytes
+[x3.config.ab] index=446 path_id=7857531698796018021 name='HeroLevel' bytes=7416
+  container_paths: Assets/Res/Config/ProtoGen/HeroLevel.bytes
+[x3.config.ab] index=447 path_id=7908372448693550675 name='HeroSkin' bytes=22078
+  container_paths: Assets/Res/Config/ProtoGen/HeroSkin.bytes
+[x3.config.ab] index=448 path_id=8006247507178824092 name='Slots' bytes=650
+  container_paths: Assets/Res/Config/ProtoGen/Slots.bytes
+[x3.config.ab] index=449 path_id=8029699893936998822 name='Vip' bytes=1727
+  container_paths: Assets/Res/Config/ProtoGen/Vip.bytes
+[x3.config.ab] index=450 path_id=8152423126554205962 name='HeroEquipLevel' bytes=52961
+  container_paths: Assets/Res/Config/ProtoGen/HeroEquipLevel.bytes
+[x3.config.ab] index=451 path_id=8217269681016329140 name='SingleTask' bytes=38
+  container_paths: Assets/Res/Config/ProtoGen/SingleTask.bytes
+[x3.config.ab] index=452 path_id=8221749965397157830 name='VipSignUp' bytes=108
+  container_paths: Assets/Res/Config/ProtoGen/VipSignUp.bytes
+[x3.config.ab] index=453 path_id=8282276676052618387 name='OrderRule' bytes=78
+  container_paths: Assets/Res/Config/ProtoGen/OrderRule.bytes
+[x3.config.ab] index=454 path_id=8295736177985049516 name='StageCondition' bytes=77
+  container_paths: Assets/Res/Config/ProtoGen/StageCondition.bytes
+[x3.config.ab] index=455 path_id=8347314663505376797 name='GuideTrigger' bytes=1096
+  container_paths: Assets/Res/Config/ProtoGen/GuideTrigger.bytes
+[x3.config.ab] index=456 path_id=8363996929717372276 name='MailGlobalCompensation' bytes=270
+  container_paths: Assets/Res/Config/ProtoGen/MailGlobalCompensation.bytes
+[x3.config.ab] index=457 path_id=8398543866644966476 name='NationFlagCfg' bytes=3310
+  container_paths: Assets/Res/Config/ProtoGen/NationFlagCfg.bytes
+[x3.config.ab] index=458 path_id=8477446191357970460 name='ShipEquipTask' bytes=11256
+  container_paths: Assets/Res/Config/ProtoGen/ShipEquipTask.bytes
+[x3.config.ab] index=459 path_id=8554076922583328567 name='ActvTransport' bytes=32
+  container_paths: Assets/Res/Config/ProtoGen/ActvTransport.bytes
+[x3.config.ab] index=460 path_id=8565531665849609037 name='KVKLogColor' bytes=398
+  container_paths: Assets/Res/Config/ProtoGen/KVKLogColor.bytes
+[x3.config.ab] index=461 path_id=8570637130050794872 name='MechaDriverLevel' bytes=265345
+  container_paths: Assets/Res/Config/ProtoGen/MechaDriverLevel.bytes
+[x3.config.ab] index=462 path_id=8589931745570286104 name='ShipEquipUpMaterial' bytes=188
+  container_paths: Assets/Res/Config/ProtoGen/ShipEquipUpMaterial.bytes
+[x3.config.ab] index=463 path_id=8597997564936125572 name='WorldTrend' bytes=3461
+  container_paths: Assets/Res/Config/ProtoGen/WorldTrend.bytes
+[x3.config.ab] index=464 path_id=8608925597378766333 name='DailyPack' bytes=516
+  container_paths: Assets/Res/Config/ProtoGen/DailyPack.bytes
+[x3.config.ab] index=465 path_id=8648317130469511282 name='HeroStrengthen' bytes=986
+  container_paths: Assets/Res/Config/ProtoGen/HeroStrengthen.bytes
+[x3.config.ab] index=466 path_id=8688267539157405277 name='HeroFavorLevel' bytes=164104
+  container_paths: Assets/Res/Config/ProtoGen/HeroFavorLevel.bytes
+[x3.config.ab] index=467 path_id=8698784090598394937 name='CardGallaryGroup' bytes=2489
+  container_paths: Assets/Res/Config/ProtoGen/CardGallaryGroup.bytes
+[x3.config.ab] index=468 path_id=8704471045344712915 name='ActvWonder' bytes=86
+  container_paths: Assets/Res/Config/ProtoGen/ActvWonder.bytes
+[x3.config.ab] index=469 path_id=8718544862822596995 name='ActvPioneerCityOuterReward' bytes=472
+  container_paths: Assets/Res/Config/ProtoGen/ActvPioneerCityOuterReward.bytes
+[x3.config.ab] index=470 path_id=8749927406293031919 name='WeekSpecial' bytes=8977
+  container_paths: Assets/Res/Config/ProtoGen/WeekSpecial.bytes
+[x3.config.ab] index=471 path_id=8772198131461689608 name='AnnType' bytes=10
+  container_paths: Assets/Res/Config/ProtoGen/AnnType.bytes
+[x3.config.ab] index=472 path_id=8790670355535688978 name='ActvScoreGroup' bytes=11812
+  container_paths: Assets/Res/Config/ProtoGen/ActvScoreGroup.bytes
+[x3.config.ab] index=473 path_id=8795406272966125935 name='ActvNewQueuePkg' bytes=372
+  container_paths: Assets/Res/Config/ProtoGen/ActvNewQueuePkg.bytes
+[x3.config.ab] index=474 path_id=8836989072126406787 name='ActvKvk' bytes=911
+  container_paths: Assets/Res/Config/ProtoGen/ActvKvk.bytes
+[x3.config.ab] index=475 path_id=8860969424106362591 name='SoldierEquipLevel' bytes=96763
+  container_paths: Assets/Res/Config/ProtoGen/SoldierEquipLevel.bytes
+[x3.config.ab] index=476 path_id=8962822177766002978 name='ActvMemory' bytes=1619
+  container_paths: Assets/Res/Config/ProtoGen/ActvMemory.bytes
+[x3.config.ab] index=477 path_id=8966991535874573277 name='ActvVoyage' bytes=566
+  container_paths: Assets/Res/Config/ProtoGen/ActvVoyage.bytes
+[x3.config.ab] index=478 path_id=9008896032374171300 name='Intelligence' bytes=3297
+  container_paths: Assets/Res/Config/ProtoGen/Intelligence.bytes
+[x3.config.ab] index=479 path_id=9047239909792636488 name='ActvGuildMerge' bytes=60
+  container_paths: Assets/Res/Config/ProtoGen/ActvGuildMerge.bytes
+[x3.config.ab] index=480 path_id=9049301016989103049 name='ActvInvasion' bytes=147
+  container_paths: Assets/Res/Config/ProtoGen/ActvInvasion.bytes
+[x3.config.ab] index=481 path_id=9076398752788593338 name='MainMonster' bytes=41847
+  container_paths: Assets/Res/Config/ProtoGen/MainMonster.bytes
+[x3.config.ab] index=482 path_id=9097289181695707064 name='HeroEquipAttribute' bytes=120599
+  container_paths: Assets/Res/Config/ProtoGen/HeroEquipAttribute.bytes
+[x3.config.ab] index=483 path_id=9105684662929457898 name='DungeonHotspot' bytes=7670
+  container_paths: Assets/Res/Config/ProtoGen/DungeonHotspot.bytes
+[x3.config.ab] index=484 path_id=9138213880144627423 name='DialogueContentInfo' bytes=8107
+  container_paths: Assets/Res/Config/ProtoGen/DialogueContentInfo.bytes
+[x3.config.ab] index=485 path_id=9219520446608195091 name='ActvVisitPackReward' bytes=698
+  container_paths: Assets/Res/Config/ProtoGen/ActvVisitPackReward.bytes

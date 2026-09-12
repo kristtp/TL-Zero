@@ -1,0 +1,55 @@
+# Virtual Environment
+.venv/
+env/
+venv/
+
+# Large Game Archives and Raw APKS (>1GB)
+*.xapk
+*.apk
+*.zip
+*.tar
+*.gz
+
+# Native binaries and dumps
+*.so
+*.dll
+*.exe
+
+# Extraction and export caches
+xapk-extracted/
+unity-export/
+
+# Live device debugging scratch dumps
+analysis-assets/device-live/
+analysis-assets/il2cpp-trace/
+analysis-assets/selected-bundle-analysis/
+analysis-assets/config-relevant-raw/
+
+# Large unity asset bundles (>5MB)
+analysis-assets/*.ab
+analysis-assets/scene.*.ab
+analysis-assets/x3.*.ab
+
+# Raw survey tile frames (keep only composite stitched outputs)
+analysis-assets/survey-run/stitch_tiles/
+analysis-assets/survey-run/scroll-test/
+analysis-assets/survey-run/*.png
+!analysis-assets/survey-run/stitched_map.png
+!analysis-assets/survey-run/stitched_map_preview.jpg
+analysis-assets/survey-run/*test*
+analysis-assets/survey-run/*calib*
+analysis-assets/survey-run/*probe*
+analysis-assets/survey-run/*check*
+analysis-assets/survey-run/*badge*
+
+# Large 28k canvas (keep overview and tiles)
+analysis-assets/survey-run/stitched_map_28k.jpg
+analysis-assets/survey-run/test_*.jpg
+
+# Python / IDE cache
+__pycache__/
+*.py[cod]
+*$py.class
+.vscode/
+.idea/
+*.log

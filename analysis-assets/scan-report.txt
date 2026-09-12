@@ -1,0 +1,930 @@
+EXISTS_NOT_CHANGED F:\ZeroOne\analysis-assets\SourceManifest
+EXISTS_NOT_CHANGED F:\ZeroOne\analysis-assets\x3.kingofseas.ab
+EXISTS_NOT_CHANGED F:\ZeroOne\analysis-assets\x3.mapcommon.ab
+EXISTS_NOT_CHANGED F:\ZeroOne\analysis-assets\x3.scene_worldmap_main.ab
+EXISTS_NOT_CHANGED F:\ZeroOne\analysis-assets\x3.scene_expdmap_main.ab
+EXISTS_NOT_CHANGED F:\ZeroOne\analysis-assets\x3.scene_expdtemplemap_main.ab
+EXISTS_NOT_CHANGED F:\ZeroOne\analysis-assets\x3.scene_expdwondermap_main.ab
+EXISTS_NOT_CHANGED F:\ZeroOne\analysis-assets\scene.kvkmap.merge.ab
+EXISTS_NOT_CHANGED F:\ZeroOne\analysis-assets\x3.scene_kvkmap_main.ab
+EXISTS_NOT_CHANGED F:\ZeroOne\analysis-assets\x3.i18n_lang_info.ab
+
+SCAN_REGEX=sea|kingofseas|turtle|beast|trap|goddess|statue|resource|garrison|map|150|coord(?:inate)?|position|pos[xyz]?|world|ocean|marine|island|monster|snare|deity|monument|asset|barracks|fort|castle|locat(?:ion|e)|vector|latitude|longitude|x3
+
+===== scene.kvkmap.merge.ab SIZE=2799 STRINGS=42 HITS=5 =====
+MATCH offset=795 encoding=ASCII text=AssetBundle
+  CONTEXT:
+    offset=795 ASCII: AssetBundle
+    offset=2254 ASCII: Matrix3x4f
+    offset=2455 ASCII: $Map
+MATCH offset=2254 encoding=ASCII text=Matrix3x4f
+  CONTEXT:
+    offset=795 ASCII: AssetBundle
+    offset=2254 ASCII: Matrix3x4f
+    offset=2455 ASCII: $Map
+    offset=2701 ASCII: .kvkmap.merge.ab8
+MATCH offset=2455 encoding=ASCII text=$Map
+  CONTEXT:
+    offset=795 ASCII: AssetBundle
+    offset=2254 ASCII: Matrix3x4f
+    offset=2455 ASCII: $Map
+    offset=2701 ASCII: .kvkmap.merge.ab8
+    offset=2738 ASCII: /KvKMap/
+MATCH offset=2701 encoding=ASCII text=.kvkmap.merge.ab8
+  CONTEXT:
+    offset=2254 ASCII: Matrix3x4f
+    offset=2455 ASCII: $Map
+    offset=2701 ASCII: .kvkmap.merge.ab8
+    offset=2738 ASCII: /KvKMap/
+MATCH offset=2738 encoding=ASCII text=/KvKMap/
+  CONTEXT:
+    offset=2455 ASCII: $Map
+    offset=2701 ASCII: .kvkmap.merge.ab8
+    offset=2738 ASCII: /KvKMap/
+
+===== SourceManifest SIZE=138 STRINGS=3 HITS=0 =====
+
+===== x3.i18n_lang_info.ab SIZE=1295 STRINGS=31 HITS=2 =====
+MATCH offset=795 encoding=ASCII text=AssetBundle
+  CONTEXT:
+    offset=795 ASCII: AssetBundle
+    offset=1102 ASCII: x3.i18n_lang_info.ab
+MATCH offset=1102 encoding=ASCII text=x3.i18n_lang_info.ab
+  CONTEXT:
+    offset=795 ASCII: AssetBundle
+    offset=1102 ASCII: x3.i18n_lang_info.ab
+
+===== x3.kingofseas.ab SIZE=3753994 STRINGS=34649 HITS=31 =====
+MATCH offset=884 encoding=ASCII text=APosi
+  CONTEXT:
+    offset=884 ASCII: APosi
+    offset=1751 ASCII: pVectors
+    offset=1847 ASCII: mapIndex
+MATCH offset=1751 encoding=ASCII text=pVectors
+  CONTEXT:
+    offset=884 ASCII: APosi
+    offset=1751 ASCII: pVectors
+    offset=1847 ASCII: mapIndex
+    offset=2620 ASCII: IgnoreMipmapLimi=
+MATCH offset=1847 encoding=ASCII text=mapIndex
+  CONTEXT:
+    offset=884 ASCII: APosi
+    offset=1751 ASCII: pVectors
+    offset=1847 ASCII: mapIndex
+    offset=2620 ASCII: IgnoreMipmapLimi=
+    offset=4777 ASCII: 9BindPose
+MATCH offset=2620 encoding=ASCII text=IgnoreMipmapLimi=
+  CONTEXT:
+    offset=1751 ASCII: pVectors
+    offset=1847 ASCII: mapIndex
+    offset=2620 ASCII: IgnoreMipmapLimi=
+    offset=4777 ASCII: 9BindPose
+    offset=6066 ASCII: TagMap
+MATCH offset=4777 encoding=ASCII text=9BindPose
+  CONTEXT:
+    offset=1847 ASCII: mapIndex
+    offset=2620 ASCII: IgnoreMipmapLimi=
+    offset=4777 ASCII: 9BindPose
+    offset=6066 ASCII: TagMap
+    offset=6461 ASCII: Cubemap#:
+MATCH offset=6066 encoding=ASCII text=TagMap
+  CONTEXT:
+    offset=2620 ASCII: IgnoreMipmapLimi=
+    offset=4777 ASCII: 9BindPose
+    offset=6066 ASCII: TagMap
+    offset=6461 ASCII: Cubemap#:
+    offset=6869 ASCII: AssetBundleQJceloadT
+MATCH offset=6461 encoding=ASCII text=Cubemap#:
+  CONTEXT:
+    offset=4777 ASCII: 9BindPose
+    offset=6066 ASCII: TagMap
+    offset=6461 ASCII: Cubemap#:
+    offset=6869 ASCII: AssetBundleQJceloadT
+    offset=10252 ASCII: ex_MC_Sea~e
+MATCH offset=6869 encoding=ASCII text=AssetBundleQJceloadT
+  CONTEXT:
+    offset=6066 ASCII: TagMap
+    offset=6461 ASCII: Cubemap#:
+    offset=6869 ASCII: AssetBundleQJceloadT
+    offset=10252 ASCII: ex_MC_Sea~e
+    offset=12185 ASCII: SkyLinePos
+MATCH offset=10252 encoding=ASCII text=ex_MC_Sea~e
+  CONTEXT:
+    offset=6461 ASCII: Cubemap#:
+    offset=6869 ASCII: AssetBundleQJceloadT
+    offset=10252 ASCII: ex_MC_Sea~e
+    offset=12185 ASCII: SkyLinePos
+    offset=286069 ASCII: Mesh_Home_Env_Sea_A
+MATCH offset=12185 encoding=ASCII text=SkyLinePos
+  CONTEXT:
+    offset=6869 ASCII: AssetBundleQJceloadT
+    offset=10252 ASCII: ex_MC_Sea~e
+    offset=12185 ASCII: SkyLinePos
+    offset=286069 ASCII: Mesh_Home_Env_Sea_A
+    offset=309492 ASCII: 3.kingofseas.abP
+MATCH offset=286069 encoding=ASCII text=Mesh_Home_Env_Sea_A
+  CONTEXT:
+    offset=10252 ASCII: ex_MC_Sea~e
+    offset=12185 ASCII: SkyLinePos
+    offset=286069 ASCII: Mesh_Home_Env_Sea_A
+    offset=309492 ASCII: 3.kingofseas.abP
+    offset=311676 ASCII: Assets/Res/KingOfSeas/Materials/SeaW
+MATCH offset=309492 encoding=ASCII text=3.kingofseas.abP
+  CONTEXT:
+    offset=12185 ASCII: SkyLinePos
+    offset=286069 ASCII: Mesh_Home_Env_Sea_A
+    offset=309492 ASCII: 3.kingofseas.abP
+    offset=311676 ASCII: Assets/Res/KingOfSeas/Materials/SeaW
+    offset=311777 ASCII: pX3_Expd
+MATCH offset=311676 encoding=ASCII text=Assets/Res/KingOfSeas/Materials/SeaW
+  CONTEXT:
+    offset=286069 ASCII: Mesh_Home_Env_Sea_A
+    offset=309492 ASCII: 3.kingofseas.abP
+    offset=311676 ASCII: Assets/Res/KingOfSeas/Materials/SeaW
+    offset=311777 ASCII: pX3_Expd
+    offset=312694 ASCII: ReflectMap
+MATCH offset=311777 encoding=ASCII text=pX3_Expd
+  CONTEXT:
+    offset=309492 ASCII: 3.kingofseas.abP
+    offset=311676 ASCII: Assets/Res/KingOfSeas/Materials/SeaW
+    offset=311777 ASCII: pX3_Expd
+    offset=312694 ASCII: ReflectMap
+    offset=312879 ASCII: _BaseMap
+MATCH offset=312694 encoding=ASCII text=ReflectMap
+  CONTEXT:
+    offset=311676 ASCII: Assets/Res/KingOfSeas/Materials/SeaW
+    offset=311777 ASCII: pX3_Expd
+    offset=312694 ASCII: ReflectMap
+    offset=312879 ASCII: _BaseMap
+    offset=313213 ASCII: SkyLinePos
+MATCH offset=312879 encoding=ASCII text=_BaseMap
+  CONTEXT:
+    offset=311777 ASCII: pX3_Expd
+    offset=312694 ASCII: ReflectMap
+    offset=312879 ASCII: _BaseMap
+    offset=313213 ASCII: SkyLinePos
+    offset=339346 ASCII: ?kMAP
+MATCH offset=313213 encoding=ASCII text=SkyLinePos
+  CONTEXT:
+    offset=312694 ASCII: ReflectMap
+    offset=312879 ASCII: _BaseMap
+    offset=313213 ASCII: SkyLinePos
+    offset=339346 ASCII: ?kMAP
+    offset=459364 ASCII: pox3
+MATCH offset=339346 encoding=ASCII text=?kMAP
+  CONTEXT:
+    offset=312879 ASCII: _BaseMap
+    offset=313213 ASCII: SkyLinePos
+    offset=339346 ASCII: ?kMAP
+    offset=459364 ASCII: pox3
+    offset=464771 ASCII: kX3Kc
+MATCH offset=459364 encoding=ASCII text=pox3
+  CONTEXT:
+    offset=313213 ASCII: SkyLinePos
+    offset=339346 ASCII: ?kMAP
+    offset=459364 ASCII: pox3
+    offset=464771 ASCII: kX3Kc
+    offset=1439261 ASCII: nX3T0
+MATCH offset=464771 encoding=ASCII text=kX3Kc
+  CONTEXT:
+    offset=339346 ASCII: ?kMAP
+    offset=459364 ASCII: pox3
+    offset=464771 ASCII: kX3Kc
+    offset=1439261 ASCII: nX3T0
+    offset=1519922 ASCII: LBx3Z
+MATCH offset=1439261 encoding=ASCII text=nX3T0
+  CONTEXT:
+    offset=459364 ASCII: pox3
+    offset=464771 ASCII: kX3Kc
+    offset=1439261 ASCII: nX3T0
+    offset=1519922 ASCII: LBx3Z
+    offset=1571738 ASCII: Bx3.
+MATCH offset=1519922 encoding=ASCII text=LBx3Z
+  CONTEXT:
+    offset=464771 ASCII: kX3Kc
+    offset=1439261 ASCII: nX3T0
+    offset=1519922 ASCII: LBx3Z
+    offset=1571738 ASCII: Bx3.
+    offset=1827365 ASCII: x3\o
+MATCH offset=1571738 encoding=ASCII text=Bx3.
+  CONTEXT:
+    offset=1439261 ASCII: nX3T0
+    offset=1519922 ASCII: LBx3Z
+    offset=1571738 ASCII: Bx3.
+    offset=1827365 ASCII: x3\o
+    offset=1853384 ASCII: PX3^
+MATCH offset=1827365 encoding=ASCII text=x3\o
+  CONTEXT:
+    offset=1519922 ASCII: LBx3Z
+    offset=1571738 ASCII: Bx3.
+    offset=1827365 ASCII: x3\o
+    offset=1853384 ASCII: PX3^
+    offset=2872543 ASCII: nX3_
+MATCH offset=1853384 encoding=ASCII text=PX3^
+  CONTEXT:
+    offset=1571738 ASCII: Bx3.
+    offset=1827365 ASCII: x3\o
+    offset=1853384 ASCII: PX3^
+    offset=2872543 ASCII: nX3_
+    offset=3408140 ASCII: }e^x3
+MATCH offset=2872543 encoding=ASCII text=nX3_
+  CONTEXT:
+    offset=1827365 ASCII: x3\o
+    offset=1853384 ASCII: PX3^
+    offset=2872543 ASCII: nX3_
+    offset=3408140 ASCII: }e^x3
+    offset=3446564 ASCII: X3D-
+MATCH offset=3408140 encoding=ASCII text=}e^x3
+  CONTEXT:
+    offset=1853384 ASCII: PX3^
+    offset=2872543 ASCII: nX3_
+    offset=3408140 ASCII: }e^x3
+    offset=3446564 ASCII: X3D-
+    offset=3448638 ASCII: k-X3
+MATCH offset=3446564 encoding=ASCII text=X3D-
+  CONTEXT:
+    offset=2872543 ASCII: nX3_
+    offset=3408140 ASCII: }e^x3
+    offset=3446564 ASCII: X3D-
+    offset=3448638 ASCII: k-X3
+    offset=3661469 ASCII: 0ix3
+MATCH offset=3448638 encoding=ASCII text=k-X3
+  CONTEXT:
+    offset=3408140 ASCII: }e^x3
+    offset=3446564 ASCII: X3D-
+    offset=3448638 ASCII: k-X3
+    offset=3661469 ASCII: 0ix3
+    offset=3723911 ASCII: tx3/
+MATCH offset=3661469 encoding=ASCII text=0ix3
+  CONTEXT:
+    offset=3446564 ASCII: X3D-
+    offset=3448638 ASCII: k-X3
+    offset=3661469 ASCII: 0ix3
+    offset=3723911 ASCII: tx3/
+MATCH offset=3723911 encoding=ASCII text=tx3/
+  CONTEXT:
+    offset=3448638 ASCII: k-X3
+    offset=3661469 ASCII: 0ix3
+    offset=3723911 ASCII: tx3/
+
+===== x3.mapcommon.ab SIZE=44180 STRINGS=908 HITS=10 =====
+MATCH offset=872 encoding=ASCII text=AssetBundle
+  CONTEXT:
+    offset=872 ASCII: AssetBundle
+    offset=24073 ASCII: x37m
+    offset=34160 ASCII: seaAreaInitialUnlock
+MATCH offset=24073 encoding=ASCII text=x37m
+  CONTEXT:
+    offset=872 ASCII: AssetBundle
+    offset=24073 ASCII: x37m
+    offset=34160 ASCII: seaAreaInitialUnlock
+    offset=38958 ASCII: x3.mapcommon.ab<
+MATCH offset=34160 encoding=ASCII text=seaAreaInitialUnlock
+  CONTEXT:
+    offset=872 ASCII: AssetBundle
+    offset=24073 ASCII: x37m
+    offset=34160 ASCII: seaAreaInitialUnlock
+    offset=38958 ASCII: x3.mapcommon.ab<
+    offset=39205 ASCII: Assets/Res/MapC,
+MATCH offset=38958 encoding=ASCII text=x3.mapcommon.ab<
+  CONTEXT:
+    offset=24073 ASCII: x37m
+    offset=34160 ASCII: seaAreaInitialUnlock
+    offset=38958 ASCII: x3.mapcommon.ab<
+    offset=39205 ASCII: Assets/Res/MapC,
+    offset=39227 ASCII: /ExpdMap/
+MATCH offset=39205 encoding=ASCII text=Assets/Res/MapC,
+  CONTEXT:
+    offset=34160 ASCII: seaAreaInitialUnlock
+    offset=38958 ASCII: x3.mapcommon.ab<
+    offset=39205 ASCII: Assets/Res/MapC,
+    offset=39227 ASCII: /ExpdMap/
+    offset=40913 ASCII: LocalPosXs
+MATCH offset=39227 encoding=ASCII text=/ExpdMap/
+  CONTEXT:
+    offset=38958 ASCII: x3.mapcommon.ab<
+    offset=39205 ASCII: Assets/Res/MapC,
+    offset=39227 ASCII: /ExpdMap/
+    offset=40913 ASCII: LocalPosXs
+    offset=42077 ASCII: LocalPosX5
+MATCH offset=40913 encoding=ASCII text=LocalPosXs
+  CONTEXT:
+    offset=39205 ASCII: Assets/Res/MapC,
+    offset=39227 ASCII: /ExpdMap/
+    offset=40913 ASCII: LocalPosXs
+    offset=42077 ASCII: LocalPosX5
+    offset=43367 ASCII: "DK_Monster_HermitCrab_Black": 9.0,(
+MATCH offset=42077 encoding=ASCII text=LocalPosX5
+  CONTEXT:
+    offset=39227 ASCII: /ExpdMap/
+    offset=40913 ASCII: LocalPosXs
+    offset=42077 ASCII: LocalPosX5
+    offset=43367 ASCII: "DK_Monster_HermitCrab_Black": 9.0,(
+    offset=43578 ASCII: SeaTurtle
+MATCH offset=43367 encoding=ASCII text="DK_Monster_HermitCrab_Black": 9.0,(
+  CONTEXT:
+    offset=40913 ASCII: LocalPosXs
+    offset=42077 ASCII: LocalPosX5
+    offset=43367 ASCII: "DK_Monster_HermitCrab_Black": 9.0,(
+    offset=43578 ASCII: SeaTurtle
+MATCH offset=43578 encoding=ASCII text=SeaTurtle
+  CONTEXT:
+    offset=42077 ASCII: LocalPosX5
+    offset=43367 ASCII: "DK_Monster_HermitCrab_Black": 9.0,(
+    offset=43578 ASCII: SeaTurtle
+
+===== x3.scene_expdmap_main.ab SIZE=62286 STRINGS=745 HITS=16 =====
+MATCH offset=95 encoding=ASCII text=CAB-20a10a3dbf0d27197e065711edd33af5.sharedAssets>
+  CONTEXT:
+    offset=95 ASCII: CAB-20a10a3dbf0d27197e065711edd33af5.sharedAssets>
+    offset=2045 ASCII: pCubemap
+    offset=2208 ASCII: IgnoreMipmapLimi=
+MATCH offset=2045 encoding=ASCII text=pCubemap
+  CONTEXT:
+    offset=95 ASCII: CAB-20a10a3dbf0d27197e065711edd33af5.sharedAssets>
+    offset=2045 ASCII: pCubemap
+    offset=2208 ASCII: IgnoreMipmapLimi=
+    offset=2340 ASCII: 5map
+MATCH offset=2208 encoding=ASCII text=IgnoreMipmapLimi=
+  CONTEXT:
+    offset=95 ASCII: CAB-20a10a3dbf0d27197e065711edd33af5.sharedAssets>
+    offset=2045 ASCII: pCubemap
+    offset=2208 ASCII: IgnoreMipmapLimi=
+    offset=2340 ASCII: 5map
+    offset=3643 ASCII: Matrix3x4f
+MATCH offset=2340 encoding=ASCII text=5map
+  CONTEXT:
+    offset=2045 ASCII: pCubemap
+    offset=2208 ASCII: IgnoreMipmapLimi=
+    offset=2340 ASCII: 5map
+    offset=3643 ASCII: Matrix3x4f
+    offset=3750 ASCII: @Posi
+MATCH offset=3643 encoding=ASCII text=Matrix3x4f
+  CONTEXT:
+    offset=2208 ASCII: IgnoreMipmapLimi=
+    offset=2340 ASCII: 5map
+    offset=3643 ASCII: Matrix3x4f
+    offset=3750 ASCII: @Posi
+    offset=4852 ASCII: _expdmap_main.a
+MATCH offset=3750 encoding=ASCII text=@Posi
+  CONTEXT:
+    offset=2340 ASCII: 5map
+    offset=3643 ASCII: Matrix3x4f
+    offset=3750 ASCII: @Posi
+    offset=4852 ASCII: _expdmap_main.a
+    offset=4884 ASCII: /ExpdMap.
+MATCH offset=4852 encoding=ASCII text=_expdmap_main.a
+  CONTEXT:
+    offset=3643 ASCII: Matrix3x4f
+    offset=3750 ASCII: @Posi
+    offset=4852 ASCII: _expdmap_main.a
+    offset=4884 ASCII: /ExpdMap.
+    offset=52314 ASCII: APosi
+MATCH offset=4884 encoding=ASCII text=/ExpdMap.
+  CONTEXT:
+    offset=3750 ASCII: @Posi
+    offset=4852 ASCII: _expdmap_main.a
+    offset=4884 ASCII: /ExpdMap.
+    offset=52314 ASCII: APosi
+    offset=53921 ASCII: pVectors
+MATCH offset=52314 encoding=ASCII text=APosi
+  CONTEXT:
+    offset=4852 ASCII: _expdmap_main.a
+    offset=4884 ASCII: /ExpdMap.
+    offset=52314 ASCII: APosi
+    offset=53921 ASCII: pVectors
+    offset=54004 ASCII: mapIndex
+MATCH offset=53921 encoding=ASCII text=pVectors
+  CONTEXT:
+    offset=4884 ASCII: /ExpdMap.
+    offset=52314 ASCII: APosi
+    offset=53921 ASCII: pVectors
+    offset=54004 ASCII: mapIndex
+    offset=55371 ASCII: Cubemap>
+MATCH offset=54004 encoding=ASCII text=mapIndex
+  CONTEXT:
+    offset=52314 ASCII: APosi
+    offset=53921 ASCII: pVectors
+    offset=54004 ASCII: mapIndex
+    offset=55371 ASCII: Cubemap>
+    offset=59407 ASCII: APost
+MATCH offset=55371 encoding=ASCII text=Cubemap>
+  CONTEXT:
+    offset=53921 ASCII: pVectors
+    offset=54004 ASCII: mapIndex
+    offset=55371 ASCII: Cubemap>
+    offset=59407 ASCII: APost
+    offset=59475 ASCII: ScreenCoorddM
+MATCH offset=59407 encoding=ASCII text=APost
+  CONTEXT:
+    offset=54004 ASCII: mapIndex
+    offset=55371 ASCII: Cubemap>
+    offset=59407 ASCII: APost
+    offset=59475 ASCII: ScreenCoorddM
+    offset=60411 ASCII: xWorldUpqA
+MATCH offset=59475 encoding=ASCII text=ScreenCoorddM
+  CONTEXT:
+    offset=55371 ASCII: Cubemap>
+    offset=59407 ASCII: APost
+    offset=59475 ASCII: ScreenCoorddM
+    offset=60411 ASCII: xWorldUpqA
+    offset=61236 ASCII:  resource
+MATCH offset=60411 encoding=ASCII text=xWorldUpqA
+  CONTEXT:
+    offset=59407 ASCII: APost
+    offset=59475 ASCII: ScreenCoorddM
+    offset=60411 ASCII: xWorldUpqA
+    offset=61236 ASCII:  resource
+MATCH offset=61236 encoding=ASCII text= resource
+  CONTEXT:
+    offset=59475 ASCII: ScreenCoorddM
+    offset=60411 ASCII: xWorldUpqA
+    offset=61236 ASCII:  resource
+
+===== x3.scene_expdtemplemap_main.ab SIZE=30105 STRINGS=407 HITS=14 =====
+MATCH offset=95 encoding=ASCII text=CAB-b92fbead2698fdc954fcb011c60e839c.sharedAssets>
+  CONTEXT:
+    offset=95 ASCII: CAB-b92fbead2698fdc954fcb011c60e839c.sharedAssets>
+    offset=2364 ASCII: Lightmap
+    offset=2433 ASCII: stringTagMap
+MATCH offset=2364 encoding=ASCII text=Lightmap
+  CONTEXT:
+    offset=95 ASCII: CAB-b92fbead2698fdc954fcb011c60e839c.sharedAssets>
+    offset=2364 ASCII: Lightmap
+    offset=2433 ASCII: stringTagMap
+    offset=3146 ASCII: IgnoreMipmapLimi=
+MATCH offset=2433 encoding=ASCII text=stringTagMap
+  CONTEXT:
+    offset=95 ASCII: CAB-b92fbead2698fdc954fcb011c60e839c.sharedAssets>
+    offset=2364 ASCII: Lightmap
+    offset=2433 ASCII: stringTagMap
+    offset=3146 ASCII: IgnoreMipmapLimi=
+    offset=3822 ASCII: @SeaW,
+MATCH offset=3146 encoding=ASCII text=IgnoreMipmapLimi=
+  CONTEXT:
+    offset=2364 ASCII: Lightmap
+    offset=2433 ASCII: stringTagMap
+    offset=3146 ASCII: IgnoreMipmapLimi=
+    offset=3822 ASCII: @SeaW,
+    offset=4795 ASCII: :0@x3.s
+MATCH offset=3822 encoding=ASCII text=@SeaW,
+  CONTEXT:
+    offset=2433 ASCII: stringTagMap
+    offset=3146 ASCII: IgnoreMipmapLimi=
+    offset=3822 ASCII: @SeaW,
+    offset=4795 ASCII: :0@x3.s
+    offset=4815 ASCII: map_main.ab
+MATCH offset=4795 encoding=ASCII text=:0@x3.s
+  CONTEXT:
+    offset=3146 ASCII: IgnoreMipmapLimi=
+    offset=3822 ASCII: @SeaW,
+    offset=4795 ASCII: :0@x3.s
+    offset=4815 ASCII: map_main.ab
+    offset=4851 ASCII: AMap.n
+MATCH offset=4815 encoding=ASCII text=map_main.ab
+  CONTEXT:
+    offset=3822 ASCII: @SeaW,
+    offset=4795 ASCII: :0@x3.s
+    offset=4815 ASCII: map_main.ab
+    offset=4851 ASCII: AMap.n
+    offset=13516 ASCII: 8indPose
+MATCH offset=4851 encoding=ASCII text=AMap.n
+  CONTEXT:
+    offset=4795 ASCII: :0@x3.s
+    offset=4815 ASCII: map_main.ab
+    offset=4851 ASCII: AMap.n
+    offset=13516 ASCII: 8indPose
+    offset=14380 ASCII: 1Pos
+MATCH offset=13516 encoding=ASCII text=8indPose
+  CONTEXT:
+    offset=4815 ASCII: map_main.ab
+    offset=4851 ASCII: AMap.n
+    offset=13516 ASCII: 8indPose
+    offset=14380 ASCII: 1Pos
+    offset=21349 ASCII: 'beInfine=GPost
+MATCH offset=14380 encoding=ASCII text=1Pos
+  CONTEXT:
+    offset=4851 ASCII: AMap.n
+    offset=13516 ASCII: 8indPose
+    offset=14380 ASCII: 1Pos
+    offset=21349 ASCII: 'beInfine=GPost
+    offset=22056 ASCII: ScreenCoord
+MATCH offset=21349 encoding=ASCII text='beInfine=GPost
+  CONTEXT:
+    offset=13516 ASCII: 8indPose
+    offset=14380 ASCII: 1Pos
+    offset=21349 ASCII: 'beInfine=GPost
+    offset=22056 ASCII: ScreenCoord
+    offset=23475 ASCII: xWorldUp8c
+MATCH offset=22056 encoding=ASCII text=ScreenCoord
+  CONTEXT:
+    offset=14380 ASCII: 1Pos
+    offset=21349 ASCII: 'beInfine=GPost
+    offset=22056 ASCII: ScreenCoord
+    offset=23475 ASCII: xWorldUp8c
+    offset=25446 ASCII:  resource
+MATCH offset=23475 encoding=ASCII text=xWorldUp8c
+  CONTEXT:
+    offset=21349 ASCII: 'beInfine=GPost
+    offset=22056 ASCII: ScreenCoord
+    offset=23475 ASCII: xWorldUp8c
+    offset=25446 ASCII:  resource
+MATCH offset=25446 encoding=ASCII text= resource
+  CONTEXT:
+    offset=22056 ASCII: ScreenCoord
+    offset=23475 ASCII: xWorldUp8c
+    offset=25446 ASCII:  resource
+
+===== x3.scene_expdwondermap_main.ab SIZE=79801 STRINGS=978 HITS=23 =====
+MATCH offset=104 encoding=ASCII text=CAB-3b9b0c8855974dd6b090af9eef01464e.sharedAssets>
+  CONTEXT:
+    offset=104 ASCII: CAB-3b9b0c8855974dd6b090af9eef01464e.sharedAssets>
+    offset=2379 ASCII: Lightmap
+    offset=2448 ASCII: stringTagMap
+MATCH offset=2379 encoding=ASCII text=Lightmap
+  CONTEXT:
+    offset=104 ASCII: CAB-3b9b0c8855974dd6b090af9eef01464e.sharedAssets>
+    offset=2379 ASCII: Lightmap
+    offset=2448 ASCII: stringTagMap
+    offset=3161 ASCII: IgnoreMipmapLimi=
+MATCH offset=2448 encoding=ASCII text=stringTagMap
+  CONTEXT:
+    offset=104 ASCII: CAB-3b9b0c8855974dd6b090af9eef01464e.sharedAssets>
+    offset=2379 ASCII: Lightmap
+    offset=2448 ASCII: stringTagMap
+    offset=3161 ASCII: IgnoreMipmapLimi=
+    offset=3592 ASCII: Cubemap
+MATCH offset=3161 encoding=ASCII text=IgnoreMipmapLimi=
+  CONTEXT:
+    offset=2379 ASCII: Lightmap
+    offset=2448 ASCII: stringTagMap
+    offset=3161 ASCII: IgnoreMipmapLimi=
+    offset=3592 ASCII: Cubemap
+    offset=4822 ASCII: rix3x4f
+MATCH offset=3592 encoding=ASCII text=Cubemap
+  CONTEXT:
+    offset=2448 ASCII: stringTagMap
+    offset=3161 ASCII: IgnoreMipmapLimi=
+    offset=3592 ASCII: Cubemap
+    offset=4822 ASCII: rix3x4f
+    offset=4921 ASCII: @Posi
+MATCH offset=4822 encoding=ASCII text=rix3x4f
+  CONTEXT:
+    offset=3161 ASCII: IgnoreMipmapLimi=
+    offset=3592 ASCII: Cubemap
+    offset=4822 ASCII: rix3x4f
+    offset=4921 ASCII: @Posi
+    offset=6380 ASCII: map_main.ab
+MATCH offset=4921 encoding=ASCII text=@Posi
+  CONTEXT:
+    offset=3592 ASCII: Cubemap
+    offset=4822 ASCII: rix3x4f
+    offset=4921 ASCII: @Posi
+    offset=6380 ASCII: map_main.ab
+    offset=6415 ASCII: AMap.
+MATCH offset=6380 encoding=ASCII text=map_main.ab
+  CONTEXT:
+    offset=4822 ASCII: rix3x4f
+    offset=4921 ASCII: @Posi
+    offset=6380 ASCII: map_main.ab
+    offset=6415 ASCII: AMap.
+    offset=62348 ASCII: m_BindPose
+MATCH offset=6415 encoding=ASCII text=AMap.
+  CONTEXT:
+    offset=4921 ASCII: @Posi
+    offset=6380 ASCII: map_main.ab
+    offset=6415 ASCII: AMap.
+    offset=62348 ASCII: m_BindPose
+    offset=62628 ASCII: PackedBitVector
+MATCH offset=62348 encoding=ASCII text=m_BindPose
+  CONTEXT:
+    offset=6380 ASCII: map_main.ab
+    offset=6415 ASCII: AMap.
+    offset=62348 ASCII: m_BindPose
+    offset=62628 ASCII: PackedBitVector
+    offset=63349 ASCII: APosi
+MATCH offset=62628 encoding=ASCII text=PackedBitVector
+  CONTEXT:
+    offset=6415 ASCII: AMap.
+    offset=62348 ASCII: m_BindPose
+    offset=62628 ASCII: PackedBitVector
+    offset=63349 ASCII: APosi
+    offset=64949 ASCII: 2map
+MATCH offset=63349 encoding=ASCII text=APosi
+  CONTEXT:
+    offset=62348 ASCII: m_BindPose
+    offset=62628 ASCII: PackedBitVector
+    offset=63349 ASCII: APosi
+    offset=64949 ASCII: 2map
+    offset=66283 ASCII: Cubemap>
+MATCH offset=64949 encoding=ASCII text=2map
+  CONTEXT:
+    offset=62628 ASCII: PackedBitVector
+    offset=63349 ASCII: APosi
+    offset=64949 ASCII: 2map
+    offset=66283 ASCII: Cubemap>
+    offset=68532 ASCII: LightmapSettings
+MATCH offset=66283 encoding=ASCII text=Cubemap>
+  CONTEXT:
+    offset=63349 ASCII: APosi
+    offset=64949 ASCII: 2map
+    offset=66283 ASCII: Cubemap>
+    offset=68532 ASCII: LightmapSettings
+    offset=68556 ASCII: enSceneMapping
+MATCH offset=68532 encoding=ASCII text=LightmapSettings
+  CONTEXT:
+    offset=64949 ASCII: 2map
+    offset=66283 ASCII: Cubemap>
+    offset=68532 ASCII: LightmapSettings
+    offset=68556 ASCII: enSceneMapping
+    offset=70840 ASCII: seaR}
+MATCH offset=68556 encoding=ASCII text=enSceneMapping
+  CONTEXT:
+    offset=66283 ASCII: Cubemap>
+    offset=68532 ASCII: LightmapSettings
+    offset=68556 ASCII: enSceneMapping
+    offset=70840 ASCII: seaR}
+    offset=71934 ASCII: 0Pos
+MATCH offset=70840 encoding=ASCII text=seaR}
+  CONTEXT:
+    offset=68532 ASCII: LightmapSettings
+    offset=68556 ASCII: enSceneMapping
+    offset=70840 ASCII: seaR}
+    offset=71934 ASCII: 0Pos
+    offset=72014 ASCII: ScreenCoordOverri
+MATCH offset=71934 encoding=ASCII text=0Pos
+  CONTEXT:
+    offset=68556 ASCII: enSceneMapping
+    offset=70840 ASCII: seaR}
+    offset=71934 ASCII: 0Pos
+    offset=72014 ASCII: ScreenCoordOverri
+    offset=72543 ASCII: qopenSea
+MATCH offset=72014 encoding=ASCII text=ScreenCoordOverri
+  CONTEXT:
+    offset=70840 ASCII: seaR}
+    offset=71934 ASCII: 0Pos
+    offset=72014 ASCII: ScreenCoordOverri
+    offset=72543 ASCII: qopenSea
+    offset=72656 ASCII: 1pos
+MATCH offset=72543 encoding=ASCII text=qopenSea
+  CONTEXT:
+    offset=71934 ASCII: 0Pos
+    offset=72014 ASCII: ScreenCoordOverri
+    offset=72543 ASCII: qopenSea
+    offset=72656 ASCII: 1pos
+    offset=73541 ASCII: wWorldUp
+MATCH offset=72656 encoding=ASCII text=1pos
+  CONTEXT:
+    offset=72014 ASCII: ScreenCoordOverri
+    offset=72543 ASCII: qopenSea
+    offset=72656 ASCII: 1pos
+    offset=73541 ASCII: wWorldUp
+    offset=76215 ASCII: 9Sea
+MATCH offset=73541 encoding=ASCII text=wWorldUp
+  CONTEXT:
+    offset=72543 ASCII: qopenSea
+    offset=72656 ASCII: 1pos
+    offset=73541 ASCII: wWorldUp
+    offset=76215 ASCII: 9Sea
+MATCH offset=76215 encoding=ASCII text=9Sea
+  CONTEXT:
+    offset=72656 ASCII: 1pos
+    offset=73541 ASCII: wWorldUp
+    offset=76215 ASCII: 9Sea
+
+===== x3.scene_kvkmap_main.ab SIZE=30136 STRINGS=411 HITS=15 =====
+MATCH offset=95 encoding=ASCII text=CAB-fd3e72f3e5340734fa2c52789b054d4c.sharedAssets>
+  CONTEXT:
+    offset=95 ASCII: CAB-fd3e72f3e5340734fa2c52789b054d4c.sharedAssets>
+    offset=2364 ASCII: Lightmap
+    offset=2433 ASCII: stringTagMap
+MATCH offset=2364 encoding=ASCII text=Lightmap
+  CONTEXT:
+    offset=95 ASCII: CAB-fd3e72f3e5340734fa2c52789b054d4c.sharedAssets>
+    offset=2364 ASCII: Lightmap
+    offset=2433 ASCII: stringTagMap
+    offset=3146 ASCII: IgnoreMipmapLimi=
+MATCH offset=2433 encoding=ASCII text=stringTagMap
+  CONTEXT:
+    offset=95 ASCII: CAB-fd3e72f3e5340734fa2c52789b054d4c.sharedAssets>
+    offset=2364 ASCII: Lightmap
+    offset=2433 ASCII: stringTagMap
+    offset=3146 ASCII: IgnoreMipmapLimi=
+    offset=3822 ASCII: @SeaW,
+MATCH offset=3146 encoding=ASCII text=IgnoreMipmapLimi=
+  CONTEXT:
+    offset=2364 ASCII: Lightmap
+    offset=2433 ASCII: stringTagMap
+    offset=3146 ASCII: IgnoreMipmapLimi=
+    offset=3822 ASCII: @SeaW,
+    offset=4796 ASCII:  @x3.s
+MATCH offset=3822 encoding=ASCII text=@SeaW,
+  CONTEXT:
+    offset=2433 ASCII: stringTagMap
+    offset=3146 ASCII: IgnoreMipmapLimi=
+    offset=3822 ASCII: @SeaW,
+    offset=4796 ASCII:  @x3.s
+    offset=4806 ASCII: _kvkmap_main.ab
+MATCH offset=4796 encoding=ASCII text= @x3.s
+  CONTEXT:
+    offset=3146 ASCII: IgnoreMipmapLimi=
+    offset=3822 ASCII: @SeaW,
+    offset=4796 ASCII:  @x3.s
+    offset=4806 ASCII: _kvkmap_main.ab
+    offset=4838 ASCII: /KvKMap._
+MATCH offset=4806 encoding=ASCII text=_kvkmap_main.ab
+  CONTEXT:
+    offset=3822 ASCII: @SeaW,
+    offset=4796 ASCII:  @x3.s
+    offset=4806 ASCII: _kvkmap_main.ab
+    offset=4838 ASCII: /KvKMap._
+    offset=13509 ASCII: 8indPose
+MATCH offset=4838 encoding=ASCII text=/KvKMap._
+  CONTEXT:
+    offset=4796 ASCII:  @x3.s
+    offset=4806 ASCII: _kvkmap_main.ab
+    offset=4838 ASCII: /KvKMap._
+    offset=13509 ASCII: 8indPose
+    offset=14373 ASCII: 1Pos
+MATCH offset=13509 encoding=ASCII text=8indPose
+  CONTEXT:
+    offset=4806 ASCII: _kvkmap_main.ab
+    offset=4838 ASCII: /KvKMap._
+    offset=13509 ASCII: 8indPose
+    offset=14373 ASCII: 1Pos
+    offset=17117 ASCII: pCubemapP
+MATCH offset=14373 encoding=ASCII text=1Pos
+  CONTEXT:
+    offset=4838 ASCII: /KvKMap._
+    offset=13509 ASCII: 8indPose
+    offset=14373 ASCII: 1Pos
+    offset=17117 ASCII: pCubemapP
+    offset=21339 ASCII: 'beInfine=GPost
+MATCH offset=17117 encoding=ASCII text=pCubemapP
+  CONTEXT:
+    offset=13509 ASCII: 8indPose
+    offset=14373 ASCII: 1Pos
+    offset=17117 ASCII: pCubemapP
+    offset=21339 ASCII: 'beInfine=GPost
+    offset=22047 ASCII: ScreenCoord
+MATCH offset=21339 encoding=ASCII text='beInfine=GPost
+  CONTEXT:
+    offset=14373 ASCII: 1Pos
+    offset=17117 ASCII: pCubemapP
+    offset=21339 ASCII: 'beInfine=GPost
+    offset=22047 ASCII: ScreenCoord
+    offset=23466 ASCII: xWorldUp8c
+MATCH offset=22047 encoding=ASCII text=ScreenCoord
+  CONTEXT:
+    offset=17117 ASCII: pCubemapP
+    offset=21339 ASCII: 'beInfine=GPost
+    offset=22047 ASCII: ScreenCoord
+    offset=23466 ASCII: xWorldUp8c
+    offset=25441 ASCII:  resource
+MATCH offset=23466 encoding=ASCII text=xWorldUp8c
+  CONTEXT:
+    offset=21339 ASCII: 'beInfine=GPost
+    offset=22047 ASCII: ScreenCoord
+    offset=23466 ASCII: xWorldUp8c
+    offset=25441 ASCII:  resource
+MATCH offset=25441 encoding=ASCII text= resource
+  CONTEXT:
+    offset=22047 ASCII: ScreenCoord
+    offset=23466 ASCII: xWorldUp8c
+    offset=25441 ASCII:  resource
+
+===== x3.scene_worldmap_main.ab SIZE=75482 STRINGS=1205 HITS=20 =====
+MATCH offset=102 encoding=ASCII text=CAB-5fbe1dd5300a92520745d31a6b1e6e04.sharedAssets>
+  CONTEXT:
+    offset=102 ASCII: CAB-5fbe1dd5300a92520745d31a6b1e6e04.sharedAssets>
+    offset=2044 ASCII: pCubemap
+    offset=2207 ASCII: IgnoreMipmapLimi=
+MATCH offset=2044 encoding=ASCII text=pCubemap
+  CONTEXT:
+    offset=102 ASCII: CAB-5fbe1dd5300a92520745d31a6b1e6e04.sharedAssets>
+    offset=2044 ASCII: pCubemap
+    offset=2207 ASCII: IgnoreMipmapLimi=
+    offset=2339 ASCII: 5map
+MATCH offset=2207 encoding=ASCII text=IgnoreMipmapLimi=
+  CONTEXT:
+    offset=102 ASCII: CAB-5fbe1dd5300a92520745d31a6b1e6e04.sharedAssets>
+    offset=2044 ASCII: pCubemap
+    offset=2207 ASCII: IgnoreMipmapLimi=
+    offset=2339 ASCII: 5map
+    offset=3642 ASCII: Matrix3x4f
+MATCH offset=2339 encoding=ASCII text=5map
+  CONTEXT:
+    offset=2044 ASCII: pCubemap
+    offset=2207 ASCII: IgnoreMipmapLimi=
+    offset=2339 ASCII: 5map
+    offset=3642 ASCII: Matrix3x4f
+    offset=3749 ASCII: @Posi
+MATCH offset=3642 encoding=ASCII text=Matrix3x4f
+  CONTEXT:
+    offset=2207 ASCII: IgnoreMipmapLimi=
+    offset=2339 ASCII: 5map
+    offset=3642 ASCII: Matrix3x4f
+    offset=3749 ASCII: @Posi
+    offset=4912 ASCII: @x3.s~
+MATCH offset=3749 encoding=ASCII text=@Posi
+  CONTEXT:
+    offset=2339 ASCII: 5map
+    offset=3642 ASCII: Matrix3x4f
+    offset=3749 ASCII: @Posi
+    offset=4912 ASCII: @x3.s~
+    offset=4921 ASCII: _worldmap_main.ab_
+MATCH offset=4912 encoding=ASCII text=@x3.s~
+  CONTEXT:
+    offset=3642 ASCII: Matrix3x4f
+    offset=3749 ASCII: @Posi
+    offset=4912 ASCII: @x3.s~
+    offset=4921 ASCII: _worldmap_main.ab_
+    offset=4959 ASCII: AMap.]
+MATCH offset=4921 encoding=ASCII text=_worldmap_main.ab_
+  CONTEXT:
+    offset=3749 ASCII: @Posi
+    offset=4912 ASCII: @x3.s~
+    offset=4921 ASCII: _worldmap_main.ab_
+    offset=4959 ASCII: AMap.]
+    offset=42307 ASCII: m_BindPose
+MATCH offset=4959 encoding=ASCII text=AMap.]
+  CONTEXT:
+    offset=4912 ASCII: @x3.s~
+    offset=4921 ASCII: _worldmap_main.ab_
+    offset=4959 ASCII: AMap.]
+    offset=42307 ASCII: m_BindPose
+    offset=42587 ASCII: PackedBitVector
+MATCH offset=42307 encoding=ASCII text=m_BindPose
+  CONTEXT:
+    offset=4921 ASCII: _worldmap_main.ab_
+    offset=4959 ASCII: AMap.]
+    offset=42307 ASCII: m_BindPose
+    offset=42587 ASCII: PackedBitVector
+    offset=43309 ASCII: APosi
+MATCH offset=42587 encoding=ASCII text=PackedBitVector
+  CONTEXT:
+    offset=4959 ASCII: AMap.]
+    offset=42307 ASCII: m_BindPose
+    offset=42587 ASCII: PackedBitVector
+    offset=43309 ASCII: APosi
+    offset=44908 ASCII: 2map
+MATCH offset=43309 encoding=ASCII text=APosi
+  CONTEXT:
+    offset=42307 ASCII: m_BindPose
+    offset=42587 ASCII: PackedBitVector
+    offset=43309 ASCII: APosi
+    offset=44908 ASCII: 2map
+    offset=46243 ASCII: Cubemap>
+MATCH offset=44908 encoding=ASCII text=2map
+  CONTEXT:
+    offset=42587 ASCII: PackedBitVector
+    offset=43309 ASCII: APosi
+    offset=44908 ASCII: 2map
+    offset=46243 ASCII: Cubemap>
+    offset=48348 ASCII: TWorld
+MATCH offset=46243 encoding=ASCII text=Cubemap>
+  CONTEXT:
+    offset=43309 ASCII: APosi
+    offset=44908 ASCII: 2map
+    offset=46243 ASCII: Cubemap>
+    offset=48348 ASCII: TWorld
+    offset=51364 ASCII: ScreenCoord
+MATCH offset=48348 encoding=ASCII text=TWorld
+  CONTEXT:
+    offset=44908 ASCII: 2map
+    offset=46243 ASCII: Cubemap>
+    offset=48348 ASCII: TWorld
+    offset=51364 ASCII: ScreenCoord
+    offset=51897 ASCII: popenSea
+MATCH offset=51364 encoding=ASCII text=ScreenCoord
+  CONTEXT:
+    offset=46243 ASCII: Cubemap>
+    offset=48348 ASCII: TWorld
+    offset=51364 ASCII: ScreenCoord
+    offset=51897 ASCII: popenSea
+    offset=53975 ASCII:  resource
+MATCH offset=51897 encoding=ASCII text=popenSea
+  CONTEXT:
+    offset=48348 ASCII: TWorld
+    offset=51364 ASCII: ScreenCoord
+    offset=51897 ASCII: popenSea
+    offset=53975 ASCII:  resource
+    offset=54844 ASCII: =Sea`
+MATCH offset=53975 encoding=ASCII text= resource
+  CONTEXT:
+    offset=51364 ASCII: ScreenCoord
+    offset=51897 ASCII: popenSea
+    offset=53975 ASCII:  resource
+    offset=54844 ASCII: =Sea`
+    offset=56167 ASCII: =sea
+MATCH offset=54844 encoding=ASCII text==Sea`
+  CONTEXT:
+    offset=51897 ASCII: popenSea
+    offset=53975 ASCII:  resource
+    offset=54844 ASCII: =Sea`
+    offset=56167 ASCII: =sea
+MATCH offset=56167 encoding=ASCII text==sea
+  CONTEXT:
+    offset=53975 ASCII:  resource
+    offset=54844 ASCII: =Sea`
+    offset=56167 ASCII: =sea
