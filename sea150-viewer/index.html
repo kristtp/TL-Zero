@@ -51,10 +51,21 @@
         <canvas id="mapCanvas" aria-label="Synthetic map of SEA 150"></canvas>
         <div class="map-badge">−3600 … 0 … +3600</div>
         <div id="cursorCoords" class="coords">X:— Y:—</div>
-        <div class="zoom-controls">
-          <button id="zoomReset" title="Reset to default fit">⟲</button>
-          <button id="zoomIn" title="Zoom in">+</button>
-          <button id="zoomOut" title="Zoom out">−</button>
+        <div class="map-nav-cluster">
+          <div class="dpad">
+            <button id="panUp" class="nav-btn dpad-up" title="Pan South (swipe up)">▲</button>
+            <div class="dpad-mid">
+              <button id="panLeft" class="nav-btn dpad-left" title="Pan East (swipe left)">◀</button>
+              <div class="dpad-dot"></div>
+              <button id="panRight" class="nav-btn dpad-right" title="Pan West (swipe right)">▶</button>
+            </div>
+            <button id="panDown" class="nav-btn dpad-down" title="Pan North (swipe down)">▼</button>
+          </div>
+          <div class="zoom-controls">
+            <button id="zoomReset" title="Reset to default fit">⟲</button>
+            <button id="zoomIn" title="Zoom in">+</button>
+            <button id="zoomOut" title="Zoom out">−</button>
+          </div>
         </div>
       </section>
 

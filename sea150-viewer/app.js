@@ -120,21 +120,25 @@ function focus(x, y, scale = 0.55) {
 
 function screenPoint(x, y) { return [state.offsetX + (x + MAP_HALF) * state.scale, state.offsetY + (MAP_HALF - y) * state.scale]; }
 function mapPoint(x, y) { return [(x - state.offsetX) / state.scale - MAP_HALF, MAP_HALF - (y - state.offsetY) / state.scale]; }
+window.screenPoint = screenPoint;
+window.mapPoint = mapPoint;
+window.focus = focus;
+window.fitMap = fitMap;
 
-function drawSea(width, height) {
-  const gradient = context.createLinearGradient(0, 0, width, height);
+function drawSea(x, y, w, h) {
+  const gradient = context.createLinearGradient(x, y, x + w, y + h);
   gradient.addColorStop(0, "#0d6278");
   gradient.addColorStop(0.52, "#168ba0");
   gradient.addColorStop(1, "#0b526b");
   context.fillStyle = gradient;
-  context.fillRect(0, 0, width, height);
+  context.fillRect(x, y, w, h);
   context.strokeStyle = "#ffffff12";
   context.lineWidth = 1;
-  for (let y = 20; y < height; y += 28) {
+  for (let waveY = y + 20; waveY < y + h; waveY += 28) {
     context.beginPath();
-    for (let x = -20; x < width + 20; x += 24) {
-      const waveY = y + Math.sin((x + y) * 0.028) * 5;
-      if (x === -20) context.moveTo(x, waveY); else context.lineTo(x, waveY);
+    for (let waveX = x - 20; waveX < x + w + 20; waveX += 24) {
+      const curY = waveY + Math.sin((waveX + waveY) * 0.028) * 5;
+      if (waveX === x - 20) context.moveTo(waveX, curY); else context.lineTo(waveX, curY);
     }
     context.stroke();
   }
@@ -256,20 +260,39 @@ function draw() {
   const width = frame.clientWidth;
   const height = frame.clientHeight;
   context.clearRect(0, 0, width, height);
-  drawSea(width, height);
+
+  // Deep oceanic background outside the grid box
+  context.fillStyle = "#07171f";
+  context.fillRect(0, 0, width, height);
+
   const [left, top] = screenPoint(-MAP_HALF, MAP_HALF);
   const mapScreenSize = MAP_SIZE * state.scale;
+
+  // Confine all map layers strictly within the bounds of the grid box
+  context.save();
+  context.beginPath();
+  context.rect(left, top, mapScreenSize, mapScreenSize);
+  context.clip();
 
   if (state.showStitched && state.stitchedImage && state.stitchedImage.complete) {
     context.drawImage(state.stitchedImage, left, top, mapScreenSize, mapScreenSize);
   } else {
-    context.fillStyle = "#0c5e6c66";
-    context.fillRect(left, top, mapScreenSize, mapScreenSize);
+    drawSea(left, top, mapScreenSize, mapScreenSize);
   }
 
-  context.strokeStyle = "#f1dfad"; context.lineWidth = 2;
+  drawGrid();
+  drawResources();
+  drawWonders();
+  drawTraps();
+
+  context.restore();
+
+  // Grid box outer boundary
+  context.strokeStyle = "#f1dfad";
+  context.lineWidth = Math.max(1.5, Math.min(3, state.scale * 4));
   context.strokeRect(left, top, mapScreenSize, mapScreenSize);
-  drawGrid(); drawResources(); drawWonders(); drawTraps(); drawCrosshair();
+
+  drawCrosshair();
 }
 
 function nearestAt(mapX, mapY) {
@@ -297,9 +320,34 @@ canvas.addEventListener("wheel", event => {
   const rect = canvas.getBoundingClientRect();
   const mouseX = event.clientX - rect.left, mouseY = event.clientY - rect.top;
   const [mapX, mapY] = mapPoint(mouseX, mouseY);
-  state.scale = Math.max(0.055, Math.min(1.8, state.scale * (event.deltaY < 0 ? 1.18 : 0.85)));
-  state.offsetX = mouseX - mapX * state.scale; state.offsetY = mouseY - mapY * state.scale; draw();
+
+  let zoomFactor;
+  if (event.ctrlKey) {
+    // Smooth scaling for laptop touchpad pinch gestures
+    zoomFactor = Math.exp(-event.deltaY * 0.008);
+  } else {
+    // Discrete mouse wheel
+    zoomFactor = event.deltaY < 0 ? 1.12 : 0.89;
+  }
+  zoomFactor = Math.max(0.65, Math.min(1.45, zoomFactor));
+
+  const targetScale = Math.max(0.055, Math.min(1.8, state.scale * zoomFactor));
+
+  // Anchor the exact map coordinate under cursor without jumping
+  state.offsetX = mouseX - (mapX + MAP_HALF) * targetScale;
+  state.offsetY = mouseY - (MAP_HALF - mapY) * targetScale;
+  state.scale = targetScale;
+  draw();
 }, { passive: false });
+
+canvas.addEventListener("dblclick", event => {
+  event.preventDefault();
+  const rect = canvas.getBoundingClientRect();
+  const mouseX = event.clientX - rect.left, mouseY = event.clientY - rect.top;
+  const [mapX, mapY] = mapPoint(mouseX, mouseY);
+  const targetScale = Math.min(1.8, Math.max(state.scale * 1.5, 0.45));
+  focus(mapX, mapY, targetScale);
+});
 
 const activePointers = new Map();
 let pinchStartDistance = 0;
@@ -583,6 +631,63 @@ document.querySelector("#zoomReset")?.addEventListener("click", fitMap);
 document.querySelector("#trapButton").addEventListener("click", () => focus(1967, 1685));
 document.querySelector("#zoomIn").addEventListener("click", () => focus(...mapPoint(frame.clientWidth / 2, frame.clientHeight / 2), Math.min(1.8, state.scale * 1.3)));
 document.querySelector("#zoomOut").addEventListener("click", () => focus(...mapPoint(frame.clientWidth / 2, frame.clientHeight / 2), Math.max(0.055, state.scale / 1.3)));
+
+// 4-Direction D-Pad Controls with continuous press support
+let panInterval = null;
+
+function startContinuousPan(dir) {
+  stopContinuousPan();
+  const panStep = () => {
+    const speed = Math.max(8, Math.min(28, 140 * state.scale));
+    switch (dir) {
+      case "up":
+        state.offsetY -= speed; // Swipe up -> Moves South (-Y)
+        break;
+      case "down":
+        state.offsetY += speed; // Swipe down -> Moves North (+Y)
+        break;
+      case "left":
+        state.offsetX -= speed; // Swipe left -> Moves East (+X)
+        break;
+      case "right":
+        state.offsetX += speed; // Swipe right -> Moves West (-X)
+        break;
+    }
+    draw();
+  };
+  panStep();
+  panInterval = setInterval(panStep, 22);
+}
+
+function stopContinuousPan() {
+  if (panInterval) {
+    clearInterval(panInterval);
+    panInterval = null;
+  }
+}
+
+function bindPanButton(buttonId, dir) {
+  const btn = document.querySelector(buttonId);
+  if (!btn) return;
+  btn.addEventListener("pointerdown", e => {
+    e.preventDefault();
+    try { btn.setPointerCapture(e.pointerId); } catch (_) {}
+    startContinuousPan(dir);
+  });
+  const stop = (e) => {
+    try { btn.releasePointerCapture(e.pointerId); } catch (_) {}
+    stopContinuousPan();
+  };
+  btn.addEventListener("pointerup", stop);
+  btn.addEventListener("pointercancel", stop);
+  btn.addEventListener("pointerleave", stop);
+}
+
+bindPanButton("#panUp", "up");
+bindPanButton("#panDown", "down");
+bindPanButton("#panLeft", "left");
+bindPanButton("#panRight", "right");
+
 document.querySelector("#addTrapButton").addEventListener("click", () => {
   const x = Number(document.querySelector("#trapX").value);
   const y = Number(document.querySelector("#trapY").value);
