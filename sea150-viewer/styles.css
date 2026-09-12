@@ -80,6 +80,84 @@ h1 { margin: 0; font-size: 29px; letter-spacing: 0; }
 .fact { display: flex; justify-content: space-between; gap: 10px; padding: 9px 0; border-bottom: 1px solid #e2e8e5; font-size: 13px; }
 .fact strong { font-family: Consolas, monospace; text-align: right; }
 
+/* Password Modal */
+.modal-backdrop {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(14, 42, 53, 0.78);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-card {
+  width: 90%;
+  max-width: 380px;
+  background: #fffdf6;
+  border-radius: 8px;
+  border: 2px solid var(--gold);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+  padding: 22px 20px;
+  color: var(--ink);
+}
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 10px;
+  margin-bottom: 14px;
+}
+.modal-header h3 {
+  margin: 0;
+  font-size: 17px;
+  color: var(--ink);
+}
+.close-btn {
+  background: transparent;
+  border: 0;
+  font-size: 22px;
+  cursor: pointer;
+  color: var(--muted);
+  line-height: 1;
+}
+.modal-desc {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.45;
+  margin: 0 0 14px;
+}
+#passwordInput {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: white;
+  color: var(--ink);
+  font-size: 14px;
+  box-sizing: border-box;
+}
+#passwordInput:focus {
+  outline: 2px solid var(--sea);
+}
+.modal-error {
+  color: #c92a2a;
+  font-size: 12px;
+  font-family: Consolas, monospace;
+  margin-top: 8px;
+  font-weight: 600;
+}
+.modal-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 18px;
+}
+.modal-actions .command {
+  margin-bottom: 0;
+}
+
 @media (max-width: 900px) {
   .workspace { grid-template-columns: 170px minmax(0, 1fr); }
   .inspector { display: none; }

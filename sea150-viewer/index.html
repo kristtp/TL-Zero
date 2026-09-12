@@ -75,6 +75,25 @@
       </aside>
     </section>
   </main>
+
+  <div id="passwordModal" class="modal-backdrop" style="display: none;">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>Protected Layer Authentication</h3>
+        <button id="closeModalButton" class="close-btn">&times;</button>
+      </div>
+      <p class="modal-desc">Access to the stitched live satellite layer requires authorization. Enter access key:</p>
+      <form id="passwordForm" onsubmit="return false;">
+        <input id="passwordInput" type="password" placeholder="Enter password..." autocomplete="current-password" autofocus>
+        <div id="passwordError" class="modal-error" style="display: none;">Access denied. Invalid password hash.</div>
+        <div class="modal-actions">
+          <button type="button" id="cancelPasswordButton" class="command secondary">Cancel</button>
+          <button type="submit" id="submitPasswordButton" class="command">Unlock Layer</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
   <script src="app.js"></script>
 </body>
 </html>

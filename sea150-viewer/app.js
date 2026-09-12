@@ -6,6 +6,29 @@ const STITCHED_IMGS = ["data/stitched_map.png", "../analysis-assets/survey-run/s
 const STITCHED_PREVIEWS = ["data/stitched_map_preview.jpg", "../analysis-assets/survey-run/stitched_map_preview.jpg"];
 const CONFIRMED_TRAP = { id: "ZeroOne", x: 1967, y: 1685, source: "Live capture 2026-09-11" };
 
+// SHA-512 authentication hash for Stitched Layer access
+// Matches 'ZeroOne' by default, or loaded from private/public inaccessible hash file
+const AUTH_HASH_DEFAULT = "a50463443742fb282e67d6a086b361149417838b7079b3cbd323cb4a9ea8250788cd0d276d9a188520f922ed28c04740204ef8b9df45ea98bf968e329cd43494";
+let targetAuthHash = AUTH_HASH_DEFAULT;
+
+async function loadAuthHash() {
+  try {
+    const res = await fetch("data/auth.sha512?t=" + Date.now());
+    if (res.ok) {
+      const text = (await res.text()).trim().toLowerCase();
+      if (text.length === 128) targetAuthHash = text;
+    }
+  } catch (_) {}
+}
+loadAuthHash();
+
+async function sha512(str) {
+  const buf = new TextEncoder().encode(str);
+  const hashBuf = await crypto.subtle.digest("SHA-512", buf);
+  const hashArr = Array.from(new Uint8Array(hashBuf));
+  return hashArr.map(b => b.toString(16).padStart(2, "0")).join("");
+}
+
 const colors = { island: "#d49b27", plant: "#2fa66d", stone: "#748592" };
 const canvas = document.querySelector("#mapCanvas");
 const context = canvas.getContext("2d");
@@ -316,7 +339,58 @@ canvas.addEventListener("pointerup", event => {
   }
 });
 
+function isStitchedAuthenticated() {
+  return sessionStorage.getItem("sea150_auth") === "unlocked";
+}
+
+function openPasswordModal(onSuccess) {
+  const modal = document.querySelector("#passwordModal");
+  const input = document.querySelector("#passwordInput");
+  const err = document.querySelector("#passwordError");
+  if (!modal || !input) return;
+
+  modal.style.display = "flex";
+  input.value = "";
+  if (err) err.style.display = "none";
+  input.focus();
+
+  const cleanup = () => {
+    modal.style.display = "none";
+    document.querySelector("#closeModalButton")?.removeEventListener("click", onCancel);
+    document.querySelector("#cancelPasswordButton")?.removeEventListener("click", onCancel);
+    document.querySelector("#passwordForm")?.removeEventListener("submit", onSubmit);
+  };
+
+  const onCancel = () => {
+    cleanup();
+    const toggle = document.querySelector("#stitchedToggle");
+    if (toggle) toggle.checked = false;
+  };
+
+  const onSubmit = async (e) => {
+    e?.preventDefault();
+    const entered = input.value;
+    const hashed = await sha512(entered);
+    if (hashed === targetAuthHash) {
+      sessionStorage.setItem("sea150_auth", "unlocked");
+      cleanup();
+      if (onSuccess) onSuccess();
+    } else {
+      if (err) err.style.display = "block";
+      input.select();
+    }
+  };
+
+  document.querySelector("#closeModalButton")?.addEventListener("click", onCancel);
+  document.querySelector("#cancelPasswordButton")?.addEventListener("click", onCancel);
+  document.querySelector("#passwordForm")?.addEventListener("submit", onSubmit);
+}
+
 function setStitchedMode(enabled) {
+  if (enabled && !isStitchedAuthenticated()) {
+    openPasswordModal(() => setStitchedMode(true));
+    return;
+  }
   state.showStitched = enabled;
   const toggle = document.querySelector("#stitchedToggle");
   const btn = document.querySelector("#toggleStitchedButton");
