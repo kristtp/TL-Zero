@@ -305,6 +305,7 @@ const activePointers = new Map();
 let pinchStartDistance = 0;
 let pinchStartScale = 1;
 let pinchCenterMap = [0, 0];
+let pinchCenterScreen = [0, 0];
 
 canvas.addEventListener("pointerdown", event => {
   event.preventDefault();
@@ -318,6 +319,7 @@ canvas.addEventListener("pointerdown", event => {
     state.lastY = event.clientY;
   } else if (activePointers.size === 2) {
     state.dragging = false;
+    state.moved = true; // prevent accidental click inspection
     const pts = Array.from(activePointers.values());
     pinchStartDistance = Math.hypot(pts[0].x - pts[1].x, pts[0].y - pts[1].y);
     pinchStartScale = state.scale;
@@ -325,15 +327,15 @@ canvas.addEventListener("pointerdown", event => {
     const rect = canvas.getBoundingClientRect();
     const midScreenX = (pts[0].x + pts[1].x) / 2 - rect.left;
     const midScreenY = (pts[0].y + pts[1].y) / 2 - rect.top;
+    pinchCenterScreen = [midScreenX, midScreenY];
     pinchCenterMap = mapPoint(midScreenX, midScreenY);
   }
 });
 
 canvas.addEventListener("pointermove", event => {
   event.preventDefault();
-  if (activePointers.has(event.pointerId)) {
-    activePointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
-  }
+  if (!activePointers.has(event.pointerId)) return;
+  activePointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
 
   const rect = canvas.getBoundingClientRect();
   state.mouseX = event.clientX - rect.left;
@@ -345,25 +347,29 @@ canvas.addEventListener("pointermove", event => {
   if (activePointers.size === 2) {
     const pts = Array.from(activePointers.values());
     const currentDist = Math.hypot(pts[0].x - pts[1].x, pts[0].y - pts[1].y);
-    if (pinchStartDistance > 5 && currentDist > 5) {
+    if (pinchStartDistance > 10 && currentDist > 10) {
       const zoomFactor = currentDist / pinchStartDistance;
       const targetScale = Math.max(0.055, Math.min(1.8, pinchStartScale * zoomFactor));
 
-      const midScreenX = (pts[0].x + pts[1].x) / 2 - rect.left;
-      const midScreenY = (pts[0].y + pts[1].y) / 2 - rect.top;
+      // Calculate the current midScreen center (allowing dual finger panning + zooming simultaneously)
+      const currentMidX = (pts[0].x + pts[1].x) / 2 - rect.left;
+      const currentMidY = (pts[0].y + pts[1].y) / 2 - rect.top;
 
       state.scale = targetScale;
-      state.offsetX = midScreenX - (pinchCenterMap[0] + MAP_HALF) * state.scale;
-      state.offsetY = midScreenY - (MAP_HALF - pinchCenterMap[1]) * state.scale;
+      // Anchor the map point under the pinch center to currentMid
+      state.offsetX = currentMidX - (pinchCenterMap[0] + MAP_HALF) * state.scale;
+      state.offsetY = currentMidY - (MAP_HALF - pinchCenterMap[1]) * state.scale;
       draw();
     }
     return;
   }
 
   if (state.dragging && activePointers.size === 1) {
-    if (Math.hypot(event.clientX - state.lastX, event.clientY - state.lastY) > 2) state.moved = true;
-    state.offsetX += event.clientX - state.lastX;
-    state.offsetY += event.clientY - state.lastY;
+    const dx = event.clientX - state.lastX;
+    const dy = event.clientY - state.lastY;
+    if (Math.hypot(dx, dy) > 2) state.moved = true;
+    state.offsetX += dx;
+    state.offsetY += dy;
     state.lastX = event.clientX;
     state.lastY = event.clientY;
     draw();
@@ -403,6 +409,13 @@ canvas.addEventListener("pointerleave", () => {
   document.querySelector("#cursorCoords").textContent = "X:— Y:—";
   draw();
 });
+
+// Native iOS/Safari & Mobile gesture event suppressors
+canvas.addEventListener("gesturestart", e => e.preventDefault());
+canvas.addEventListener("gesturechange", e => e.preventDefault());
+canvas.addEventListener("gestureend", e => e.preventDefault());
+canvas.addEventListener("touchstart", e => { if (e.touches.length > 1) e.preventDefault(); }, { passive: false });
+canvas.addEventListener("touchmove", e => { if (e.touches.length > 1) e.preventDefault(); }, { passive: false });
 
 function isStitchedAuthenticated() {
   return sessionStorage.getItem("sea150_auth") === "unlocked";
@@ -566,6 +579,7 @@ document.querySelectorAll("input").forEach(input => input.addEventListener("chan
 document.querySelector("#toggleStitchedButton")?.addEventListener("click", () => setStitchedMode(!state.showStitched));
 document.querySelector("#stitchedToggle")?.addEventListener("change", e => setStitchedMode(e.target.checked));
 document.querySelector("#fitButton").addEventListener("click", fitMap);
+document.querySelector("#zoomReset")?.addEventListener("click", fitMap);
 document.querySelector("#trapButton").addEventListener("click", () => focus(1967, 1685));
 document.querySelector("#zoomIn").addEventListener("click", () => focus(...mapPoint(frame.clientWidth / 2, frame.clientHeight / 2), Math.min(1.8, state.scale * 1.3)));
 document.querySelector("#zoomOut").addEventListener("click", () => focus(...mapPoint(frame.clientWidth / 2, frame.clientHeight / 2), Math.max(0.055, state.scale / 1.3)));
