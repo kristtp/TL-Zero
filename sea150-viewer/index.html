@@ -17,8 +17,11 @@
     </header>
 
     <section class="workspace">
-      <aside class="panel controls">
-        <div class="panel-title">Map Layers</div>
+      <aside id="controlsPanel" class="panel controls">
+        <div class="panel-header">
+          <div class="panel-title">Map Layers</div>
+          <button id="toggleControlsBtn" class="collapse-btn" title="Toggle Controls">◀</button>
+        </div>
         <label class="toggle"><input id="stitchedToggle" type="checkbox"><span>Stitched map</span><b id="stitchedStatus">Live</b></label>
         <label class="toggle"><input id="resourcesToggle" type="checkbox" checked><span>Resources</span><b id="resourceCount">0</b></label>
         <label class="toggle"><input id="wondersToggle" type="checkbox" checked><span>Goddesses</span><b id="wonderCount">0</b></label>
@@ -48,6 +51,7 @@
       </aside>
 
       <section class="map-frame">
+        <button id="floatingToggleControls" class="floating-toggle-btn" title="Open Controls" style="display: none;">☰ Controls</button>
         <canvas id="mapCanvas" aria-label="Synthetic map of SEA 150"></canvas>
         <div class="map-badge">−3600 … 0 … +3600</div>
         <div id="cursorCoords" class="coords">X:— Y:—</div>

@@ -731,6 +731,39 @@ document.querySelector("#stitchedToggle")?.addEventListener("change", e => setSt
 document.querySelector("#fitButton").addEventListener("click", fitMap);
 document.querySelector("#zoomReset")?.addEventListener("click", fitMap);
 document.querySelector("#trapButton").addEventListener("click", () => focus(1967, 1685));
+
+// Sidebar Collapse / Expand Toggle
+function toggleControlsSidebar(forceState) {
+  const panel = document.querySelector("#controlsPanel");
+  const workspace = document.querySelector(".workspace");
+  const floatingBtn = document.querySelector("#floatingToggleControls");
+  const isCollapsed = forceState !== undefined ? forceState : !panel.classList.contains("collapsed");
+
+  if (isCollapsed) {
+    panel.classList.add("collapsed");
+    workspace?.classList.add("controls-collapsed");
+    if (floatingBtn) floatingBtn.style.display = "block";
+  } else {
+    panel.classList.remove("collapsed");
+    workspace?.classList.remove("controls-collapsed");
+    if (floatingBtn) floatingBtn.style.display = "none";
+  }
+
+  // Trigger resize after layout changes so the canvas adapts smoothly
+  setTimeout(() => {
+    resize();
+    fitMap();
+  }, 100);
+}
+
+document.querySelector("#toggleControlsBtn")?.addEventListener("click", () => toggleControlsSidebar(true));
+document.querySelector("#floatingToggleControls")?.addEventListener("click", () => toggleControlsSidebar(false));
+
+// On mobile (< 640px), auto-collapse sidebar on start so map render takes full screen
+if (window.innerWidth <= 640) {
+  setTimeout(() => toggleControlsSidebar(true), 50);
+}
+
 document.querySelector("#zoomIn")?.addEventListener("click", () => {
   const box = getWindowRect();
   const [cx, cy] = mapPoint(box.x + box.width / 2, box.y + box.height / 2);
