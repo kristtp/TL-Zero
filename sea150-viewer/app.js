@@ -102,7 +102,8 @@ function getWindowRect() {
     ? Math.round(frame.clientWidth * 0.90)
     : Math.max(200, Math.min(frame.clientWidth - 56, frame.clientHeight - 56));
   const x = Math.round((frame.clientWidth - size) / 2);
-  const y = Math.round((frame.clientHeight - size) / 2);
+  // Shift static box up by 15% of frame height (10% + 5%)
+  const y = Math.max(10, Math.round((frame.clientHeight - size) / 2 - frame.clientHeight * 0.15));
   return { x, y, width: size, height: size };
 }
 

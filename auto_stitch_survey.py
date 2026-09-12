@@ -224,31 +224,46 @@ def stitch_tile(canvas, crop, pos_x, pos_y):
     if x2 > x1 and y2 > y1:
         canvas[y1:y2, x1:x2] = crop[cy1:cy2, cx1:cx2]
 
+# Physical scaling of game viewport:
+# A 400px swipe moves 15 map units -> ~26.7 px/unit
+# A 1000px swipe moves 37 map units -> ~27.0 px/unit
+# Average physical camera resolution: 26.85 screen pixels per map unit
+SCREEN_PX_PER_MAP_UNIT = 26.85
+
 def stitch_both(master_canvas, overview_canvas, crop, gx, gy):
     """
     Stitches crop onto:
-    1) Master Canvas at 4.0 px/unit everywhere (28,800 x 28,800) in full un-downsampled native resolution.
-    2) Overview Canvas at 1.0 px/unit (7,200 x 7,200) for real-time sea150-viewer screen fit.
+    1) Master Canvas at 4.0 px/unit (28,800 x 28,800).
+    2) Overview Canvas at 1.0 px/unit (7,200 x 7,200) for real-time sea150-viewer.
     """
+    # Physical size of crop in map units:
+    # 420 px width / 26.85 = 15.64 map units
+    # 1100 px height / 26.85 = 40.97 map units
+    map_w = CROP_W / SCREEN_PX_PER_MAP_UNIT
+    map_h = CROP_H / SCREEN_PX_PER_MAP_UNIT
+
+    off_map_x = CROP_OFFSET_X / SCREEN_PX_PER_MAP_UNIT
+    off_map_y = CROP_OFFSET_Y / SCREEN_PX_PER_MAP_UNIT
+
     # 1. Master 28,800 Canvas (4.0 px/unit)
-    cx_28k = int(round(MASTER_CENTER + gx * SCALE))
-    cy_28k = int(round(MASTER_CENTER - gy * SCALE))
-    px_28k = cx_28k + CROP_OFFSET_X
-    py_28k = cy_28k + CROP_OFFSET_Y
-    stitch_tile(master_canvas, crop, px_28k, py_28k)
+    master_w = max(1, int(round(map_w * SCALE)))  # ~63 px
+    master_h = max(1, int(round(map_h * SCALE)))  # ~164 px
+    crop_master = cv2.resize(crop, (master_w, master_h), interpolation=cv2.INTER_AREA)
+
+    cx_28k = int(round(MASTER_CENTER + (gx + off_map_x) * SCALE))
+    cy_28k = int(round(MASTER_CENTER - (gy - off_map_y) * SCALE))
+    stitch_tile(master_canvas, crop_master, cx_28k, cy_28k)
 
     # 2. Overview 7,200 Canvas (1.0 px/unit)
-    ov_w = int(round(CROP_W / SCALE))   # 105 px
-    ov_h = int(round(CROP_H / SCALE))   # 275 px
+    ov_w = max(1, int(round(map_w)))  # ~16 px
+    ov_h = max(1, int(round(map_h)))  # ~41 px
     crop_ov = cv2.resize(crop, (ov_w, ov_h), interpolation=cv2.INTER_AREA)
 
-    cx_ov = int(round(OVERVIEW_CENTER + gx))
-    cy_ov = int(round(OVERVIEW_CENTER - gy))
-    px_ov = cx_ov + int(round(CROP_OFFSET_X / SCALE))
-    py_ov = cy_ov + int(round(CROP_OFFSET_Y / SCALE))
-    stitch_tile(overview_canvas, crop_ov, px_ov, py_ov)
+    cx_ov = int(round(OVERVIEW_CENTER + gx + off_map_x))
+    cy_ov = int(round(OVERVIEW_CENTER - gy - off_map_y))
+    stitch_tile(overview_canvas, crop_ov, cx_ov, cy_ov)
 
-    return (px_28k, py_28k), (px_ov, py_ov)
+    return (cx_28k, cy_28k), (cx_ov, cy_ov)
 
 def async_save_canvas(overview_canvas, master_canvas=None, save_master=False):
     """Saves overview canvas asynchronously to prevent loop blocking."""
