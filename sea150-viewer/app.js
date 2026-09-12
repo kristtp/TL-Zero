@@ -301,12 +301,40 @@ canvas.addEventListener("wheel", event => {
   state.offsetX = mouseX - mapX * state.scale; state.offsetY = mouseY - mapY * state.scale; draw();
 }, { passive: false });
 
+const activePointers = new Map();
+let pinchStartDistance = 0;
+let pinchStartScale = 1;
+let pinchCenterMap = [0, 0];
+
 canvas.addEventListener("pointerdown", event => {
-  state.dragging = true; state.moved = false; state.lastX = event.clientX; state.lastY = event.clientY;
-  canvas.setPointerCapture(event.pointerId);
+  event.preventDefault();
+  activePointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
+  try { canvas.setPointerCapture(event.pointerId); } catch (_) {}
+
+  if (activePointers.size === 1) {
+    state.dragging = true;
+    state.moved = false;
+    state.lastX = event.clientX;
+    state.lastY = event.clientY;
+  } else if (activePointers.size === 2) {
+    state.dragging = false;
+    const pts = Array.from(activePointers.values());
+    pinchStartDistance = Math.hypot(pts[0].x - pts[1].x, pts[0].y - pts[1].y);
+    pinchStartScale = state.scale;
+
+    const rect = canvas.getBoundingClientRect();
+    const midScreenX = (pts[0].x + pts[1].x) / 2 - rect.left;
+    const midScreenY = (pts[0].y + pts[1].y) / 2 - rect.top;
+    pinchCenterMap = mapPoint(midScreenX, midScreenY);
+  }
 });
 
 canvas.addEventListener("pointermove", event => {
+  event.preventDefault();
+  if (activePointers.has(event.pointerId)) {
+    activePointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
+  }
+
   const rect = canvas.getBoundingClientRect();
   state.mouseX = event.clientX - rect.left;
   state.mouseY = event.clientY - rect.top;
@@ -314,29 +342,66 @@ canvas.addEventListener("pointermove", event => {
   const [mapX, mapY] = mapPoint(state.mouseX, state.mouseY);
   document.querySelector("#cursorCoords").textContent = `X:${Math.round(mapX)} Y:${Math.round(mapY)}`;
 
-  if (state.dragging) {
+  if (activePointers.size === 2) {
+    const pts = Array.from(activePointers.values());
+    const currentDist = Math.hypot(pts[0].x - pts[1].x, pts[0].y - pts[1].y);
+    if (pinchStartDistance > 5 && currentDist > 5) {
+      const zoomFactor = currentDist / pinchStartDistance;
+      const targetScale = Math.max(0.055, Math.min(1.8, pinchStartScale * zoomFactor));
+
+      const midScreenX = (pts[0].x + pts[1].x) / 2 - rect.left;
+      const midScreenY = (pts[0].y + pts[1].y) / 2 - rect.top;
+
+      state.scale = targetScale;
+      state.offsetX = midScreenX - (pinchCenterMap[0] + MAP_HALF) * state.scale;
+      state.offsetY = midScreenY - (MAP_HALF - pinchCenterMap[1]) * state.scale;
+      draw();
+    }
+    return;
+  }
+
+  if (state.dragging && activePointers.size === 1) {
     if (Math.hypot(event.clientX - state.lastX, event.clientY - state.lastY) > 2) state.moved = true;
     state.offsetX += event.clientX - state.lastX;
     state.offsetY += event.clientY - state.lastY;
     state.lastX = event.clientX;
     state.lastY = event.clientY;
+    draw();
   }
-  draw();
 });
+
+function endPointer(event) {
+  activePointers.delete(event.pointerId);
+  try { canvas.releasePointerCapture(event.pointerId); } catch (_) {}
+
+  if (activePointers.size === 1) {
+    const remaining = Array.from(activePointers.values())[0];
+    state.dragging = true;
+    state.moved = true;
+    state.lastX = remaining.x;
+    state.lastY = remaining.y;
+  } else if (activePointers.size === 0) {
+    state.dragging = false;
+    pinchStartDistance = 0;
+  }
+}
+
+canvas.addEventListener("pointerup", event => {
+  const wasPinching = activePointers.size >= 2;
+  endPointer(event);
+  if (!state.moved && !wasPinching && activePointers.size === 0) {
+    const rect = canvas.getBoundingClientRect();
+    const [mapX, mapY] = mapPoint(event.clientX - rect.left, event.clientY - rect.top);
+    inspect(nearestAt(mapX, mapY));
+  }
+});
+
+canvas.addEventListener("pointercancel", endPointer);
 
 canvas.addEventListener("pointerleave", () => {
   state.mouseOver = false;
   document.querySelector("#cursorCoords").textContent = "X:— Y:—";
   draw();
-});
-
-canvas.addEventListener("pointerup", event => {
-  state.dragging = false;
-  if (!state.moved) {
-    const rect = canvas.getBoundingClientRect();
-    const [mapX, mapY] = mapPoint(event.clientX - rect.left, event.clientY - rect.top);
-    inspect(nearestAt(mapX, mapY));
-  }
 });
 
 function isStitchedAuthenticated() {

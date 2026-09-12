@@ -63,8 +63,8 @@ h1 { margin: 0; font-size: 29px; letter-spacing: 0; }
 .hint, .notice { color: var(--muted); font-size: 12px; line-height: 1.5; }
 .notice { margin-top: 16px; padding: 12px; background: #eef3ef; border-left: 3px solid var(--gold); }
 
-.map-frame { position: relative; min-width: 0; min-height: 520px; overflow: hidden; background: var(--sea); }
-#mapCanvas { display: block; width: 100%; height: 100%; cursor: crosshair; }
+.map-frame { position: relative; min-width: 0; min-height: 520px; overflow: hidden; background: var(--sea); touch-action: none; }
+#mapCanvas { display: block; width: 100%; height: 100%; cursor: crosshair; touch-action: none; user-select: none; -webkit-user-select: none; }
 .map-badge, .coords { position: absolute; top: 14px; padding: 7px 10px; color: white; background: #173342dc; font: 700 11px/1 Consolas, monospace; pointer-events: none; }
 .map-badge { left: 14px; }
 .coords { right: 14px; }
